@@ -1,162 +1,128 @@
 """
-Module for handling FalkorDB (Graph Database) operations.
-
-This module manages connections to FalkorDB and saves movie/series data
-with relationship structures. Includes error handling for offline scenarios.
+DetectiveDatabase Module
+Handles interactions with FalkorDB to store and retrieve game state data
+(Suspects, Locations, Clues, and Relationships) for SherlockAI.
 """
+import os
 from dotenv import load_dotenv
 from falkordb import FalkorDB
 
+# Load environment variables
 load_dotenv()
 
 
-class FalkorManager:
+class DetectiveDatabase:
     """
-    Manages connection to FalkorDB graph database.
-
-    Handles node creation, relationship linking, and graceful degradation
-    when FalkorDB or Docker is unavailable.
+    Manages the Knowledge Graph for the detective game.
     """
 
-    # pylint: disable=too-few-public-methods
     def __init__(self):
-        """Initialize connection settings and database connection."""
+        """Initialize connection to FalkorDB."""
         self.host = "localhost"
         self.port = 6379
         self.client = None
         self.graph = None
         self.is_active = False
-
         self._connect()
 
     def _connect(self):
-        """
-        Attempt connection to FalkorDB Docker container.
-
-        Sets is_active flag based on connection success.
-        """
+        """Establish connection to the FalkorDB Docker container."""
         try:
             self.client = FalkorDB(host=self.host, port=self.port)
-            self.graph = self.client.select_graph("IMDB_Graph")
+            # We create a specific graph named 'SherlockCase'
+            self.graph = self.client.select_graph("SherlockCase")
             self.is_active = True
-            print("✔ Connected to FalkorDB (Graph Mode Active)")
-        # pylint: disable=broad-exception-caught
-        except Exception:
-            print("FalkorDB not detected. Running in MongoDB-only mode.")
+            print("✔ Connected to FalkorDB (Graph: SherlockCase)")
+        except Exception as e:
+            print(f"✘ FalkorDB Connection Failed: {e}")
+            print(
+                "  Make sure Docker is running: 'docker run -p 6379:6379 falkordb/falkordb'")
             self.is_active = False
 
-    def _sanitize_title(self, title: str) -> str:
+    def reset_game(self):
         """
-        Sanitize title for Cypher query safety.
-        """
-        return title.replace("'", "\\'").replace('"', '\\"')
-
-    def save_media(self, media_item):
-        """
-        Save media item as node and create relationships in graph.
+        Clears the entire graph to start a new game/scenario.
         """
         if not self.is_active:
             return
 
         try:
-            title = self._sanitize_title(media_item.title)
-            year = media_item.year
-            rating = media_item.rating
-            m_type = "Movie" if media_item.media_type == "movie" else "Series"
-            status = media_item.status
-            poster_url = media_item.poster_url if media_item.poster_url else ""
+            # Cypher query to delete all nodes and relationships
+            self.graph.query("MATCH (n) DETACH DELETE n")
+            print("🧹 Game board cleared. Ready for a new mystery.")
+        except Exception as e:
+            print(f"Error resetting game: {e}")
 
-            # Create main node
-            node_query = f"""
-            MERGE (m:{m_type} {{title: '{title}'}})
-            SET m.year = '{year}',
-                m.rating = '{rating}',
-                m.status = '{status}',
-                m.poster = '{poster_url}'
-            RETURN m
-            """
-
-            self.graph.query(node_query)
-            print(f" Synced to FalkorDB Graph: {media_item.title}")
-
-            # Create hub node and link
-            self._create_hub_relationship(title, m_type, status)
-
-            # Link items by status
-            self._create_status_relationships(title, m_type, status)
-
-        # pylint: disable=broad-exception-caught
-        except Exception as error:
-            print(f"FalkorDB Error: {error}")
-
-    def _create_hub_relationship(self, title: str, m_type: str,
-                                 _status: str) -> None:
+    def add_person(self, name: str, role: str, trait: str):
         """
-        Create relationship between media item and category hub.
+        Adds a person (Suspect, Victim, or Killer) to the graph.
+
+        Args:
+            name (str): Character's name (e.g., 'Butler James')
+            role (str): 'Victim', 'Killer', or 'Suspect'
+            trait (str): Personality trait (e.g., 'Nervous', 'Arrogant')
         """
-        try:
-            if m_type == "Movie":
-                hub_query = f"""
-                MERGE (hub:Hub {{name: 'All Movies'}})
-                WITH hub
-                MATCH (m:Movie {{title: '{title}'}})
-                MERGE (m)-[r:BELONGS_TO]->(hub)
-                RETURN r
-                """
-            else:  # Series
-                hub_query = f"""
-                MERGE (hub:Hub {{name: 'All Series'}})
-                WITH hub
-                MATCH (s:Series {{title: '{title}'}})
-                MERGE (s)-[r:BELONGS_TO]->(hub)
-                RETURN r
-                """
+        if not self.is_active:
+            return
 
-            self.graph.query(hub_query)
-
-        # pylint: disable=broad-exception-caught
-        except Exception:
-            pass
-
-    def _create_status_relationships(self, title: str, m_type: str,
-                                     status: str) -> None:
+        query = f"""
+        MERGE (p:Person {{name: '{name}'}})
+        SET p.role = '{role}',
+            p.trait = '{trait}'
+        RETURN p
         """
-        Create relationships between items with same watch status.
+        self.graph.query(query)
+        print(f"👤 Added Person: {name} ({role})")
+
+    def add_location_record(self, person_name: str, location_name: str, time: str):
         """
-        try:
-            # Create status hub
-            status_hub_query = f"""
-            MERGE (hub:StatusHub {{status: '{status}'}})
-            RETURN hub
-            """
-            self.graph.query(status_hub_query)
+        Records a character's location at a specific time (Alibi).
+        Creates: (Person)-[:SEEN_AT {time: '...'}]->(Location)
+        """
+        if not self.is_active:
+            return
 
-            # Link media to status hub
-            media_to_status = f"""
-            MATCH (m:{m_type} {{title: '{title}'}})
-            MATCH (hub:StatusHub {{status: '{status}'}})
-            MERGE (m)-[r:HAS_STATUS]->(hub)
-            RETURN r
-            """
-            self.graph.query(media_to_status)
+        query = f"""
+        MATCH (p:Person {{name: '{person_name}'}})
+        MERGE (l:Location {{name: '{location_name}'}})
+        MERGE (p)-[:SEEN_AT {{time: '{time}'}}]->(l)
+        """
+        self.graph.query(query)
 
-            # Link items with same status
-            same_status_query = f"""
-            MATCH (m1:{m_type} {{status: '{status}'}})
-            MATCH (m2:{m_type} {{status: '{status}', title: '{title}'}})
-            WHERE m1.title < m2.title
-            MERGE (m1)-[r:SAME_STATUS]->(m2)
-            RETURN r
-            """
-            try:
-                self.graph.query(same_status_query)
-            except Exception:  # pylint: disable=broad-exception-caught
-                pass
+    def add_relationship(self, person1: str, person2: str, relation_type: str, detail: str):
+        """
+        Adds a social relationship between two characters.
+        Example: (Maid)-[:HATES {reason: 'Unpaid wages'}]->(Lord Henry)
+        """
+        if not self.is_active:
+            return
 
-        # pylint: disable=broad-exception-caught
-        except Exception:
-            pass
+        # relation_type should be uppercase, e.g., 'HATES', 'LOVES', 'KNOWS'
+        rel_type = relation_type.upper().replace(" ", "_")
+
+        query = f"""
+        MATCH (p1:Person {{name: '{person1}'}})
+        MATCH (p2:Person {{name: '{person2}'}})
+        MERGE (p1)-[r:{rel_type} {{detail: '{detail}'}}]->(p2)
+        """
+        self.graph.query(query)
+
+    def add_clue(self, item_name: str, location_name: str, description: str):
+        """
+        Places a physical clue in a location.
+        Creates: (Item)-[:FOUND_IN]->(Location)
+        """
+        if not self.is_active:
+            return
+
+        query = f"""
+        MERGE (i:Item {{name: '{item_name}', description: '{description}'}})
+        MERGE (l:Location {{name: '{location_name}'}})
+        MERGE (i)-[:FOUND_IN]->(l)
+        """
+        self.graph.query(query)
+        print(f"🔍 Clue hidden: {item_name} in {location_name}")
 
 
-# Global instance for use throughout application
-falkor_db = FalkorManager()
+# Create a global instance
+db = DetectiveDatabase()
