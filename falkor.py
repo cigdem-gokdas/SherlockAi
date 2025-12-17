@@ -56,12 +56,11 @@ class DetectiveDatabase:
     def add_person(self, name: str, role: str, trait: str):
         """
         Adds a person (Suspect, Victim, or Killer) to the graph.
-
-        Args:
-            name (str): Character's name (e.g., 'Butler James')
-            role (str): 'Victim', 'Killer', or 'Suspect'
-            trait (str): Personality trait (e.g., 'Nervous', 'Arrogant')
         """
+        if name:
+            name = name.replace("'", "\\'")
+        if trait:
+            trait = trait.replace("'", "\\'")
         if not self.is_active:
             return
 
@@ -74,17 +73,21 @@ class DetectiveDatabase:
         self.graph.query(query)
         print(f"👤 Added Person: {name} ({role})")
 
-    def add_location_record(self, person_name: str, location_name: str, time: str):
+    def add_location_record(self, person_name: str, name: str, time: str):
         """
         Records a character's location at a specific time (Alibi).
         Creates: (Person)-[:SEEN_AT {time: '...'}]->(Location)
         """
+        if name:
+            name = name.replace("'", "\\'")
+        if trait:
+            trait = trait.replace("'", "\\'")
         if not self.is_active:
             return
 
         query = f"""
         MATCH (p:Person {{name: '{person_name}'}})
-        MERGE (l:Location {{name: '{location_name}'}})
+        MERGE (l:Location {{name: '{name}'}})
         MERGE (p)-[:SEEN_AT {{time: '{time}'}}]->(l)
         """
         self.graph.query(query)
@@ -92,8 +95,11 @@ class DetectiveDatabase:
     def add_relationship(self, person1: str, person2: str, relation_type: str, detail: str):
         """
         Adds a social relationship between two characters.
-        Example: (Maid)-[:HATES {reason: 'Unpaid wages'}]->(Lord Henry)
         """
+        if name:
+            name = name.replace("'", "\\'")
+        if trait:
+            trait = trait.replace("'", "\\'")
         if not self.is_active:
             return
 
@@ -112,6 +118,12 @@ class DetectiveDatabase:
         Places a physical clue in a location.
         Creates: (Item)-[:FOUND_IN]->(Location)
         """
+        if description:
+            description = description.replace("'", "\\'")
+        if location_name:
+            location_name = location_name.replace("'", "\\'")
+        if item_name:
+            item_name = item_name.replace("'", "\\'")
         if not self.is_active:
             return
 
