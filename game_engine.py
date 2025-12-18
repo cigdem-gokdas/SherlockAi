@@ -35,12 +35,12 @@ class DetectiveGame:
         """
         Set up a new mystery case.
         """
-        print("\n🔎 INITIALIZING NEW CASE...")
+        print("\n INITIALIZING NEW CASE...")
         
         if use_ai_generator and mystery_data:
             case = mystery_data['case']
-            print(f"✅ Mystery initialized: '{case['title']}'")
-            print(f"🎭 Victim: {case['victim']['name']} found dead in {case['victim']['killed_where']} at {case['victim']['killed_when']}")
+            print(f" Mystery initialized: '{case['title']}'")
+            print(f" Victim: {case['victim']['name']} found dead in {case['victim']['killed_where']} at {case['victim']['killed_when']}")
             self.case_title = case['title']
             self.victim_name = case['victim']['name']
         else:
@@ -65,8 +65,8 @@ class DetectiveGame:
             db.add_clue("Kanlı Hançer", "Bahçe", "Mutfak hançeri, parmak izleriyle")
             db.add_clue("Aşk Mektubu", "Çalışma Odası", "İmzasız mektup")
             
-            print("✅ Mystery initialized: 'Köşkte Gizem'")
-            print(f"🎭 Victim: Hasan Efendi found dead in Bahçe at 22:00")
+            print(" Mystery initialized: 'Köşkte Gizem'")
+            print(f"Victim: Hasan Efendi found dead in Bahçe at 22:00")
             self.case_title = "Köşkte Gizem"
             self.victim_name = "Hasan Efendi"
         
@@ -75,8 +75,8 @@ class DetectiveGame:
         self.start_time = time.time()
         self.game_active = True
         self.current_location = "Crime Scene"
-        print(f"\n⏰ Timer started! You have {self.time_limit // 60} minutes.")
-        print("🔎 Investigation begins...\n")
+        print(f"\n Timer started! You have {self.time_limit // 60} minutes.")
+        print(" Investigation begins...\n")
         
     def get_remaining_time(self) -> int:
         """Returns seconds remaining."""
@@ -113,7 +113,7 @@ class DetectiveGame:
             
             if item_data not in self.discovered_evidence:
                 self.discovered_evidence.append(item_data)
-                print(f"🔍 NEW EVIDENCE: {item_data['name']}")
+                print(f" NEW EVIDENCE: {item_data['name']}")
         
         if location_name not in self.visited_locations:
             self.visited_locations.append(location_name)

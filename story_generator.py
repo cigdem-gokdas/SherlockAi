@@ -147,11 +147,11 @@ JSON:"""
                 
                 return case_data
             else:
-                print("⚠️ JSON bulunamadı, varsayılan hikaye kullanılıyor")
+                print(" JSON bulunamadı, varsayılan hikaye kullanılıyor")
                 return self._get_fallback_case()
                 
         except json.JSONDecodeError as e:
-            print(f"⚠️ JSON parse hatası: {e}")
+            print(f" JSON parse hatası: {e}")
             print("Response:", response[:200])
             return self._get_fallback_case()
 
@@ -169,7 +169,7 @@ JSON:"""
             if name in seen_names:
                 # Havuzdan kullanılmamış bir isim bul
                 new_name = next((n for n in self.turkish_names if n not in seen_names), f"Şüpheli {i+1}")
-                print(f"⚠️ İsim çakışması düzeltildi: {name} -> {new_name}")
+                print(f" İsim çakışması düzeltildi: {name} -> {new_name}")
                 case_data['suspects'][i]['name'] = new_name
                 name = new_name
             
@@ -187,7 +187,7 @@ JSON:"""
             target_index = random.randint(0, len(case_data['suspects'])-1)
             case_data['suspects'][target_index]['is_killer'] = True
             killer_in_suspects = case_data['suspects'][target_index]
-            print(f"⚠️ Katil eksikti, atandı: {killer_in_suspects['name']}")
+            print(f" Katil eksikti, atandı: {killer_in_suspects['name']}")
 
         # 'killer' objesindeki ismin, şüpheliler listesindeki katille aynı olduğundan emin ol
         case_data['killer']['name'] = killer_in_suspects['name']
@@ -289,11 +289,11 @@ SADECE JSON ARRAY VER, BAŞKA HİÇBİR ŞEY YAZMA!
                 
                 return normalized_clues if normalized_clues else self._get_fallback_clues(locations)
             else:
-                print("⚠️ JSON bulunamadı, varsayılan kanıtlar kullanılıyor")
+                print(" JSON bulunamadı, varsayılan kanıtlar kullanılıyor")
                 return self._get_fallback_clues(locations)
                 
         except json.JSONDecodeError as e:
-            print(f"⚠️ JSON parse hatası: {e}")
+            print(f" JSON parse hatası: {e}")
             print(f"Response: {response[:200]}")
             return self._get_fallback_clues(locations)
     
@@ -364,13 +364,13 @@ SADECE JSON ARRAY VER, BAŞKA HİÇBİR ŞEY YAZMA!
         
         # 1. Ana konsept
         case_data = self.generate_case_concept()
-        print(f"✅ Hikaye: {case_data.get('title', 'İsimsiz Gizem')}")
+        print(f"   Hikaye: {case_data.get('title', 'İsimsiz Gizem')}")
         print(f"   Kurban: {case_data['victim']['name']}")
         print(f"   Şüpheli Sayısı: {len(case_data['suspects'])}")
         
         # 2. Kanıtlar
         clues = self.generate_clues(case_data)
-        print(f"✅ {len(clues)} kanıt üretildi")
+        print(f" {len(clues)} kanıt üretildi")
         
         # Debug: Kanıt formatını kontrol et
         if clues:
@@ -379,11 +379,11 @@ SADECE JSON ARRAY VER, BAŞKA HİÇBİR ŞEY YAZMA!
         
         # 3. Alibiler
         alibis = self.generate_alibis(case_data)
-        print(f"✅ {len(alibis)} alibi oluşturuldu")
+        print(f" {len(alibis)} alibi oluşturuldu")
         
         # 4. İlişkiler
         relationships = self.generate_relationships(case_data)
-        print(f"✅ {len(relationships)} ilişki tanımlandı")
+        print(f" {len(relationships)} ilişki tanımlandı")
         
         mystery_data = {
             "case": case_data,
@@ -396,19 +396,19 @@ SADECE JSON ARRAY VER, BAŞKA HİÇBİR ŞEY YAZMA!
         try:
             with open("debug_mystery.json", "w", encoding="utf-8") as f:
                 json.dump(mystery_data, f, ensure_ascii=False, indent=2)
-            print("💾 Debug: Hikaye 'debug_mystery.json' dosyasına kaydedildi")
+            print(" Debug: Hikaye 'debug_mystery.json' dosyasına kaydedildi")
         except Exception as e:
-            print(f"⚠️ Debug kayıt hatası: {e}")
+            print(f" Debug kayıt hatası: {e}")
         
         return mystery_data
     
     def load_mystery_to_database(self, mystery: Dict):
         """Üretilen hikayeyi FalkorDB'ye yükle."""
         if not db.is_active:
-            print("❌ FalkorDB bağlantısı yok!")
+            print("FalkorDB bağlantısı yok!")
             return
         
-        print("\n💾 Hikaye FalkorDB'ye yükleniyor...")
+        print("\n Hikaye FalkorDB'ye yükleniyor...")
         
         db.reset_game()
         
@@ -437,7 +437,7 @@ SADECE JSON ARRAY VER, BAŞKA HİÇBİR ŞEY YAZMA!
                 db.add_clue(item_name, location, description)
                 print(f"  ✓ Kanıt eklendi: {item_name}")
             except Exception as e:
-                print(f"  ⚠️ Kanıt eklenirken hata: {e}")
+                print(f"  Kanıt eklenirken hata: {e}")
                 print(f"     Clue data: {clue}")
                 continue
         
@@ -450,7 +450,7 @@ SADECE JSON ARRAY VER, BAŞKA HİÇBİR ŞEY YAZMA!
                 
                 db.add_location_record(person, location, time)
             except Exception as e:
-                print(f"  ⚠️ Alibi eklenirken hata: {e}")
+                print(f"   Alibi eklenirken hata: {e}")
                 continue
         
         # 5. İlişkileri ekle
@@ -463,17 +463,17 @@ SADECE JSON ARRAY VER, BAŞKA HİÇBİR ŞEY YAZMA!
                 
                 db.add_relationship(person1, person2, rel_type, detail)
             except Exception as e:
-                print(f"  ⚠️ İlişki eklenirken hata: {e}")
+                print(f"   İlişki eklenirken hata: {e}")
                 continue
         
-        print("✅ Hikaye veritabanına yüklendi!")
+        print(" Hikaye veritabanına yüklendi!")
         
         return case
     
     def _get_fallback_case(self) -> Dict:
         """Hata durumunda varsayılan TÜRKÇE hikaye."""
         # DÜZELTME: Kullanıcıya yedek hikayenin devreye girdiği bildiriliyor
-        print("\n⚠️ DİKKAT: AI bozuk veri ürettiği için 'YEDEK HİKAYE' (Köşk) devreye girdi!\n")
+        print("\n DİKKAT: AI bozuk veri ürettiği için 'YEDEK HİKAYE' (Köşk) devreye girdi!\n")
         return {
             "title": "Köşkte Gizem",
             "victim": {

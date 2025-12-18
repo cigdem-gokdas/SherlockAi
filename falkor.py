@@ -31,9 +31,9 @@ class DetectiveDatabase:
             self.client = FalkorDB(host=self.host, port=self.port)
             self.graph = self.client.select_graph("SherlockCase")
             self.is_active = True
-            print("✓ Connected to FalkorDB (Graph: SherlockCase)")
+            print("Connected to FalkorDB (Graph: SherlockCase)")
         except Exception as e:
-            print(f"✘ FalkorDB Connection Failed: {e}")
+            print(f"FalkorDB Connection Failed: {e}")
             print(
                 "  Make sure Docker is running: 'docker run -p 6379:6379 falkordb/falkordb'")
             self.is_active = False
@@ -47,7 +47,7 @@ class DetectiveDatabase:
 
         try:
             self.graph.query("MATCH (n) DETACH DELETE n")
-            print("🧹 Game board cleared. Ready for a new mystery.")
+            print(" Game board cleared. Ready for a new mystery.")
         except Exception as e:
             print(f"Error resetting game: {e}")
 
@@ -67,7 +67,6 @@ class DetectiveDatabase:
         """
         params = {'name': name, 'role': role, 'trait': trait}
         self.graph.query(query, params)
-        print(f"👤 Added Person: {name} Role hidden.")
 
     def add_location_record(self, person_name: str, name: str, time: str):
         """
@@ -117,7 +116,6 @@ class DetectiveDatabase:
         """
         params = {'item_name': item_name, 'location_name': location_name, 'description': description}
         self.graph.query(query, params)
-        print(f"🔍 Clue hidden: {item_name} in {location_name}")
 
 
 # Create a global instance

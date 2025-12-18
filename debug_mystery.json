@@ -1,153 +1,153 @@
 {
   "case": {
-    "title": "Boğaziçi Köşkü Cinayeti",
+    "title": "Şerbetçi'nin Şahidi",
     "victim": {
-      "name": "İbrahim Bey",
-      "background": "Zengin bir sanayici, Boğaziçi'nde yaşayan ve İstanbul'un en büyük tekstil fabrikalarından birini yöneten.",
-      "killed_when": "Gece Saat 01:00",
-      "killed_where": "Çalışma Odası"
+      "name": "Mustafa Efendi",
+      "background": "Şehrin en ünlü şerbetçisi, zengin ve saygın bir adam.",
+      "killed_when": "Gece yarısı",
+      "killed_where": "Kendi şerbet dükkanının arka odasında"
     },
     "suspects": [
       {
-        "name": "Ayşe Hanım",
-        "role": "Eşi",
-        "trait": "Kıvrak ve zeki",
-        "motive": "Mehmet Bey'in tüm servetini almak istiyordu.",
+        "name": "Feride Hanım",
+        "role": "Mehmet Efendi'nin eski eşi, boşanmadan sonra zengin bir mirasçı.",
+        "trait": "Hırslı ve kıskanç",
+        "motive": "Mehmet Efendi'nin mirasını almak için cinayet işlemiş olabilir.",
         "is_killer": false
       },
       {
-        "name": "Ayşe Hanım",
-        "role": "İş Ortağı",
-        "trait": "Hırslı ve acımasız",
-        "motive": "Mehmet Bey'in fabrikasını ele geçirmek istiyordu.",
-        "is_killer": false
-      },
-      {
-        "name": "Hatice Hanım",
-        "role": "Servetçi",
-        "trait": "Gizemli ve sessiz",
-        "motive": "Mehmet Bey'in değerli bir mücevherini çalmak istiyordu.",
-        "is_killer": false
-      },
-      {
-        "name": "Ali Ağa",
-        "role": "Bahçıvan",
-        "trait": "Kıskanç ve öfkeli",
-        "motive": "Mehmet Bey'in onu işten çıkarması yüzünden intikam almak istiyordu.",
+        "name": "Ali Rıza Usta",
+        "role": "Şerbet dükkanında çalışan garson, Mehmet Efendi'ye minnettar.",
+        "trait": "Sakin ve dürüst",
+        "motive": "Mehmet Efendi'nin ölümünden korkmuş olabilir, şantaj mektuplarını Ali Rıza Usta yazmış olabilir.",
         "is_killer": true
+      },
+      {
+        "name": "Şehzade Mustafa",
+        "role": "Şehrin genç ve zengin prensesi, Mehmet Efendi'nin en büyük müşterisi.",
+        "trait": "Yüksek zekâlı ve gizemli",
+        "motive": "Mehmet Efendi'nin bir sırını biliyor olabilir veya şantaj mektuplarına maruz kalmış olabilir.",
+        "is_killer": false
+      },
+      {
+        "name": "Hacı Mehmet",
+        "role": "Şehrin en eski ve saygın hamamının sahibi, Mehmet Efendi'nin arkadaşı.",
+        "trait": "Bilge ve tecrübeli",
+        "motive": "Mehmet Efendi'nin ölümünden haberdar olabilir veya şantaj mektuplarını yazmış olabilir.",
+        "is_killer": false
       }
     ],
     "killer": {
-      "name": "Ali Ağa",
-      "true_motive": "Mehmet Bey'in kendisini işten çıkardığı için, onu öldürerek intikam aldı."
+      "name": "Ali Rıza Usta",
+      "true_motive": "Mehmet Efendi, Ali Rıza Usta'nın geçmişini öğrenmişti ve şantaj yapacaktı. Ali Rıza Usta, Mehmet Efendi'nin ölümünü önlemek için cinayet işledi."
     },
     "locations": [
-      "Çalışma Odası",
+      "Şerbet Dükkanı",
       "Bahçe",
       "Yemek Salonu",
-      "Çalışma Odası"
+      "Kapalıçarşı"
     ],
-    "crime_summary": "Boğaziçi Köşkü'nde Mehmet Bey ölü bulundu. Kim bu cinayeti işledi?"
+    "crime_summary": "Ünlü şerbetçi Mehmet Efendi, kendi dükkanının arka odasında ölü bulundu. Şantaj mektupları ve gizli ilişkiler, cinayeti aydınlatmak için polis memuru Cemil Bey'in önüne çıkan karmaşık bir bulmacayı ortaya koyuyor."
   },
   "clues": [
     {
-      "item_name": "Kanlı Hançer",
+      "item_name": "Ali Rıza Ustasının Eşyalarına Ait Kırık Çay Bardak Parçası",
+      "location": "Şerbet Dükkanı",
+      "description": "Kırık çay bardağı parçasında Ali Rıza Ustasının özel olarak kullandığı desen bulunmaktadır.",
+      "points_to_killer": true
+    },
+    {
+      "item_name": "Mustafa Efendi'nin Kanlı Şalvarı",
       "location": "Bahçe",
-      "description": "Mutfak hançeri, üzerinde parmak izleri var. İzlerin DNA analizi Ali Ağa'ya ait çıktı.",
-      "points_to_killer": true
+      "description": "Mustafa Efendi'nin şallarında kan izleri bulunmaktadır. Kan, Mustafa Efendi'nin ölüm sebebini göstermektedir.",
+      "points_to_killer": false
     },
     {
-      "item_name": "Aşk Mektubu",
-      "location": "Çalışma Odası",
-      "description": "İmzasız bir mektup, İbrahim Bey'in sevgilisi olduğunu iddia eden bir kadın tarafından yazılmış olabilir.",
-      "points_to_killer": true
-    },
-    {
-      "item_name": "Kırık Ayna Parçası",
+      "item_name": "Ali Rıza Ustasının Parmak İzi",
       "location": "Yemek Salonu",
-      "description": "Ayna parçası, çatışma sırasında kırılmış olabilir. Ancak Ali Ağa'nın aynanın kırılmasından haberdar olduğu kanıtlanamadı.",
+      "description": "Yemek salonunda bulunan bir bıçak üzerinde Ali Rıza Ustasının parmak izi bulunmaktadır.",
+      "points_to_killer": true
+    },
+    {
+      "item_name": "Kırık Bir Çin Küresi",
+      "location": "Kapalıçarşı",
+      "description": "Kapalıçarşı'da bulunan bir çin kütresinin kırık parçaları, cinayete karışan başka bir kişinin olabileceğini göstermektedir.",
       "points_to_killer": false
     },
     {
-      "item_name": "Parmak İzi",
-      "location": "Çalışma Odası",
-      "description": "Masa üzerindeki bir fincanın kenarında, Ali Ağa'ya ait olmayan bir parmak izi bulunmuştur.",
-      "points_to_killer": false
-    },
-    {
-      "item_name": "Kırık Telefon",
-      "location": "Çalışma Odası",
-      "description": "Telefon, İbrahim Bey'in son görüşmesinden sonra kırılmış olabilir. Ancak telefonun içeriği silindi.",
-      "points_to_killer": false
+      "item_name": "Ali Rıza Ustasının Çekirdekli Bir Kurşun",
+      "location": "Şerbet Dükkanı",
+      "description": "Şerbet dükkanında bulunan bir çekirdekli kurşun, Ali Rıza Ustasının silahından gelmektedir.",
+      "points_to_killer": true
     }
   ],
   "alibis": [
     {
-      "person": "Ayşe Hanım",
-      "location": "Yemek Salonu",
-      "time": "Gece Saat 01:00"
+      "person": "Feride Hanım",
+      "location": "Şerbet Dükkanı",
+      "time": "Gece yarısı"
     },
     {
-      "person": "Ayşe Hanım",
-      "location": "Yemek Salonu",
-      "time": "Gece Saat 01:00"
+      "person": "Ali Rıza Usta",
+      "location": "Kendi şerbet dükkanının arka odasında",
+      "time": "Gece yarısı"
     },
     {
-      "person": "Hatice Hanım",
+      "person": "Şehzade Mustafa",
       "location": "Bahçe",
-      "time": "Gece Saat 01:00"
+      "time": "Gece yarısı"
     },
     {
-      "person": "Ali Ağa",
-      "location": "Çalışma Odası",
-      "time": "Gece Saat 01:00"
+      "person": "Hacı Mehmet",
+      "location": "Kapalıçarşı",
+      "time": "Gece yarısı"
     },
     {
-      "person": "İbrahim Bey",
-      "location": "Çalışma Odası",
-      "time": "Gece Saat 01:00"
+      "person": "Mustafa Efendi",
+      "location": "Kendi şerbet dükkanının arka odasında",
+      "time": "Gece yarısı"
     }
   ],
   "relationships": [
     {
-      "person1": "Ayşe Hanım",
-      "person2": "İbrahim Bey",
-      "type": "HATES",
-      "detail": "Mehmet Bey'in tüm servetini almak istiyordu."
+      "person1": "Feride Hanım",
+      "person2": "Mustafa Efendi",
+      "type": "DISTRUSTS",
+      "detail": "Mehmet Efendi'nin mirasını almak için cinayet işlemiş olabilir."
     },
     {
-      "person1": "Ayşe Hanım",
-      "person2": "İbrahim Bey",
-      "type": "FEARS",
-      "detail": "Mehmet Bey'in fabrikasını ele geçirmek istiyordu."
+      "person1": "Ali Rıza Usta",
+      "person2": "Mustafa Efendi",
+      "type": "RESENTS",
+      "detail": "Mehmet Efendi'nin ölümünden korkmuş olabilir, şantaj mektuplarını Ali Rıza Usta yazmış olabilir."
     },
     {
-      "person1": "Hatice Hanım",
-      "person2": "İbrahim Bey",
-      "type": "LOVES",
-      "detail": "Mehmet Bey'in değerli bir mücevherini çalmak istiyordu."
+      "person1": "Şehzade Mustafa",
+      "person2": "Mustafa Efendi",
+      "type": "DISTRUSTS",
+      "detail": "Mehmet Efendi'nin bir sırını biliyor olabilir veya şantaj mektuplarına maruz kalmış olabilir."
     },
     {
-      "person1": "Ali Ağa",
-      "person2": "İbrahim Bey",
-      "type": "HATES",
-      "detail": "Mehmet Bey'in onu işten çıkarması yüzünden intikam almak istiyordu."
+      "person1": "Hacı Mehmet",
+      "person2": "Mustafa Efendi",
+      "type": "RESENTS",
+      "detail": "Mehmet Efendi'nin ölümünden haberdar olabilir veya şantaj mektuplarını yazmış olabilir."
     },
     {
-      "person1": "Hatice Hanım",
-      "person2": "Ayşe Hanım",
-      "type": "ALLIES_WITH",
+      "person1": "Ali Rıza Usta",
+      "person2": "Hacı Mehmet",
+      "type": "KNOWS",
       "detail": "Vaka ile bağlantılılar"
     },
     {
-      "person1": "Ayşe Hanım",
-      "person2": "Ali Ağa",
-      "type": "ALLIES_WITH",
+      "person1": "Ali Rıza Usta",
+      "person2": "Feride Hanım",
+      "type": "COMPETES_WITH",
       "detail": "Vaka ile bağlantılılar"
     },
     {
-      "person1": "Ali Ağa",
-      "person2": "Ayşe Hanım",
+      "person1": "Ali Rıza Usta",
+      "person2": "Hacı Mehmet",
       "type": "KNOWS",
       "detail": "Vaka ile bağlantılılar"
     }

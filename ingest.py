@@ -41,16 +41,16 @@ def load_json_files(directory):
                         # Belgeye dönüştür
                         documents.append(Document(page_content=content, metadata={"source": filename, "type": "dialogue_style"}))
             except Exception as e:
-                print(f"⚠️ {filename} okunurken hata: {e}")
+                print(f" {filename} okunurken hata: {e}")
     return documents
 
 def create_vector_db():
-    print("🕵️‍♂️ Veri Yükleyicisi Başlatılıyor...")
+    print(" Veri Yükleyicisi Başlatılıyor...")
     
     # Klasör kontrolü
     if not os.path.exists(DATA_PATH):
         os.makedirs(DATA_PATH)
-        print(f"⚠️ '{DATA_PATH}' klasörü oluşturuldu. Lütfen içine .txt kitapları ve .json dosyalarını atıp tekrar çalıştırın.")
+        print(f" '{DATA_PATH}' klasörü oluşturuldu. Lütfen içine .txt kitapları ve .json dosyalarını atıp tekrar çalıştırın.")
         return
 
     # 1. Metin Dosyalarını Yükle (.txt)
@@ -59,35 +59,35 @@ def create_vector_db():
     book_docs = txt_loader.load()
     
     # 2. JSON Dosyalarını Yükle (.json)
-    print("🎭 Karakter Diyalogları (.json) taranıyor...")
+    print(" Karakter Diyalogları (.json) taranıyor...")
     json_docs = load_json_files(DATA_PATH)
     
     all_docs = book_docs + json_docs
     
     if not all_docs:
-        print("❌ HATA: 'data' klasöründe hiç dosya bulunamadı!")
+        print(" HATA: 'data' klasöründe hiç dosya bulunamadı!")
         return
 
-    print(f"✅ Toplam {len(all_docs)} parça veri bulundu.")
+    print(f" Toplam {len(all_docs)} parça veri bulundu.")
 
     # 3. Parçalama
-    print("✂️  Veriler işleniyor...")
+    print("  Veriler işleniyor...")
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
     chunks = text_splitter.split_documents(all_docs)
 
     # 4. Embedding (TÜRKÇE İÇİN KRİTİK NOKTA)
     # ollama.py ile aynı model olmak ZORUNDA
-    print("🧠 Yapay zeka modeli hazırlanıyor (paraphrase-multilingual-MiniLM-L12-v2)...")
+    print(" Yapay zeka modeli hazırlanıyor (paraphrase-multilingual-MiniLM-L12-v2)...")
     embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
 
     # 5. Veritabanını Temizle ve Oluştur
     if os.path.exists(DB_PATH):
-        print("🗑️  Eski veritabanı temizleniyor...")
+        print("  Eski veritabanı temizleniyor...")
         shutil.rmtree(DB_PATH)
 
-    print("💾 Veritabanı kaydediliyor...")
+    print(" Veritabanı kaydediliyor...")
     Chroma.from_documents(documents=chunks, embedding=embedding_model, persist_directory=DB_PATH)
-    print("🎉 İŞLEM TAMAM! Veritabanı hazır.")
+    print(" İŞLEM TAMAM! Veritabanı hazır.")
 
 if __name__ == "__main__":
     create_vector_db()

@@ -14,7 +14,7 @@ class DetectiveAgent:
     
     def __init__(self, model_name: str = "gemma2"):
         print(f"🤖 AI Ajanı Başlatılıyor (Model: {model_name})...")
-        
+
         self.llm = Ollama(
             model=model_name, 
             temperature=0.1,    # Gemma2 çok yaratıcıdır, 0.1 gayet iyi.
@@ -30,9 +30,9 @@ class DetectiveAgent:
                 persist_directory="./chroma_db",
                 embedding_function=self.embeddings
             )
-            print("✅ Vektör Veritabanı (RAG) Bağlandı.")
+            print("Vektör Veritabanı (RAG) Bağlandı.")
         except Exception as e:
-            print(f"❌ Vektör Veritabanı Hatası: {e}")
+            print(f" Vektör Veritabanı Hatası: {e}")
             self.vector_db = None
         
         self.system_prompt = """SENİN GÖREVİN: Sherlock Holmes evreninde geçen bir cinayet oyununda, oyuncuya yardımcı olan yapay zekasın.

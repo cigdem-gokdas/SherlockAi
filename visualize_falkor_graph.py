@@ -37,7 +37,7 @@ def visualize_graph_data():
 
     # Check if result has data
     if not result.result_set:
-        print("⚠️  Graph is empty! Run the game setup first.")
+        print("  Graph is empty! Run the game setup first.")
         return
 
     for record in result.result_set:
@@ -75,7 +75,7 @@ def visualize_graph_data():
 
     try:
         plt.savefig(OUTPUT_FILENAME)
-        print(f"✅ Visualization saved to {OUTPUT_FILENAME}")
+        print(f" Visualization saved to {OUTPUT_FILENAME}")
     except Exception as e:
         print(f"Could not save image: {e}")
 
