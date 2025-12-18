@@ -13,8 +13,8 @@ class GameCLI:
     
     def __init__(self):
         self.game = DetectiveGame(time_limit_minutes=30)
-        self.agent = DetectiveAgent(model_name="llama3.2")
-        self.generator = MysteryGenerator(model_name="llama3.2")
+        self.agent = DetectiveAgent(model_name="gemma2")
+        self.generator = MysteryGenerator(model_name="gemma2")
         self.running = True
         self.mystery_data = None
         self.current_character = None  # Hangi karakterle konuşuyor
@@ -108,7 +108,15 @@ class GameCLI:
             print("   Kullanım: ara <lokasyon adı>")
             return
         
+        search_term = " ".join(args).lower().strip()
+
+        actual_locations = self.mystery_data['case']['locations']
         location = " ".join(args)
+
+        for loc in actual_locations:
+            if search_term in loc.lower():
+                location = loc
+                break
         
         print(f"\n🔦 {location} dikkatle aranıyor...")
         time.sleep(1)  # Atmosfer için
@@ -133,19 +141,21 @@ class GameCLI:
         """Şüpheli ile konuşma (rol yapma modu)."""
         if not args:
             print("\n❌ Kiminle konuşmak istiyorsunuz?")
-            print("   Kullanım: konuş <kişi adı>")
             return
         
-        person_name = " ".join(args)
-        self.current_character = person_name
+        person_name = " ".join(args).lower().strip()
         
-        # Kişiyi bul
         suspects = self.mystery_data['case']['suspects']
+        # Kurbanla konuşulmaz ama listede varsa diye:
         victim = self.mystery_data['case']['victim']
         
         character = None
+        
+        # Şüpheliler içinde ara
         for s in suspects:
-            if s['name'].lower() == person_name.lower():
+            # ÖRNEK: Kullanıcı "ayşe" yazdı, s['name'] "Ayşe Hanım". 
+            # "ayşe" in "ayşe hanım" -> TRUE olur.
+            if person_name in s['name'].lower(): 
                 character = s
                 break
         

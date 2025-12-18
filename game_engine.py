@@ -13,7 +13,7 @@ class DetectiveGame:
     """Main game controller for the detective mystery."""
     
     def __init__(self, time_limit_minutes: int = 30):
-        self.time_limit = time_limit_minutes * 60  # Convert to seconds
+        self.time_limit = time_limit_minutes * 60
         self.start_time = None
         self.game_active = False
         self.discovered_evidence = []
@@ -23,7 +23,6 @@ class DetectiveGame:
         self.case_title = "Unknown Case"
         self.victim_name = "Unknown Victim"
         
-        # Load RAG system
         self.embeddings = HuggingFaceEmbeddings(
             model_name="sentence-transformers/all-MiniLM-L6-v2"
         )
@@ -35,58 +34,41 @@ class DetectiveGame:
     def initialize_mystery(self, use_ai_generator: bool = True, mystery_data: dict = None):
         """
         Set up a new mystery case.
-        
-        Args:
-            use_ai_generator: If True, generate story with AI. If False, use provided mystery_data
-            mystery_data: Pre-generated mystery dict (from MysteryGenerator)
         """
-        print("\n🔍 INITIALIZING NEW CASE...")
+        print("\n🔎 INITIALIZING NEW CASE...")
         
         if use_ai_generator and mystery_data:
-            # Use provided AI-generated mystery
             case = mystery_data['case']
             print(f"✅ Mystery initialized: '{case['title']}'")
             print(f"🎭 Victim: {case['victim']['name']} found dead in {case['victim']['killed_where']} at {case['victim']['killed_when']}")
             self.case_title = case['title']
             self.victim_name = case['victim']['name']
         else:
-            # Fallback to manual case
             db.reset_game()
             
-            # Example case: Manor Murder
-            db.add_person("Lord Henry", "Victim", "Wealthy nobleman")
-            db.add_person("Lady Margaret", "Suspect", "Wife, stands to inherit")
-            db.add_person("James Butler", "Suspect", "Butler, recently fired")
-            db.add_person("Dr. Watson", "Suspect", "Family physician")
-            db.add_person("Alice Maid", "Suspect", "Maid, unpaid wages")
-            db.add_person("Thomas Gardener", "Killer", "Gardener, secret affair")
+            db.add_person("Hasan Efendi", "Victim", "Zengin tüccar")
+            db.add_person("Ayşe Hanım", "Suspect", "Eşi, miras alacak")
+            db.add_person("Mehmet Ağa", "Suspect", "Uşak, işten çıkarıldı")
+            db.add_person("Fatma Hanım", "Suspect", "Hizmetçi")
+            db.add_person("Ali Ağa", "Killer", "Bahçıvan")
             
-            db.add_location_record("Lady Margaret", "Bedroom", "10:00 PM")
-            db.add_location_record("James Butler", "Kitchen", "10:15 PM")
-            db.add_location_record("Dr. Watson", "Study", "9:45 PM")
-            db.add_location_record("Alice Maid", "Garden", "10:30 PM")
-            db.add_location_record("Thomas Gardener", "Garden", "10:00 PM")
-            db.add_location_record("Lord Henry", "Garden", "10:00 PM")
+            db.add_location_record("Ayşe Hanım", "Yatak Odası", "Saat 22:00")
+            db.add_location_record("Mehmet Ağa", "Mutfak", "Saat 22:15")
+            db.add_location_record("Ali Ağa", "Bahçe", "Saat 22:00")
+            db.add_location_record("Hasan Efendi", "Bahçe", "Saat 22:00")
             
-            db.add_relationship("Lady Margaret", "Lord Henry", "RESENTS", 
-                              "Angry about affair with maid")
-            db.add_relationship("James Butler", "Lord Henry", "HATES", 
-                              "Fired without severance pay")
-            db.add_relationship("Thomas Gardener", "Lady Margaret", "LOVES", 
-                              "Secret romantic affair")
-            db.add_relationship("Alice Maid", "Lord Henry", "FEARS", 
-                              "Witnessed something suspicious")
+            db.add_relationship("Ayşe Hanım", "Hasan Efendi", "RESENTS", 
+                              "Kocasına kızgın")
+            db.add_relationship("Ali Ağa", "Ayşe Hanım", "LOVES", 
+                              "Gizli aşk")
             
-            db.add_clue("Bloody Knife", "Garden", "Kitchen knife with fingerprints")
-            db.add_clue("Love Letter", "Study", "Letter from Lady Margaret to unknown lover")
-            db.add_clue("Muddy Boots", "Kitchen", "Gardener's boots with fresh soil")
-            db.add_clue("Torn Fabric", "Garden", "Blue fabric matching gardener's shirt")
-            db.add_clue("Poison Bottle", "Library", "Empty arsenic bottle (red herring)")
+            db.add_clue("Kanlı Hançer", "Bahçe", "Mutfak hançeri, parmak izleriyle")
+            db.add_clue("Aşk Mektubu", "Çalışma Odası", "İmzasız mektup")
             
-            print("✅ Mystery initialized: 'The Manor Murder'")
-            print(f"🎭 Victim: Lord Henry found dead in the Garden at 10:00 PM")
-            self.case_title = "The Manor Murder"
-            self.victim_name = "Lord Henry"
+            print("✅ Mystery initialized: 'Köşkte Gizem'")
+            print(f"🎭 Victim: Hasan Efendi found dead in Bahçe at 22:00")
+            self.case_title = "Köşkte Gizem"
+            self.victim_name = "Hasan Efendi"
         
     def start_game(self):
         """Begin the timed investigation."""
@@ -108,15 +90,17 @@ class DetectiveGame:
         return self.get_remaining_time() <= 0
     
     def search_location(self, location_name: str) -> List[Dict]:
-        """Search a location for clues using FalkorDB."""
+        """Search a location for clues using FalkorDB - PARAMETRELİ."""
         if not db.is_active:
             return []
         
-        query = f"""
-        MATCH (i:Item)-[:FOUND_IN]->(l:Location {{name: '{location_name}'}})
+        # Parametreli sorgu
+        query = """
+        MATCH (i:Item)-[:FOUND_IN]->(l:Location {name: $location_name})
         RETURN i.name AS item, i.description AS description
         """
-        result = db.graph.query(query)
+        params = {'location_name': location_name}
+        result = db.graph.query(query, params)
         
         found_items = []
         for record in result.result_set:
@@ -137,16 +121,17 @@ class DetectiveGame:
         return found_items
     
     def query_witnesses(self, location: str, time: str) -> List[Dict]:
-        """Find who was at a location at a specific time."""
+        """Find who was at a location at a specific time - PARAMETRELİ."""
         if not db.is_active:
             return []
         
-        query = f"""
-        MATCH (p:Person)-[r:SEEN_AT]->(l:Location {{name: '{location}'}})
-        WHERE r.time = '{time}'
+        query = """
+        MATCH (p:Person)-[r:SEEN_AT]->(l:Location {name: $location})
+        WHERE r.time = $time
         RETURN p.name AS person, p.role AS role, r.time AS time
         """
-        result = db.graph.query(query)
+        params = {'location': location, 'time': time}
+        result = db.graph.query(query, params)
         
         witnesses = []
         for record in result.result_set:
@@ -157,7 +142,6 @@ class DetectiveGame:
                 "time": record[2]
             })
             
-            # Track interviewed people
             if person_name not in self.interviewed_people:
                 self.interviewed_people.append(person_name)
         
@@ -169,15 +153,16 @@ class DetectiveGame:
             self.interviewed_people.append(person_name)
     
     def get_relationships(self, person_name: str) -> List[Dict]:
-        """Get all relationships for a person."""
+        """Get all relationships for a person - PARAMETRELİ."""
         if not db.is_active:
             return []
         
-        query = f"""
-        MATCH (p1:Person {{name: '{person_name}'}})-[r]->(p2:Person)
+        query = """
+        MATCH (p1:Person {name: $person_name})-[r]->(p2:Person)
         RETURN type(r) AS relationship, p2.name AS target, r.detail AS detail
         """
-        result = db.graph.query(query)
+        params = {'person_name': person_name}
+        result = db.graph.query(query, params)
         
         relationships = []
         for record in result.result_set:
@@ -203,7 +188,6 @@ Question: {question}
 
 Provide a brief, atmospheric response in the style of Sherlock Holmes."""
         
-        # Return context for now - you'll integrate with Ollama next
         return context[:500] + "..."
     
     def make_accusation(self, suspect_name: str) -> Dict:
@@ -211,7 +195,6 @@ Provide a brief, atmospheric response in the style of Sherlock Holmes."""
         if not db.is_active:
             return {"correct": False, "message": "Database not active"}
         
-        # Find the actual killer
         query = """
         MATCH (k:Person {role: 'Killer'})
         RETURN k.name AS killer
@@ -243,31 +226,3 @@ Provide a brief, atmospheric response in the style of Sherlock Holmes."""
             "visited_locations": self.visited_locations,
             "interviewed": self.interviewed_people
         }
-
-
-# Example usage
-if __name__ == "__main__":
-    game = DetectiveGame(time_limit_minutes=30)
-    game.initialize_mystery()
-    game.start_game()
-    
-    # Simulate investigation
-    print("\n--- Searching Garden ---")
-    items = game.search_location("Garden")
-    for item in items:
-        print(f"  📦 {item['name']}: {item['description']}")
-    
-    print("\n--- Who was in the Garden at 10:00 PM? ---")
-    witnesses = game.query_witnesses("Garden", "10:00 PM")
-    for w in witnesses:
-        print(f"  👤 {w['name']} ({w['role']})")
-    
-    print("\n--- What are Lady Margaret's relationships? ---")
-    rels = game.get_relationships("Lady Margaret")
-    for r in rels:
-        print(f"  💔 {r['type']} → {r['target']}: {r['detail']}")
-    
-    print("\n--- Making accusation ---")
-    result = game.make_accusation("Thomas Gardener")
-    print(f"  {'✅ CORRECT!' if result['correct'] else '❌ WRONG!'}")
-    print(f"  Actual killer: {result['actual_killer']}")

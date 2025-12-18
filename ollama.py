@@ -1,298 +1,174 @@
-"""
-Ollama-based AI Agent for SherlockAI
-Karakterlere bürünerek rol yapan AI dedektif asistanı
-"""
 import json
+import logging
 from langchain_community.llms import Ollama
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_core.prompts import PromptTemplate
 from falkor import db
 
-class DetectiveAgent:
-    """Karakterlere bürünen AI dedektif asistanı."""
-    
-    def __init__(self, model_name: str = "llama3.2"):
-        """
-        Ollama agent'ı başlat.
-        
-        Args:
-            model_name: Ollama model adı (llama3.2, mistral, vb.)
-        """
-        self.llm = Ollama(model=model_name, temperature=0.8)
-        
-        # Vector DB yükle (Sherlock & Agatha Christie kitapları)
-        self.embeddings = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2"
-        )
-        self.vector_db = Chroma(
-            persist_directory="./chroma_db",
-            embedding_function=self.embeddings
-        )
-        
-        # Dedektif asistanı persona
-        self.assistant_persona = """Sen deneyimli bir dedektif asistanısın. 
-Sherlock Holmes ve Hercule Poirot'nun metotlarını kullanıyorsun.
-Konuşman kibar, biraz gizemli ve atmosferik olmalı.
-Victorian dönemi İngiliz centilmenliği ile Agatha Christie'nin zarif üslubunu birleştir.
+logging.basicConfig(level=logging.INFO)
 
-ÖNEMLİ KURALLAR:
-- KATİLİ ASLA direkt söyleme, sadece yönlendir
-- Mantıksal çıkarımlar öner
-- Sorulara kısa (2-3 cümle) ve atmosferik cevaplar ver
-- "Şunu unutmayın ki..." veya "Dikkat ederseniz..." gibi ifadeler kullan
-- Her zaman "sayın dedektif" diye hitap et
+class DetectiveAgent:
+    """
+    Tamamen Türkçe konuşan, RAG tabanlı ve karakterlere bürünen dedektif asistanı.
+    """
+    
+    def __init__(self, model_name: str = "gemma2"):
+        print(f"🤖 AI Ajanı Başlatılıyor (Model: {model_name})...")
+        
+        self.llm = Ollama(
+            model=model_name, 
+            temperature=0.1,    # Gemma2 çok yaratıcıdır, 0.1 gayet iyi.
+            repeat_penalty=1.2  # Tekrarı önleyen kritik ayar
+        )
+        
+        self.embeddings = HuggingFaceEmbeddings(
+            model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+        )
+        
+        try:
+            self.vector_db = Chroma(
+                persist_directory="./chroma_db",
+                embedding_function=self.embeddings
+            )
+            print("✅ Vektör Veritabanı (RAG) Bağlandı.")
+        except Exception as e:
+            print(f"❌ Vektör Veritabanı Hatası: {e}")
+            self.vector_db = None
+        
+        self.system_prompt = """SENİN GÖREVİN: Sherlock Holmes evreninde geçen bir cinayet oyununda, oyuncuya yardımcı olan yapay zekasın.
+
+ÇOK ÖNEMLİ KURALLAR (BU KURALLARA UYMAZSAN SİSTEM ÇÖKER):
+1. DİL: SADECE SAF VE DURU İSTANBUL TÜRKÇESİ KULLAN.
+2. YASAKLAR: Asla İngilizce kelime kullanma (Örn: "invitation", "thing", "suspicion" YASAK). Cümle aralarına İngilizce sıkıştırma.
+3. GRAMER: Kelimelere uydurma ekler getirme ("thingi", "suspasiyon" gibi kelimeler uydurma).
+4. ÜSLUP: Edebi, 19. yüzyıl beyefendisi/hanımefendisi gibi konuş.
+5. GİZLİLİK: Katilin ismini asla direkt söyleme.
 """
     
-    def get_detective_context(self, query: str) -> str:
-        """Sherlock/Agatha kitaplarından ilgili pasajları çek."""
-        docs = self.vector_db.similarity_search(query, k=2)
-        
-        if not docs:
+    def get_rag_context(self, query: str, k: int = 3) -> str:
+        if not self.vector_db:
             return ""
-        
-        passages = []
-        for doc in docs:
-            content = doc.page_content[:400]
-            passages.append(content)
-        
-        return "\n\n".join(passages)
-    
+        try:
+            docs = self.vector_db.similarity_search(query, k=k)
+            if not docs:
+                return ""
+            context_parts = []
+            for doc in docs:
+                content = doc.page_content.replace("\n", " ").strip()
+                context_parts.append(f"- {content}")
+            return "\n".join(context_parts)
+        except Exception:
+            return ""
+
     def character_introduction(self, name: str, trait: str, role: str, victim_name: str) -> str:
-        """Karakterin kendini tanıtması."""
-        
-        # Karakterin psikolojisini anlamak için kitaplardan ilham al
-        context = self.get_detective_context(f"suspect interrogation {trait} character")
-        
-        prompt = f"""Sen bir cinayet soruşturmasında şüphelisin. Karaktere bürün ve kendini tanıt.
+        # Karakter konuşmalarında RAG bazen kafasını karıştırabilir, bu yüzden prompt'u basitleştirdik.
+        prompt = f"""{self.system_prompt}
 
-KİŞİLİK BİLGİLERİN:
-- İsmin: {name}
-- Karakterin: {trait}
-- Rolün: {role}
-- Kurban: {victim_name}
+ŞU AN BU KARAKTERİ CANLANDIRIYORSUN:
+İsim: {name}
+Rol: {role}
+Özellik: {trait}
+Kurbanla İlişki: {victim_name} tanıyordun.
 
-KLASIK DEDEKTIF HİKAYELERİNDEN İLHAM:
-{context}
+GÖREV: Dedektife kendini tanıt.
+SADECE TÜRKÇE KONUŞ. "Thing", "Invitation" gibi kelimeler kullanma.
+Kısa ve öz konuş.
 
-Dedektif seni sorgulamaya geldi. İlk karşılaşmada kendini tanıt.
-
-KURALLAR:
-- Karakterine uygun konuş (örn: hizmetçiysen resmi, aristokrat isen kibirli)
-- 2-3 cümle ile kendini tanıt
-- Biraz gergin veya şüpheli görünebilirsin (çünkü şüphelisin)
-- Kurbanla ilişkini kısaca belirt
-- Victorian/1920s üslubunda konuş
-
-Cevabın (sadece konuşma, başka açıklama yok):"""
-
-        response = self.llm.invoke(prompt)
-        return response.strip().strip('"')
+Cevap:"""
+        return self._invoke_llm(prompt)
     
     def character_response(self, character_name: str, character_trait: str, 
                           question: str, relationships: list, is_killer: bool = False) -> str:
-        """Karakterin soruya cevabı."""
         
-        # Karakterin ruh halini anlamak için kitaplardan öğren
-        context = self.get_detective_context(f"interrogation question {question}")
-        
-        # İlişkileri formatlayalım
-        rel_text = ""
+        rel_text = "İlişkilerim:"
         if relationships:
-            rel_text = "İlişkilerin:\n"
-            for rel in relationships[:3]:  # Max 3 tane göster
-                rel_text += f"- {rel['target']}: {rel['detail']}\n"
+            for r in relationships[:3]:
+                rel_text += f"\n- {r['target']} kişisine: {r['detail']}"
         
-        killer_instruction = ""
-        if is_killer:
-            killer_instruction = """
-ÖNEMLİ: SEN KATİLSİN AMA BUNU ASLA İTİRAF ETME!
-- Savunmacı ol ama şüphe uyandırma
-- Yalan söylerken tutarlı ol
-- Başkalarını suçlayabilirsin (kırmızı ringa balığı)
-- Gerginsen bunu hafif belli et
-"""
-        else:
-            killer_instruction = """
-Sen MASUMSUN:
-- Gerçekleri söyle ama tam bilgi vermeyebilirsin
-- Kendi motifini savunabilirsin
-- Başkalarından şüphelenebilirsin
-"""
+        secret = "SEN KATİLSİN! Yakalanmamak için mantıklı yalanlar söyle." if is_killer else "SEN MASUMSUN. Bildiklerini anlat."
         
-        prompt = f"""Sen {character_name} adlı karaktersin. Dedektif sana soru soruyor.
+        prompt = f"""{self.system_prompt}
 
-KİŞİLİĞİN: {character_trait}
-
+KARAKTERİN: {character_name} ({character_trait})
+DURUMUN: {secret}
 {rel_text}
 
-{killer_instruction}
+SORU: "{question}"
 
-DEDEKTIF HİKAYELERİNDEN ÖRNEK DIYALOGLAR:
-{context}
+GÖREV:
+Bu soruya karakterine uygun cevap ver.
+ASLA İNGİLİZCE KELİME KULLANMA.
+Saçma kelimeler türetme. Düzgün Türkçe cümle kur.
 
-DEDEKTİFİN SORUSU: "{question}"
-
-KURALLAR:
-- Karakterine sadık kal
-- 2-3 cümle ile cevapla
-- Victorian/1920s dönemi üslubunda konuş
-- Eğer bilmiyorsan "bilmiyorum" diyebilirsin
-- Duygularını göster (korku, öfke, üzüntü)
-
-Cevabın (sadece konuşma):"""
-
-        response = self.llm.invoke(prompt)
-        return response.strip().strip('"')
+Cevap:"""
+        return self._invoke_llm(prompt)
     
     def answer_question(self, question: str, game_state: dict = None) -> str:
-        """Dedektif asistanı olarak soruya cevap ver."""
-        
-        # Graph'tan ilgili bilgileri al
         graph_context = self._get_graph_context(question)
         
-        # Kitaplardan metot öğren
-        detective_methods = self.get_detective_context(question)
-        
-        game_info = ""
-        if game_state:
-            game_info = f"""
-Soruşturma Durumu:
-- Kanıt sayısı: {game_state.get('evidence_count', 0)}
-- Ziyaret edilen yerler: {', '.join(game_state.get('visited_locations', [])) or 'Henüz yok'}
-- Kalan süre: {game_state.get('time_remaining', 0)} saniye
-"""
-        
-        prompt = f"""{self.assistant_persona}
+        prompt = f"""{self.system_prompt}
 
-VAKA VERİLERİ:
+BİLGİLER:
 {graph_context}
 
-SHERLOCK & AGATHA'DAN METOTLAR:
-{detective_methods}
+SORU: "{question}"
 
-{game_info}
+GÖREV: Dedektif asistanı olarak Türkçe cevap ver. İngilizce terim kullanma.
 
-DEDEKTİFİN SORUSU: "{question}"
-
-Kısa (2-3 cümle), atmosferik ve yol gösterici bir cevap ver.
-Katili asla söyleme, sadece mantık yürütmeye yönlendir.
-
-Cevabın:"""
-
-        response = self.llm.invoke(prompt)
-        return response.strip().strip('"')
+Cevap:"""
+        return self._invoke_llm(prompt)
     
     def suggest_next_action(self, game_state: dict) -> str:
-        """Sonraki adım önerisi."""
-        
-        visited = game_state.get('visited_locations', [])
-        evidence_count = game_state.get('evidence_count', 0)
-        
-        # Ziyaret edilmemiş yerler
-        if db.is_active:
-            query = "MATCH (l:Location) RETURN DISTINCT l.name"
-            result = db.graph.query(query)
-            all_locs = [r[0] for r in result.result_set]
-            unvisited = [loc for loc in all_locs if loc not in visited]
-        else:
-            unvisited = []
-        
-        prompt = f"""{self.assistant_persona}
+        prompt = f"""{self.system_prompt}
+Oyuncu şimdi ne yapmalı? Ona Sherlock tarzı kısa bir tavsiye ver.
+Cevap:"""
+        return self._invoke_llm(prompt)
 
-Dedektif şu durumda:
-- {len(visited)} yer ziyaret edildi: {', '.join(visited) if visited else 'hiçbiri'}
-- {evidence_count} kanıt toplandı
-- Henüz gidilmemiş yerler: {', '.join(unvisited) if unvisited else 'tüm yerler gezildi'}
-
-Sherlock Holmes tarzında, bir sonraki adım için kısa (2 cümle) öneri ver.
-
-Önerin:"""
-
-        response = self.llm.invoke(prompt)
-        return response.strip().strip('"')
-    
     def analyze_evidence(self, evidence_list: list) -> str:
-        """Kanıtları analiz et."""
+        if not evidence_list: return "Henüz kanıt yok."
+        evidence_text = "\n".join([f"- {e['name']}: {e['description']}" for e in evidence_list])
         
-        if not evidence_list:
-            return "Sayın dedektif, henüz analiz edecek kanıt bulunmuyor. Lokasyonları aramaya başlayın."
-        
-        evidence_text = "\n".join([
-            f"- {e['name']} ({e['location']}): {e['description']}"
-            for e in evidence_list
-        ])
-        
-        prompt = f"""{self.assistant_persona}
-
-Toplanan Kanıtlar:
+        prompt = f"""{self.system_prompt}
+KANITLAR:
 {evidence_text}
 
-Bu kanıtları Sherlock Holmes gibi analiz et:
-- Hangi kanıtlar birbiriyle bağlantılı?
-- Hangi şüpheliyi işaret ediyorlar?
-- Çelişkiler var mı?
-
-2-3 cümlelik zarif bir analiz yap. Katili söyleme!
-
-Analizin:"""
-
-        response = self.llm.invoke(prompt)
-        return response.strip().strip('"')
+Bu kanıtları yorumla. Türkçe konuş.
+Analiz:"""
+        return self._invoke_llm(prompt)
     
     def comment_on_evidence(self, item_name: str, description: str) -> str:
-        """Yeni bulunan kanıt hakkında yorum."""
-        
-        context = self.get_detective_context(f"evidence {item_name}")
-        
-        prompt = f"""{self.assistant_persona}
-
-Dedektif yeni bir kanıt buldu:
-Kanıt: {item_name}
-Açıklama: {description}
-
-Klasik dedektif hikayelerinden:
-{context}
-
-Bu kanıt hakkında kısa (1-2 cümle), atmosferik bir yorum yap.
-"İlginç..." veya "Dikkat edin..." gibi başla.
-
-Yorumun:"""
-
-        response = self.llm.invoke(prompt)
-        return response.strip().strip('"')
+        prompt = f"""{self.system_prompt}
+Yeni Kanıt: {item_name} ({description})
+Buna kısa, gizemli bir tepki ver.
+Cevap:"""
+        return self._invoke_llm(prompt)
     
     def _get_graph_context(self, query: str) -> str:
-        """Graph'tan ilgili bağlamı çek."""
-        if not db.is_active:
-            return "Veri yok"
-        
+        if not db or not db.is_active: return ""
         context = []
-        
-        # İnsanlar
-        if any(w in query.lower() for w in ["kim", "kişi", "şüpheli", "who"]):
-            q = "MATCH (p:Person) WHERE p.role <> 'Killer' RETURN p.name, p.role, p.trait LIMIT 5"
-            result = db.graph.query(q)
-            if result.result_set:
-                context.append("Şüpheliler:")
-                for r in result.result_set:
-                    context.append(f"- {r[0]} ({r[1]}): {r[2]}")
-        
-        # Yerler
-        if any(w in query.lower() for w in ["nerede", "yer", "where", "location"]):
-            q = "MATCH (l:Location) RETURN DISTINCT l.name LIMIT 5"
-            result = db.graph.query(q)
-            if result.result_set:
-                locs = [r[0] for r in result.result_set]
-                context.append(f"Yerler: {', '.join(locs)}")
-        
-        return "\n".join(context) if context else "Henüz veri yok"
+        try:
+            query_lower = query.lower()
+            if any(x in query_lower for x in ['kim', 'kişi', 'şüpheli']):
+                q = "MATCH (p:Person) RETURN p.name, p.role, p.trait LIMIT 5"
+                res = db.graph.query(q)
+                if res.result_set:
+                    for r in res.result_set: context.append(f"{r[0]} ({r[1]}) - {r[2]}")
+            
+            if any(x in query_lower for x in ['nerede', 'mekan', 'yer']):
+                q = "MATCH (l:Location) RETURN l.name LIMIT 5"
+                res = db.graph.query(q)
+                if res.result_set:
+                    context.append("Mekanlar: " + ", ".join([r[0] for r in res.result_set]))
+        except: pass
+        return "\n".join(context)
 
-
-# Test
-if __name__ == "__main__":
-    agent = DetectiveAgent()
-    
-    # Test dedektif asistanı
-    response = agent.answer_question("Nereden başlamalıyım?")
-    print(f"Asistan: {response}")
+    def _invoke_llm(self, prompt: str) -> str:
+        try:
+            response = self.llm.invoke(prompt)
+            # İngilizce kaçamakları temizlemeye çalış
+            clean = response.strip().strip('"').strip("'")
+            if "Here is" in clean or "Sure" in clean: # LLM İngilizce cevap vermeye kalkarsa
+                 return "Kafam biraz karıştı dedektif, lütfen sorunuzu Türkçe tekrarlayın."
+            return clean
+        except Exception as e:
+            return "Şu an düşüncelerimi toparlayamıyorum."

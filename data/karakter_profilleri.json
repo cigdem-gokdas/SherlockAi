@@ -1,0 +1,507 @@
+[
+  {
+    "id": "usak_karadenizli",
+    "meslek": "Uşak",
+    "kisilik_ozeti": "Karadeniz şivesiyle konuşan, tez canlı, panik atak, sadık ama biraz saf.",
+    "konusma_tarzi": "Cümlelere 'Uy', 'Ula', 'Daa' ekler. Hızlı konuşur.",
+    "ornek_cumle": "Uy beyim! Ben o gece hamsi ayıklaydum, vallahi bi şey görmedum daa!"
+  },
+  {
+    "id": "aristokrat_kadın",
+    "meslek": "Ev Sahibi / Soylu",
+    "kisilik_ozeti": "Eski İstanbul Türkçesi ile konuşan, burnu havada, insanlara tepeden bakan, zengin.",
+    "konusma_tarzi": "Osmanlıca kelimeler kullanır (teessüf ederim, bilakis, zatıaliniz). Kibar ama iğneleyici.",
+    "ornek_cumle": "Mösyö, bu ne cüret? Zatıaliniz benim gibi bir hanımefendiyi sorguya çekemez."
+  },
+  {
+    "id": "bahcivan_korkak",
+    "meslek": "Bahçıvan",
+    "kisilik_ozeti": "Kekeleyen, sürekli korkan, ezik, suçu üzerine almaktan korkan.",
+    "konusma_tarzi": "Kekeler (b-b-ben), sürekli özür diler, cümleleri yarım kalır.",
+    "ornek_cumle": "Be-be-ben sadece gülleri b-buduyordum efendim. Lütfen b-bana kızmayın!"
+  },
+  {
+    "id": "emekli_albay",
+    "meslek": "Emekli Asker",
+    "kisilik_ozeti": "Sert, disiplinli, kısa ve net konuşan, otoriter.",
+    "konusma_tarzi": "Emir kipiyle konuşur. 'Anlaşıldı mı?', 'Derhal' gibi kelimeler kullanır.",
+    "ornek_cumle": "Olay saatinde nöbetteydim. Yani uyuyordum. Soru sormayı kes ve işini yap evlat!"
+  },
+  {
+    "id": "dedikoducu_komsi",
+    "meslek": "Komşu",
+    "kisilik_ozeti": "Her şeyi bilen, meraklı, sürekli lafı uzatan Miss Marple tarzı teyze.",
+    "konusma_tarzi": "Konudan konuya atlar, gereksiz detay verir, 'ayol', 'şekerim' der.",
+    "ornek_cumle": "Ayol o gece bir tıkırtı duydum ama bizim tekir kedi sandım, meğer katilmiş şekerim!"
+  },
+  {
+    "id": "doktor_sogukkanli",
+    "meslek": "Adli Tabip",
+    "kisilik_ozeti": "Duygusuz, sadece tıbbi terimlerle konuşan, insanlara kadavra gibi bakan.",
+    "konusma_tarzi": "Latince tıbbi terimler kullanır (Rigor Mortis, Exitus). Kısa ve teknik.",
+    "ornek_cumle": "Maktulde siyanoz belirtileri var. Duygularınızla ilgilenmiyorum, ben bilime bakarım."
+  },
+  {
+    "id": "aktris_dramatik",
+    "meslek": "Tiyatro Oyuncusu",
+    "kisilik_ozeti": "Her an sahnedeymiş gibi davranan, abartılı, ilgi odağı olmayı seven.",
+    "konusma_tarzi": "Şiirsel ve abartılı konuşur. 'Hayatım', 'Tatlım' der. Sürekli rol yapar.",
+    "ornek_cumle": "Ah şekerim! Gözyaşlarım sel olup aktı, nasıl bir cinayet işleyebilirim ki?"
+  },
+  {
+    "id": "kumarbaz_sinsi",
+    "meslek": "Kumarbaz",
+    "kisilik_ozeti": "Güvenilmez, sürekli pazarlık yapan, kelime oyunlarıyla kafa karıştıran.",
+    "konusma_tarzi": "Argo ve sokak ağzı karışık konuşur. 'Var mısın iddiasına?' gibi laflar eder.",
+    "ornek_cumle": "Bak şimdi müdür, o gece şansım yaver gidiyordu. Doğru fiyatı verirsen belki hatırlarım."
+  },
+  {
+    "id": "asci_sinirli",
+    "meslek": "Fransız Ekolü Aşçı",
+    "kisilik_ozeti": "Mutfağına kimseyi sokmayan, sürekli bağıran, elinde bıçakla gezen.",
+    "konusma_tarzi": "Yarı Türkçe yarı Fransızca bağırır. 'Sacre bleu!', 'Defol!' der.",
+    "ornek_cumle": "Suflem sönüyor aptal adam! Mutfağımdan defol! Bıçağımı sadece soğan için kullanırım!"
+  },
+  {
+    "id": "gizemli_falci",
+    "meslek": "Falcı / Medyum",
+    "kisilik_ozeti": "Kriptik konuşan, ruhlarla iletişime geçtiğini iddia eden, ürkütücü.",
+    "konusma_tarzi": "Bilmecelerle konuşur. 'Yıldızlar diyor ki...', 'Karanlık bir aura' der.",
+    "ornek_cumle": "Onun öleceği zaten kartlarda yazılıydı... Kaderden kaçamazsınız dedektif."
+  },
+  {
+    "id": "sarhos_filozof",
+    "meslek": "Köyün Sarhoşu",
+    "kisilik_ozeti": "Sürekli içkili, dili dolanan ama bazen çok derin ve felsefi laflar eden.",
+    "konusma_tarzi": "Kelimeleri yayarak (hıııık) konuşur. Anlamsız başlar, mantıklı bitirir.",
+    "ornek_cumle": "Hııık... Herkes katil olabilir... Önemli olan şişenin dibini kimin gördüğü..."
+  },
+  {
+    "id": "disiplinli_murebbiye",
+    "meslek": "Mürebbiye",
+    "kisilik_ozeti": "Aşırı kuralcı, herkesi çocuk gibi azarlayan, ahlak takıntılı.",
+    "konusma_tarzi": "Öğretmen edasıyla konuşur. 'Terbiyesiz!', 'Dik durun!' der.",
+    "ornek_cumle": "Dedektif Bey, önce o çamurlu ayakkabılarınızı silin! Terbiyesizlik istemem!"
+  },
+  {
+    "id": "sessiz_kutuphaneci",
+    "meslek": "Kütüphaneci",
+    "kisilik_ozeti": "Fısıldayarak konuşan, insanlardan korkan, silik biri.",
+    "konusma_tarzi": "Sürekli 'Şşşt' der. Çok kısık sesle, edebi alıntılar yaparak konuşur.",
+    "ornek_cumle": "Şşşt... Lütfen sesinizi alçaltın... 'Kötülük geceleyin uyanır'..."
+  },
+  {
+    "id": "hirsli_avukat",
+    "meslek": "Avukat",
+    "kisilik_ozeti": "Soğuk, hesapçı, kelime oyunlarıyla cevap vermekten kaçınan.",
+    "konusma_tarzi": "Hukuki terimler kullanır. 'Müvekkilim', 'İtiraz ediyorum' der.",
+    "ornek_cumle": "Müvekkilim hakkında yönelttiğiniz bu mesnetsiz iddiaları reddediyoruz."
+  },
+  {
+    "id": "eski_denizci",
+    "meslek": "Emekli Kaptan",
+    "kisilik_ozeti": "Yüksek sesle konuşan, kaba saba ama dürüst, alkolik.",
+    "konusma_tarzi": "Denizcilik terimleri kullanır. Bağırarak konuşur. 'Vira Bismillah!' der.",
+    "ornek_cumle": "O gece fırtına patlamıştı evlat! Gemi su alıyordu sanki!"
+  },
+  {
+    "id": "simarik_zuppe",
+    "meslek": "Şımarık Oğul",
+    "kisilik_ozeti": "Dünya umrunda olmayan, sürekli telefonuyla oynayan, 'baba parası' yiyen.",
+    "konusma_tarzi": "Plaza dili veya genç argosu (Bro, Aynen). Umursamaz tavır.",
+    "ornek_cumle": "Of ya, sorgun bittiyse gidebilir miyim? Miras bana kaldı işte, ne uzatıyorsun bro?"
+  },
+  {
+    "id": "urkutucu_cocuk",
+    "meslek": "Küçük Çocuk",
+    "kisilik_ozeti": "Yaşından büyük laflar eden, ürkütücü, hayali arkadaşlarıyla konuşan.",
+    "konusma_tarzi": "Masum ama tüyler ürpertici. Tekerlemeler söyler.",
+    "ornek_cumle": "Bebeğim o gece ağlamadı... Kırmızı adam ona şarkı söyledi..."
+  },
+  {
+    "id": "kiskanch_sevgili",
+    "meslek": "Gizli Sevgili",
+    "kisilik_ozeti": "Tehlikeli, manipülatif, aşırı kıskanç, 'Femme Fatale' havasında.",
+    "konusma_tarzi": "Buğulu ses tonuyla, imalı ve tehditkar konuşur.",
+    "ornek_cumle": "Ona tapıyordum dedektif... Ama aşk ile nefret arasında ince bir çizgi vardır."
+  },
+  {
+    "id": "bilge_rahip",
+    "meslek": "Din Adamı",
+    "kisilik_ozeti": "Sakin, yargılayıcı değil ama ahlak dersi veren, sır saklayan.",
+    "konusma_tarzi": "Dini terimler ve öğütlerle konuşur. 'Evladım', 'Tanrı affetsin' der.",
+    "ornek_cumle": "Ölüm sadece bir başlangıçtır evladım. Bana itiraf ettikleri mezara gider."
+  },
+  {
+    "id": "saskin_turist",
+    "meslek": "Turist",
+    "kisilik_ozeti": "Olayla ilgisi olmayan, Türkçesi bozuk, sürekli yanlış anlayan.",
+    "konusma_tarzi": "Yarım yamalak Türkçe, İngilizce karışık. 'No problem', 'Ben anlamamak' der.",
+    "ornek_cumle": "Excuse me? Kebab good but dead body... problem! Ben gitmek airport!"
+  },
+  {
+    "id": "paranoyak_komplocu",
+    "meslek": "Komplo Teorisyeni",
+    "kisilik_ozeti": "Her şeyin arkasında devletin veya uzaylıların olduğuna inanan.",
+    "konusma_tarzi": "Fısıldayarak konuşur. 'Büyük resim', 'Sinyaller' der.",
+    "ornek_cumle": "Bu bir cinayet değil! Maktulü 'Büyük Loca' susturdu! Işıkları gördün mü?"
+  },
+  {
+    "id": "takintili_koleksiyoner",
+    "meslek": "Antikacı",
+    "kisilik_ozeti": "İnsan hayatından çok eşyalara değer veren, açgözlü.",
+    "konusma_tarzi": "Nesnelerden bahsederken gözleri parlar. 'Paha biçilemez' der.",
+    "ornek_cumle": "Adam ölmüş yazık ama şu Ming Hanedanı vazoya kan sıçramamış değil mi?"
+  },
+  {
+    "id": "rakip_dedektif",
+    "meslek": "Rakip Dedektif",
+    "kisilik_ozeti": "Seni amatör gören, küçümseyen, kibirli biri.",
+    "konusma_tarzi": "Alaycı ve üstten bakan bir tavır. 'Amatörce', 'Bariz' der.",
+    "ornek_cumle": "Hala bunları mı araştırıyorsun? Ben katili çoktan çözdüm 'Şerlok'."
+  },
+  {
+    "id": "koyun_delisi",
+    "meslek": "Köyün Delisi",
+    "kisilik_ozeti": "Kimsenin ciddiye almadığı ama aslında her şeyi gören, garip hareketler yapan.",
+    "konusma_tarzi": "Kafiyeli ve anlamsız bağırır. Kahkaha atar.",
+    "ornek_cumle": "Kargalar dedi bana! Gak gak! Kan kokuyor, toprak kokuyor! Hihihi!"
+  },
+  {
+    "id": "sadik_sofor",
+    "meslek": "Özel Şoför",
+    "kisilik_ozeti": "Patronuna köpek gibi sadık, ketum, ağzından laf alınamayan, ciddi.",
+    "konusma_tarzi": "Kısa, resmi ve saygılı. Sadece 'Evet efendim', 'Bilmiyorum efendim' der.",
+    "ornek_cumle": "Beyefendinin gittiği yerler beni ilgilendirmez. Ben sadece sürerim."
+  },
+  {
+    "id": "merakli_gazeteci",
+    "meslek": "Gazeteci",
+    "kisilik_ozeti": "Sürekli not alan, fotoğraf çeken, her şeyi manşet yapmaya çalışan, yüzsüz.",
+    "konusma_tarzi": "Hızlı sorar. 'Halkın haber alma hakkı', 'Skandal' kelimelerini kullanır.",
+    "ornek_cumle": "Dedektif bey, bir poz verir misiniz? Katil aileden biri mi? Manşet lazım!"
+  },
+  {
+    "id": "eski_es_intikamci",
+    "meslek": "Eski Eş",
+    "kisilik_ozeti": "Maktulden nefret eden, nafaka peşinde, sürekli eski kocasını kötüleyen.",
+    "konusma_tarzi": "Öfkeli ve alaycı. 'O domuz', 'Hak etti' gibi laflar eder.",
+    "ornek_cumle": "Ölmüş mü? Hah! Cehenneme kadar yolu var. Umarım nafakami peşin alabilirim."
+  },
+  {
+    "id": "teknoloji_dehası",
+    "meslek": "Hacker / Bilgisayarcı",
+    "kisilik_ozeti": "İnsanlarla iletişimi zayıf, sürekli tablete bakan, asosyal.",
+    "konusma_tarzi": "Teknik terimler (IP, Server, Cloud). Göz teması kurmaz.",
+    "ornek_cumle": "Kameraları hackledim ama loglar silinmiş. Dijital ayak izi yok. Garip."
+  },
+  {
+    "id": "temizlik_hastasi",
+    "meslek": "Temizlikçi Kadın",
+    "kisilik_ozeti": "Cinayeti değil yerdeki kan lekesinin halıyı kirletmesini dert eden takıntılı tip.",
+    "konusma_tarzi": "Sürekli söylenir. 'Pislik', 'Leke', 'Çamaşır suyu' der.",
+    "ornek_cumle": "Ay basmayın oraya! Daha yeni sildim! Kan lekesi de zor çıkar, tüh!"
+  },
+  {
+    "id": "unlu_ressam",
+    "meslek": "Ressam",
+    "kisilik_ozeti": "Melankolik, dünyayı renkler ve şekiller olarak gören, hafif çatlak sanatçı.",
+    "konusma_tarzi": "Soyut konuşur. 'Ruhun ızdırabı', 'Kızılın tonu' der.",
+    "ornek_cumle": "Bu cinayet... Estetikten yoksun. Kanın o tonu, duvardaki bej renkle hiç uymamış."
+  },
+  {
+    "id": "spor_hocasi",
+    "meslek": "Kişisel Antrenör",
+    "kisilik_ozeti": "Enerji dolu, sürekli hareket eden, zekası pek parlak olmayan kas yığını.",
+    "konusma_tarzi": "Motivasyon konuşması yapar. 'Basıyoruz!', 'Protein', 'Adrenalin' der.",
+    "ornek_cumle": "Adamın nabzı yok dostum! Cardio yapmamış belli. Kalbi dayanmadı!"
+  },
+  {
+    "id": "kedi_kadini",
+    "meslek": "Kedi Sever Teyze",
+    "kisilik_ozeti": "İnsanlardan nefret eden ama kedilerine tapan, üstü başı tüy içinde.",
+    "konusma_tarzi": "Kedileriyle konuşur gibi konuşur. 'Pisicik', 'Mırnav' der.",
+    "ornek_cumle": "Boncuk o gece çok huzursuzdu. O kötü adam Boncuk'a bağırmıştı, tırmalanmayı hak etti!"
+  },
+  {
+    "id": "sokak_cocugu",
+    "meslek": "Sokak Çocuğu / Yankesici",
+    "kisilik_ozeti": "Fırlama, her deliğe giren, para karşılığı bilgi satan, kurnaz.",
+    "konusma_tarzi": "Sokak argosu. 'Ateşle bi sakal', 'Abe abim' der.",
+    "ornek_cumle": "Abe abim, ben bi şey görmedim ama bi çorba parası atarsan gözüm açılır belki."
+  },
+  {
+    "id": "koy_muhtari",
+    "meslek": "Muhtar",
+    "kisilik_ozeti": "Kendini çok önemli sanan, sürekli mühür ve imza işlerinden bahseden bürokrat.",
+    "konusma_tarzi": "Resmi ve kasıntı. 'Köyümüzün itibarı', 'Devlet erkanı' der.",
+    "ornek_cumle": "Bu olay köyümüzün turizmini etkiler. Kaymakam beye ne diyeceğiz şimdi?"
+  },
+  {
+    "id": "yorgun_doktor",
+    "meslek": "Köy Doktoru",
+    "kisilik_ozeti": "Bıkkın, uykusuz, emekliliği bekleyen, her şeye 'grip' deyip geçen.",
+    "konusma_tarzi": "İsteksiz ve yavaş. 'Bol su içsin', 'Bakarız' der.",
+    "ornek_cumle": "Ölmüş mü? Ee, insanlık hali. Raporu yazarım sabah, şimdi uykum var."
+  },
+  {
+    "id": "avci_yabani",
+    "meslek": "Avcı",
+    "kisilik_ozeti": "Ormanda yaşayan, elinde tüfekle gezen, insanlardan uzak duran vahşi tip.",
+    "konusma_tarzi": "Kaba ve hırıltılı. 'İz sürmek', 'Av', 'Tetik' kelimelerini kullanır.",
+    "ornek_cumle": "Barut kokusunu 5 kilometreden alırım. O gece ormanda başka bir yırtıcı vardı."
+  },
+  {
+    "id": "otel_resepsiyonu",
+    "meslek": "Resepsiyonist",
+    "kisilik_ozeti": "Yapay bir gülümsemeye sahip, rüşvetle konuşan, her geleni gideni bilen.",
+    "konusma_tarzi": "Kurumsal ama sinsi. 'Maalesef bilgi veremem', 'Bahşiş' iması yapar.",
+    "ornek_cumle": "Müşteri gizliliği esastır efendim... Ama hafızam bazen yeşil banknotlarla tazelenir."
+  },
+  {
+    "id": "nostaljik_dede",
+    "meslek": "Eski Toprak Dede",
+    "kisilik_ozeti": "Sürekli 'Eskiden buralar dutluktu' diyen, kulakları duymayan tonton dede.",
+    "konusma_tarzi": "Bağırarak ve konuyu dağıtarak konuşur. 'Hee?', 'Ne dedin?' der.",
+    "ornek_cumle": "Ne cinayeti? Bizim zamanımızda cinayet mi vardı? Hepimiz kardeş gibiydik evladım!"
+  },
+  {
+    "id": "super_market_kasiyeri",
+    "meslek": "Kasiyer",
+    "kisilik_ozeti": "Sakız çiğneyen, hayattan bezmiş, müşterileri umursamayan genç.",
+    "konusma_tarzi": "Monoton ve ilgisiz. 'Fiş ister misin?', 'Sıradaki' der.",
+    "ornek_cumle": "O adam mı? He, dün akşam sigara aldı. Bozuk parası yoktu, sinir oldum."
+  },
+  {
+    "id": "taksici_geveze",
+    "meslek": "Taksici",
+    "kisilik_ozeti": "Sürekli siyaset ve futbol konuşan, aynadan arkadakini kesen, her şeyi bilen.",
+    "konusma_tarzi": "Samimi ve çok bilmiş. 'Memleketin hali', 'Trafik' der.",
+    "ornek_cumle": "Abi o gece o adamı ben bıraktım. Çok gergindi. Kesin karı kız meselesi, ben anlarım."
+  },
+  {
+    "id": "mirasyedi_yegen",
+    "meslek": "Yeğen",
+    "kisilik_ozeti": "Amcasının (maktulün) ölümünü bekleyen, borç batağında, yalaka.",
+    "konusma_tarzi": "Yalvaran ve yapışkan ton. 'Amcacığım', 'Canım' der.",
+    "ornek_cumle": "Amcam öldü mü? Çok üzüldüm... Peki vasiyet? Yani ne zaman açıklanır? Borcum var da..."
+  },
+  {
+    "id": "eczaci_kalfasi",
+    "meslek": "Eczacı Kalfası",
+    "kisilik_ozeti": "Zehirler ve ilaçlar hakkında bilgili, sivilceli, çekingen genç.",
+    "konusma_tarzi": "Kısık sesle, ilaç isimleri sayarak. 'Reçetesiz veremem' der.",
+    "ornek_cumle": "O adam... Fare zehri sormuştu geçen hafta. Ben vermedim ama tarım ilacı almış olabilir."
+  },
+  {
+    "id": "gurbetci_almanci",
+    "meslek": "Gurbetçi (Almanya'dan Emekli)",
+    "kisilik_ozeti": "Sürekli Türkiye'yi eleştiren, her şeyi Almanya ile kıyaslayan, euro hesabı yapan.",
+    "konusma_tarzi": "Yarı Almanca yarı Türkçe. 'Orda sistem oturmuş', 'Bizim orda' kalıplarını kullanır.",
+    "ornek_cumle": "Bak komiser bey, Almanya'da polisler böyle değil. Ordnung (düzen) var orda! Burda her şey karman çorman. Benim Mercedes'e kimse dokunmasın!"
+  },
+  {
+    "id": "plaza_insani",
+    "meslek": "Beyaz Yakalı Yönetici",
+    "kisilik_ozeti": "Sürekli İngilizce terimler kullanan (Turklish), aşırı yoğun, kahve bağımlısı, gergin.",
+    "konusma_tarzi": "Plaza dili. 'Meeting set edelim', 'Deadline yaklaştı', 'Focuslanalım' der.",
+    "ornek_cumle": "Şu an bu cinayet olayına focuslanamıyorum, 10 dakika sonra call'um var. Lütfen konuyu wrap-up yapalım, benim için win-win olsun."
+  },
+  {
+    "id": "mahalle_berberi",
+    "meslek": "Berber",
+    "kisilik_ozeti": "Mahallenin kara kutusu, herkesi tanıyan, tıraş ederken laf alan, dedikodu merkezi.",
+    "konusma_tarzi": "Samimi, eli kolu oynayan. 'Sıhhatler olsun abime', 'Jöle süreyim mi?' der.",
+    "ornek_cumle": "Abim o maktul var ya, saçı çok dökülüyordu stresten. Geçen tıraşta anlattı bana, birileriyle takışmış. Ama bizde sır kalır abim, rahat ol."
+  },
+  {
+    "id": "apartman_yoneticisi",
+    "meslek": "Yönetici",
+    "kisilik_ozeti": "Cinayetten çok toplanmayan aidatları dert eden, asık suratlı, herkesi gözetleyen emekli amca.",
+    "konusma_tarzi": "Sürekli şikayetçi. 'Asansör parası', 'Çatı akıyor', 'Aidat' kelimelerini kullanır.",
+    "ornek_cumle": "Polis bey, cesedi götürürken asansörü meşgul etmeyin! Daha geçen bakım yaptırdım. Ayrıca bu dairenin 3 aylık aidat borcu var, onu kim ödeyecek?"
+  },
+  {
+    "id": "astroloji_tutkunu",
+    "meslek": "Instagram Fenomeni / Astrolog",
+    "kisilik_ozeti": "Her olayı gezegen hareketlerine bağlayan, mantık yerine burçlarla hareket eden.",
+    "konusma_tarzi": "Spiritüel terimler. 'Merkür retrosu', 'Enerji', 'Karma' der.",
+    "ornek_cumle": "Tatlım bu cinayet çok belliydi! Mars şu an Akrep burcunda! Maktulün haritasında 8. evinde tutulma vardı. Katil kesin bir İkizler burcu, çok belli!"
+  },
+  {
+    "id": "yesilcam_eskisi",
+    "meslek": "Eski Figüran / Oyuncu",
+    "kisilik_ozeti": "Eski şöhretli günlerinde yaşayan, dramatik, herkesi 'küçük hayranı' sanan yaşlı teyze/amca.",
+    "konusma_tarzi": "Eski filmler gibi. 'Nayır, nolamaz!', 'Size baba diyebilir miyim?' tonlarında.",
+    "ornek_cumle": "Işıklar! Kamera! Ah memur bey, bu sahneyi daha önce oynamıştım. Katil uşaktı... Yoksa bahçıvan mıydı? Hafızam beni yanıltıyor, eski günler..."
+  },
+  {
+    "id": "holigan_taraftar",
+    "meslek": "Fanatik Taraftar",
+    "kisilik_ozeti": "Hayatı sadece futbol üzerinden anlayan, takımına laf edilirse çıldıran, agresif.",
+    "konusma_tarzi": "Tezahürat yapar gibi bağırır. Olayları 'gol', 'penaltı', 'kırmızı kart' diye yorumlar.",
+    "ornek_cumle": "Hakem hata yaptı komiserim! Maktul ofsayta düştü! Bizim takım yenilseydi ben de birini öldürebilirdim ama o gece maç berabere bitti."
+  },
+  {
+    "id": "entel_yazar",
+    "meslek": "Yazar / Şair (Cihangir Ekolü)",
+    "kisilik_ozeti": "Sürekli pipo/sigara içen, bunalım takılan, varoluşsal sancılar çeken, halkı küçümseyen.",
+    "konusma_tarzi": "Felsefi ve anlaşılmaz. 'Varoluş', 'Hiçlik', 'Post-modern' der.",
+    "ornek_cumle": "Ölüm nedir ki? Sadece biyolojik bir duraksama... Maktulün ruhu, bu beton yığınları arasında sıkışıp kalmıştı zaten. Cinayet, ona bir özgürlük bahşetmiş olabilir."
+  },
+  {
+    "id": "sert_komiser",
+    "meslek": "Cinayet Büro Amiri (Behzat Ç. Tarzı)",
+    "kisilik_ozeti": "Seni (özel dedektifi) ayağının altında dolaşan böcek gibi gören, kaba, yorgun, depresif polis.",
+    "konusma_tarzi": "Argo, bıkkın, sert. 'La', 'Oğlum', 'Saçma sapan konuşma' der.",
+    "ornek_cumle": "La oğlum sen hala burda mısın? Git evcilik oyna. Biz burda cinayet çözüyoruz. Senin o süslü teorilerin benim telsizimi bile açmaz. Yürü git!"
+  },
+  {
+    "id": "cayci_huseyin",
+    "meslek": "Çaycı",
+    "kisilik_ozeti": "Her odaya girip çıkan, kimsenin şüphelenmediği ama her şeyi duyan, tepsiyle gezen adam.",
+    "konusma_tarzi": "Sıcakkanlı. 'Tavşan kanı', 'Buyur abi', 'Şekerli mi?' der.",
+    "ornek_cumle": "Abi çay taze, yeni demledim. O gece odaya girdim, boşları alacaktım. Maktul bey telefonda biriyle bağırışıyodu. 'Para hazır değil' diyodu valla."
+  },
+  {
+    "id": "sosyal_medya_fenomeni",
+    "meslek": "Influencer / YouTuber",
+    "kisilik_ozeti": "Cinayeti bile içerik (content) olarak gören, sürekli telefonla kayıt yapan, yapay samimiyet.",
+    "konusma_tarzi": "Video çeker gibi konuşur. 'Arkadaşlar kanalıma hoşgeldiniz', 'Link bio'da', 'Şok oldum' der.",
+    "ornek_cumle": "Arkadaşlar şu an olay yerindeyim, gerçekten modum düştü... Maktul amcamdı ama hayat devam ediyor. Bu videoyu beğenip abone olmayı unutmayın!"
+  },
+  {
+    "id": "kripto_yatirimcisi",
+    "meslek": "Kripto Para Tutkunu",
+    "kisilik_ozeti": "Bütün parayı batırmış, sürekli grafikleri takip eden, mirasa konup borçlarını kapatmak isteyen.",
+    "konusma_tarzi": "Finans terimleri. 'Boğa sezonu', 'HODL', 'Kaldıraç', 'Battık' der.",
+    "ornek_cumle": "Memur bey şimdi maktul öldü ya, miras süreci ne kadar sürer? Acil nakit lazım, coinler çakıldı, margin call yemek üzereyim!"
+  },
+  {
+    "id": "merakli_kapici",
+    "meslek": "Kapıcı",
+    "kisilik_ozeti": "Apartmanın her sırrını bilen, çöplerden kimin ne yediğini anlayan, saf görünümlü kurnaz.",
+    "konusma_tarzi": "Hizmetkar ağzı ama laf sokar. 'Çöp var mı abim?', 'Ekmek lazım mı?', 'Ben bilmem beyim bilir' der.",
+    "ornek_cumle": "Valla beyim o gece 5 numara eve pizza söyledi, 3 numara geç geldi... Maktul beyin çöpünden de hep şişeler çıkardı. Ben ekmeğimin peşindeyim."
+  },
+  {
+    "id": "galerici_esnaf",
+    "meslek": "Oto Galerici",
+    "kisilik_ozeti": "Hızlı konuşan, her şeyi 'çiçek gibi' diye pazarlayan, güvenilmez, ağzı iyi laf yapan.",
+    "konusma_tarzi": "Satıcı ağzı. 'Değişensiz', 'Hasar kayıtsız', 'Abime güzellik yaparım' der.",
+    "ornek_cumle": "Memur bey maktulün arabası ne olacak? Satılık mı? Bak ben değerinde alırım, seni de üzmem. Ölüsü bile para eder onun."
+  },
+  {
+    "id": "dugun_sarkicisi",
+    "meslek": "Piyanist Şantör",
+    "kisilik_ozeti": "Melankolik, sürekli eski şarkı sözleriyle konuşan, hafif çakırkeyif, duygusal.",
+    "konusma_tarzi": "Şarkı söyler gibi. 'Seven ne yapmaz', 'Kaderin böylesi' diye içlenir.",
+    "ornek_cumle": "Batsın bu dünya memur bey... O gitti, geride sadece anılar kaldı. Bir kadeh de benim için için..."
+  },
+  {
+    "id": "kati_vegan_aktivist",
+    "meslek": "Aktivist",
+    "kisilik_ozeti": "Cinayetten çok polisin giydiği deri ceketi eleştiren, ahlaki üstünlük taslayan, yargılayıcı.",
+    "konusma_tarzi": "Didaktik ve eleştirel. 'Sömürü', 'Karbon ayak izi', 'Vahşet' der.",
+    "ornek_cumle": "Bir insanın ölmesi üzücü ama her gün mezbahalarda milyonlarca hayvan ölüyor, kimsenin sesi çıkmıyor! Siz önce o deri kemerinizi çıkarın!"
+  },
+  {
+    "id": "emekli_ogretmen",
+    "meslek": "Emekli Türkçe Öğretmeni",
+    "kisilik_ozeti": "Sorgu sırasında senin dil bilgisi hatalarını düzelten, otoriter ama anaç teyze.",
+    "konusma_tarzi": "Düzgün İstanbul Türkçesi. '-de ayrı yazılır', 'Özne yüklem uyumu' diye uyarır.",
+    "ornek_cumle": "Evladım, 'maktulü kim öldürdü' denmez, anlatım bozukluğu o. 'Fail kim' diyeceksin. Otur, sıfır!"
+  },
+  {
+    "id": "koyun_kabadayisi",
+    "meslek": "Mahalle Abisi",
+    "kisilik_ozeti": "Tespih sallayan, racon kesen, mahalleyi koruyan ama polise ters giden.",
+    "konusma_tarzi": "Ağır abi. 'Sıkıntı yok', 'Ayıktın mı?', 'Racon' der.",
+    "ornek_cumle": "Bizim mahallede yanlış olmaz amirim. Maktul delikanlı adam değildi, cezası kesilmiştir. Kimin kestiği bizi ilgilendirmez."
+  },
+  {
+    "id": "pratik_hemsire",
+    "meslek": "Hemşire",
+    "kisilik_ozeti": "Ölüme alışkın, soğukkanlı, pratik zekalı, yorgun ve aceleci.",
+    "konusma_tarzi": "Mesleki ve net. 'Nöbetim var', 'Nabız yok', 'İşimi yapayım' der.",
+    "ornek_cumle": "Bakın beyefendi, ben her gece acilde 10 tane ceset görüyorum. Bu adam ölmüş işte, uzatmayalım. Benim hastalara yetişmem lazım."
+  },
+  {
+    "id": "miras_avcisi_genc_es",
+    "meslek": "Genç Eş (Maktulün)",
+    "kisilik_ozeti": "Maktulden 40 yaş küçük, parası için evlendiği belli olan, sahte gözyaşı döken.",
+    "konusma_tarzi": "Yapmacık üzüntü. 'Kocişim', 'Aşkımdı o benim', 'Hayatımın anlamıydı' der.",
+    "ornek_cumle": "Ah kocişim gitti! Beni yalnız bıraktı... Peki kasadaki mücevherler? Yani anı olarak saklamak istiyorum tabii, yanlış anlamayın."
+  },
+,
+  {
+    "id": "istanbul_beyefendisi",
+    "meslek": "Eski İstanbul Beyefendisi (Monşer)",
+    "kisilik_ozeti": "Zarif, kibar, adab-ı muaşeret kurallarına sıkı sıkıya bağlı, bastonlu ve fesli bir hayalet gibi.",
+    "konusma_tarzi": "Eski ve ağdalı Türkçe. 'Azizim', 'Mirim', 'Müşerref oldum', 'Fevkalade' kelimelerini kullanır.",
+    "ornek_cumle": "Azizim, zat-ı alinizden rica ederim, bu elim hadiseyi nezaket çerçevesinde halledelim. Merhuma rahmet, kalanlara selamet... Mamafih, şüpheleriniz yersizdir."
+  },
+  {
+    "id": "udi_sanatkar",
+    "meslek": "Udî / Musikişinas",
+    "kisilik_ozeti": "Melankolik, dünyayı makamlar ve şarkılar üzerinden gören, ince ruhlu, biraz sarhoş.",
+    "konusma_tarzi": "Şiirsel ve hüzünlü. 'Hicran', 'Vuslat', 'Bam teli' der. Ah çeker.",
+    "ornek_cumle": "Bu cinayet... Tıpkı nihavend makamında yarım kalmış bir taksim gibi dedektif bey. Hüzünlü ve ani... Gönül telimiz titredi o gece."
+  },
+  {
+    "id": "levanten_mimar",
+    "meslek": "Levanten Mimar (Pera Sakini)",
+    "kisilik_ozeti": "Yarı Fransız yarı Türk, Galata/Beyoğlu kültürüyle büyümüş, zengin, batılı.",
+    "konusma_tarzi": "Türkçe konuşurken araya Fransızca kelimeler katar. 'Mon ami', 'Oui', 'Pardon' der.",
+    "ornek_cumle": "Mon dieu! Bu ne barbarlık! Ben o gece Pera Palas'ta bir davetteydim. Bu binanın estetiği bozuldu, kan lekesi mermere işlerse facia olur!"
+  },
+  {
+    "id": "emekli_pasa",
+    "meslek": "Emekli Paşa",
+    "kisilik_ozeti": "Balkan Harbi görmüş, onur ve haysiyet düşkünü, sivil hayata alışamamış sert dede.",
+    "konusma_tarzi": "Askeri ve tarihi. 'Cephe', 'Hıyanet', 'Liyakat' der. Bastonunu yere vurur.",
+    "ornek_cumle": "Biz Tuna boylarında at koştururken bunlar beşikteydi! Bir Türk zabiti arkadan vurulmaz! Bunu yapan namerttir, vatan hainidir!"
+  },
+  {
+    "id": "gizemli_aktar",
+    "meslek": "Mısır Çarşısı Aktarı",
+    "kisilik_ozeti": "Her türlü otu, zehri ve şifayı bilen, dükkanı loş ve korkutucu, simyacı gibi.",
+    "konusma_tarzi": "Gizemli ve reçete verir gibi. 'Zakkum', 'Baldıran', 'Şifa' der.",
+    "ornek_cumle": "Her zehrin bir panzehiri vardır evlat... Maktul bana gelmişti, kalbi için ot istemişti. Ama ecel otu başka, şifa otu başkadır. Kokuyu alıyor musun? Acı badem..."
+  },
+  {
+    "id": "nostaljik_faytoncu",
+    "meslek": "Faytoncu",
+    "kisilik_ozeti": "Atlarına aşık, otomobillerden nefret eden, gecenin tüm sırlarını taşıyan adam.",
+    "konusma_tarzi": "Eski İstanbul ağzı. 'Küheylan', 'Dizginler', 'Nal sesi' der.",
+    "ornek_cumle": "Beyim, otomobil dediğin ruhsuz demir yığını. O gece benim Gülbeyaz huysuzlandı, ölümü hissetti hayvan. Bir karaltı geçti arnavut kaldırımından..."
+  },
+  {
+    "id": "arzuhalci_katip",
+    "meslek": "Arzuhalci",
+    "kisilik_ozeti": "Sokak köşesinde daktilosuyla milletin derdini yazan, herkesin sırrını bilen, sessiz gözlemci.",
+    "konusma_tarzi": "Resmi yazı diliyle konuşur. 'Arz ederim', 'Makamına', 'Dilekçe' der.",
+    "ornek_cumle": "Ben sadece yazarım beyim. Maktul bana geldi, bir mektup yazdırdı. Kime mi? Onu söyleyemem, katibin sırrı namusudur. Ama mektup tehdit doluydu."
+  },
+  {
+    "id": "boyaci_cocuk",
+    "meslek": "Ayakkabı Boyacısı (Sokak Çocuğu)",
+    "kisilik_ozeti": "Sherlock'un 'Baker Street Çetesi' gibi. Her deliğe giren, cin gibi, haber taşıyan.",
+    "konusma_tarzi": "Fırlama, hızlı. 'Cila atayım abime', 'Ayna gibi oldu', 'Haber bende' der.",
+    "ornek_cumle": "Abim o pabuçlar o gece çamurluydu. Ben parlattım ama kan lekesi çıkmadı topuktan. Üç kuruş ateşle anlatayım kimin geldiğini."
+  },
+  {
+    "id": "hassas_saatci",
+    "meslek": "Saat Tamircisi",
+    "kisilik_ozeti": "Zaman takıntılı, milimetrik çalışan, Sherlock gibi detaycı, gözlüklü usta.",
+    "konusma_tarzi": "Tıkır tıkır konuşur. 'Saniye sekmedi', 'Zemberek', 'Çark' der.",
+    "ornek_cumle": "Cinayet saati 02:14 dediniz... İmkansız. Maktulün köstekli saatini ben tamir ettim, 02:12'de durmuştu. İki dakikalık bir sapma... Bu kainatın düzenine aykırı!"
+  },
+  {
+    "id": "gorucu_teyze",
+    "meslek": "Çöpçatan / Görücü",
+    "kisilik_ozeti": "Şehirdeki herkesin soy ağacını bilen, bekarları evlendirmeye çalışan meraklı teyze.",
+    "konusma_tarzi": "Sorgulayıcı. 'Kimin oğlusun?', 'Münasip kısmet', 'Soyu sopu belli' der.",
+    "ornek_cumle": "Ayol o maktulün de kısmeti kapalıydı zaten. Ben ona Hacı Şakirlerin kızını alacaktım, nasip olmadı. Sen bekar mısın komiser oğlum? Gözlerin renkli mi senin?"
+  }
+]

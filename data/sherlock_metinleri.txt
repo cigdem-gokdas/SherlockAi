@@ -1,0 +1,531 @@
+--------------------------------------------------
+
+Müfettiş sordu: "Dikkatimi çekmek istediğiniz başka bir husus var mı Bay Holmes?"
+
+Holmes cevap verdi: "Evet, geceleyin köpeğin garip davranışına dikkatinizi çekerim."
+
+"Ama köpek geceleyin hiçbir şey yapmadı ki," dedi Müfettiş şaşkınlıkla.
+
+"İşte garip olan olay da buydu zaten," dedi Holmes. "Köpek havlamadı. Bu demektir ki gece gelen ziyaretçi, köpeğin iyi tanıdığı biriydi. Yoksa yabancı birine mutlaka havlardı."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Bana Edgar Allan Poe'nun Dupin'ini hatırlatıyorsunuz. Hikayeler dışında böyle bireylerin var olduğundan haberim yoktu."
+
+Sherlock Holmes ayağa kalktı ve piposunu yaktı. "Şüphesiz beni Dupin'e benzeterek bana iltifat ettiğinizi sanıyorsunuz," diye karşılık verdi. "Oysa benim fikrime göre Dupin çok yetersiz bir adamdı. On beş dakikalık bir sessizlikten sonra tam yerinde bir lafla arkadaşlarının düşüncelerine dalması numarası, gerçekten çok gösterişli ve yüzeysel. Şüphesiz biraz analitik zekası vardı; ama Poe'nun hayal ettiği gibi bir fenomen olmaktan çok uzaktı."
+
+"Peki Gaboriau'nun eserlerini okudunuz mu?" diye sordum. "Lecoq sizin dedektiflik anlayışınıza uyuyor mu?"
+
+Sherlock Holmes alaycı bir tavırla burnunu çekti. "Lecoq acınası bir beceriksizdi," dedi öfkeli bir sesle; "onun takdir edilecek tek bir yanı vardı, o da enerjisi. O kitap beni resmen hasta etti. Mesele kimliği belirsiz bir mahkumu teşhis etmekti. Ben bunu yirmi dört saatte yapabilirdim. Lecoq ise altı ay kadar uğraştı. Dedektiflere nelerden kaçınmaları gerektiğini öğreten bir ders kitabı olarak okutulabilir."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Korkarım aziz dostum Watson, vardığın sonuçların büyük kısmı hatalıydı. Seni zihnen teşvik ettiğimi söylediğimde, açık konuşmak gerekirse, senin yanılgılarını fark etmenin beni bazen gerçeğe yönlendirdiğini kastetmiştim. Yine de bu vakada tamamen haksız sayılmazsın. Adamın bir taşra hekimi olduğu kesin. Ve epey yürüdüğü de doğru."
+
+"O halde haklıymışım."
+
+"O kadarında evet."
+
+"Hepsi bu mu yani?"
+
+"Hayır, hayır, sevgili Watson, hepsi bu değil; kesinlikle değil. Örneğin, bir doktora sunulan bir hediyenin, bir av kulübünden ziyade bir hastaneden gelmesi daha muhtemeldir. Ve o hastanenin adının önünde 'C.C.' harfleri varsa, 'Charing Cross' ismi kendiliğinden akla gelir."
+
+"Haklı olabilirsin."
+
+"İhtimaller bu yönde. Ve eğer bunu bir çalışma hipotezi olarak kabul edersek, bu meçhul ziyaretçimizi zihnimizde inşa etmek için taze bir temele sahip oluruz."
+
+"Peki, diyelim ki 'C.C.H.' harfleri 'Charing Cross Hastanesi' anlamına geliyor; bundan başka ne gibi çıkarımlar yapabiliriz?"
+
+"Aklına hiçbir şey gelmiyor mu? Yöntemlerimi biliyorsun. Onları uygula!"
+
+"Sadece bariz olan şu sonuç aklıma geliyor: Adam taşraya gitmeden önce şehirde çalışmış."
+
+"Sanırım bundan biraz daha fazlasını çıkarabiliriz. Olaya şu açıdan bak: Böyle bir hediye en çok hangi vesileyle verilmiş olabilir? Arkadaşları, iyi dileklerini sunmak için ne zaman bir araya gelirler? Belli ki Dr. Mortimer, kendi muayenehanesini açmak üzere hastanedeki görevinden ayrıldığı sırada. Bir hediye verildiğini biliyoruz. Bir şehir hastanesinden taşra hekimliğine geçiş olduğunu da biliyoruz. O halde hediyenin bu görev değişikliği vesilesiyle verildiğini söylemek, çıkarımlarımızı çok mu zorlamak olur?"
+
+"Kesinlikle muhtemel görünüyor."
+
+"Şimdi dikkat et, bu adam hastane kadrosunda yer almış olamaz; zira sadece Londra'da yerleşik ve köklü bir hekim böyle bir pozisyonda bulunabilir ve öyle biri de kalkıp taşraya gitmez. O halde neydi? Hastanede olup da kadrolu değilse, olsa olsa bir asistan cerrah ya da dahiliyeciydi; yani kıdemli bir öğrenciden hallice. Ve bastondaki tarihe göre beş yıl önce ayrılmış. Böylece senin o ciddi, orta yaşlı aile hekimin havaya karışıp yok oluyor sevgili Watson; ve yerine otuz yaşının altında, sevecen, hırsları olmayan, dalgın ve bir teriyerden büyük ama bir mastiffden küçük bir köpeği olan genç bir adam beliriyor."
+
+Sherlock Holmes arkasına yaslanıp tavana doğru duman halkaları üflerken ben şüpheyle güldüm.
+
+"Son söylediklerini doğrulama imkanım yok," dedim, "ama en azından adamın yaşını ve mesleki kariyerini bulmak zor değil."
+
+Küçük tıp kitaplığımdan Tıp Rehberi'ni aldım ve ismi buldum. Birkaç Mortimer vardı ama ziyaretçimiz olmaya uyan sadece biriydi. Kaydını yüksek sesle okudum:
+
+"Mortimer, James, M.R.C.S., 1882, Grimpen, Dartmoor, Devon. 1882'den 1884'e kadar Charing Cross Hastanesi'nde asistan cerrah. 'Hastalık bir Geriye Dönüş müdür?' başlıklı makalesiyle Karşılaştırmalı Patoloji üzerine Jackson ödülü sahibi. İsveç Patoloji Derneği muhabir üyesi. 'Atavizmin Bazı Gariplikleri' (Lancet 1882) ve 'İlerliyor muyuz?' (Psikoloji Dergisi, Mart 1883) makalelerinin yazarı. Grimpen, Thorsley ve High Barrow bölgelerinin sağlık memuru."
+
+"O yerel av kulübünden hiç bahsedilmemiş Watson," dedi Holmes muzip bir gülümsemeyle, "ama çok isabetli bir şekilde gözlemlediğin gibi, bir taşra doktoru. Sanırım çıkarımlarımda haklı çıktım. Sıfatlara gelince; yanlış hatırlamıyorsam sevecen, hırssız ve dalgın demiştim. Benim tecrübeme göre, bu dünyada sadece sevecen bir adam hatıra hediyeleri alır, sadece hırsları olmayan bir adam Londra kariyerini taşra için terk eder ve sadece dalgın bir adam bekleme odasında bir saat bekledikten sonra kartvizitini değil de bastonunu bırakıp gider."
+
+"Peki ya köpek?"
+
+"Bastonunu efendisinin arkasından taşıma alışkanlığına sahip. Ağır bir baston olduğu için köpek onu tam ortasından, sıkıca kavramış ve dişlerinin izleri çok net bir şekilde görülüyor. Köpeğin çenesi, bu izlerin arasındaki mesafeye bakılırsa, bana kalırsa bir teriyer için fazla geniş, bir mastiff için ise fazla dar."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Önümde, şayet böylesine korkunç bir trajedinin habercisi oldukları kanıtlanmasaydı, insanın gülüp geçebileceği bu tuhaf üretimler duruyor. Gizli yazıların her türüne oldukça aşinayımdır ve hatta bu konuda, yüz altmış ayrı şifreyi analiz ettiğim naçizane bir makalenin de yazarıyım; fakat itiraf etmeliyim ki bu sistem bana tamamen yeni. Bu sistemi icat edenlerin amacı, görünüşe göre bu karakterlerin bir mesaj taşıdığını gizlemek ve bunların çocukların rastgele çiziktirdiği resimler olduğu izlenimini vermekmiş."
+
+"Ancak, sembollerin harfleri temsil ettiğini bir kez kavrayıp, gizli yazılarda bizi yönlendiren kuralları uyguladığımda, çözüm yeterince kolaylaştı. Bana sunulan ilk mesaj o kadar kısaydı ki, XXX sembolünün E harfini temsil ettiğini söylemekten öteye gidemedim. Bildiğiniz gibi, E İngiliz alfabesinde en sık kullanılan harftir ve o kadar baskındır ki, kısa bir cümlede bile en çok onunla karşılaşmayı beklersiniz. İlk mesajdaki on beş sembolden dördü aynıydı, bu yüzden bunu E olarak kabul etmek makuldü. Bazı durumlarda figürün elinde bir bayrak olması, bazılarında ise olmaması dikkatimi çekti; bayrakların dağılımına bakarak, bunların cümleyi kelimelere bölmek için kullanıldığını düşündüm. Bu hipotezi kabul ettim ve E'nin o figürle temsil edildiğini not ettim."
+
+"Ama asıl zorluk bundan sonra başladı. İngilizce harflerin E'den sonraki kullanım sıklığı hiç de belirgin değildir. Kabaca söylemek gerekirse, harfler T, A, O, I, N, S, H, R, D ve L sırasıyla sık kullanılır; ancak T, A, O ve I birbirine çok yakındır ve bir anlam çıkana kadar her kombinasyonu denemek sonsuz bir iş olurdu. Bu yüzden yeni materyal bekledim. Bay Hilton Cubitt ile ikinci görüşmemde, bana iki kısa cümle ve bayrak olmadığı için tek bir kelime gibi görünen başka bir mesaj verdi. İşte semboller. Şimdi, bu tek kelimede, beş harfli bir kelimenin ikinci ve dördüncü sırasında iki E olduğunu görüyorum. Bu kelime 'sever', 'lever' ya da 'never' olabilirdi. Bir yalvarışa verilecek cevap olarak sonuncusunun, yani 'never' (asla) kelimesinin en muhtemel olduğu tartışılmazdı ve koşullar bunun hanımefendi tarafından yazılmış bir cevap olduğuna işaret ediyordu. Bunu doğru kabul ederek, sembollerin sırasıyla N, V ve R harflerini temsil ettiğini söyleyebiliriz."
+
+"Hala epey zorluk çekiyordum, ancak aklıma gelen mutlu bir düşünce bana başka harfler de kazandırdı. Eğer bu yalvarışlar, tahmin ettiğim gibi, hanımefendinin geçmiş hayatında samimi olduğu birinden geliyorsa, içinde iki E bulunan ve arasında üç harf olan bir kombinasyon pekala 'ELSIE' ismini temsil edebilirdi. İncelediğimde, böyle bir kombinasyonun üç kez tekrarlanan mesajın sonunu oluşturduğunu gördüm. Bu kesinlikle 'Elsie'ye yapılmış bir çağrıydı. Bu sayede L, S ve I harflerini elde ettim. Peki ama bu nasıl bir çağrı olabilirdi? 'Elsie'den önce gelen kelimede sadece dört harf vardı ve E ile bitiyordu. Bu kelime kesinlikle 'COME' (gel) olmalıydı. Sonu E ile biten diğer tüm dört harfli kelimeleri denedim ama duruma uyan başka bir kelime bulamadım. Böylece elimde C, O ve M harfleri de vardı ve artık ilk mesajı kelimelere bölüp, hala bilinmeyen her sembol için noktalar koyarak çözmeye başlayabilirdim. Bu işlem sonucunda şöyle bir tablo ortaya çıktı:
+.M .ERE ..E SL.NE."
+
+"Şimdi, ilk harf SADECE A olabilir, ki bu çok yararlı bir keşif, çünkü bu kısa cümlede en az üç kez geçiyor; ikinci kelimedeki H harfi de belirginleşiyor. Şimdi cümle şu hale geliyor:
+AM HERE A.E SLANE.
+Veya isimdeki bariz boşlukları doldurursak:
+AM HERE ABE SLANEY. (Abe Slaney buradayım.)
+Elimde o kadar çok harf vardı ki, ikinci mesaja büyük bir güvenle geçebildim ve o da şu şekilde çözüldü:
+A. ELRI. ES.
+Burada eksik harfler için T ve G koyarak ve ismin, yazarın konakladığı bir ev veya han olduğunu varsayarak anlamlı bir sonuç elde ettim."
+
+Müfettiş Martin ve ben, arkadaşımın zorlukların üstesinden gelmemizi sağlayan bu sonuçlara nasıl ulaştığını anlattığı bu eksiksiz ve net açıklamayı büyük bir ilgiyle dinlemiştik.
+
+Müfettiş, "Peki sonra ne yaptınız efendim?" diye sordu.
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+Sherlock Holmes ve Dr. Watson kamp yapmaya gitmişlerdi. Yıldızların altında çadırlarını kurup uykuya daldılar. Gecenin bir yarısı Holmes, Watson'ı dürterek uyandırdı ve şöyle dedi:
+
+"Watson, gökyüzüne bak ve bana ne gördüğünü söyle."
+
+Watson uykulu gözlerle yukarı baktı ve cevap verdi: "Milyonlarca ve milyonlarca yıldız görüyorum Holmes."
+
+Holmes sordu: "Peki, bu sana ne anlatıyor? Bundan ne çıkarıyorsun?"
+
+Watson bir an düşündü ve filozofça bir edayla konuşmaya başladı: "Buna astronomik açıdan bakarsak, evrende milyonlarca galaksi ve milyarlarca gezegen olduğunu görüyorum. Astrolojik açıdan bakarsak, Satürn'ün Aslan burcunda olduğunu görüyorum. Zaman açısından bakarsak, saatin üçü çeyrek geçtiğini çıkarıyorum. Meteorolojik açıdan ise, yarın havanın çok güzel olacağını tahmin ediyorum. Teolojik açıdan da, Tanrı'nın ne kadar kudretli, bizlerinse ne kadar küçük ve önemsiz olduğunu anlıyorum. Peki sen ne görüyorsun Holmes?"
+
+Sherlock Holmes bir süre sessiz kaldı ve sonra şöyle dedi:
+
+"Watson, seni sersem! Görmüyor musun, birisi çadırımızı çalmış!"
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+Holmes kıkırdadı ve ellerini ovuşturdu. "Harika!" dedi. "Harika! Söyle bana dostum MacDonald, bu hoş ve dokunaklı görüşme sanırım profesörün çalışma odasında gerçekleşti?"
+
+"Öyle oldu."
+
+"Hoş bir oda, değil mi?"
+
+"Çok hoş... gerçekten çok gösterişli, Bay Holmes."
+
+"Yazı masasının önünde oturdun, değil mi?"
+
+"Aynen öyle."
+
+"Güneş senin gözüne vuruyordu, onun yüzü ise gölgede mi kalmıştı?"
+
+"Şey, vakit akşamdı; ama lambanın benim yüzüme çevrildiğini hatırlıyorum."
+
+"Öyle olması beklenirdi. Peki, profesörün başının üzerindeki tabloyu fark ettin mi?"
+
+"Gözümden pek bir şey kaçmaz Bay Holmes. Belki de bunu sizden öğrendim. Evet, tabloyu gördüm; başını ellerinin arasına almış, size yan gözle bakan genç bir kadın."
+
+"O tablo Jean Baptiste Greuze tarafından yapılmıştır."
+
+Müfettiş ilgili görünmeye çalıştı.
+
+Holmes parmak uçlarını birleştirip sandalyesinde arkasına yaslanarak devam etti: "Jean Baptiste Greuze, 1750 ile 1800 yılları arasında parlamış Fransız bir ressamdır. Elbette sanat kariyerini kastediyorum. Modern eleştirmenler, çağdaşlarının onun hakkında oluşturduğu yüksek fikri fazlasıyla onaylamıştır."
+
+Müfettişin bakışları dalgınlaştı. "Acaba biz konuya—" dedi.
+
+"Zaten konudayız," diye sözünü kesti Holmes. "Söylediğim her şeyin, senin Birlstone Gizemi dediğin olayla çok doğrudan ve hayati bir ilgisi var. Aslına bakarsan, buna meselenin tam merkezi bile denilebilir."
+
+MacDonald zayıf bir şekilde gülümsedi ve bana yardım dilercesine baktı. "Düşünceleriniz benim için biraz fazla hızlı ilerliyor Bay Holmes. Bir iki halkayı atlıyorsunuz ve ben o boşluğu aşamıyorum. Tüm dünyada, bu ölü ressam ile Birlstone'daki vaka arasında ne gibi bir bağlantı olabilir ki?"
+
+"Tüm bilgiler dedektifin işine yarar," dedi Holmes. "Hatta 1865 yılında, Portalis müzayedesinde Greuze'ün 'La Jeune Fille a l'Agneau' (Kuzulu Genç Kız) adlı tablosunun bir milyon iki yüz bin franka —yani kırk bin sterlinden fazlaya— satıldığı gibi önemsiz bir gerçek bile, zihninde bir düşünce zinciri başlatabilir."
+
+Bunun işe yaradığı açıktı. Müfettiş dürüstçe ilgilenmiş görünüyordu.
+
+"Sana şunu hatırlatabilirim," diye devam etti Holmes, "profesörün maaşı pek çok güvenilir referans kitabından öğrenilebilir. Yılda yedi yüz sterlin."
+
+"O halde nasıl satın alabilir—"
+
+"Aynen öyle! Nasıl alabilir?"
+
+"Vay canına, bu gerçekten dikkate değer," dedi müfettiş düşünceli bir tavırla. "Devam edin Bay Holmes. Buna bayıldım. Bu harika!"
+
+Holmes gülümsedi. Gerçek bir sanatçının özelliği olarak, samimi bir hayranlık onu her zaman ısıtırdı.
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Çalışma yöntemlerimi biliyorsunuz Bay Mac. Ama bunu mümkün olan en kısa süre için kendime saklayacağım. Sadece tek bir detayı doğrulamak istiyorum ki bu çok kolayca yapılabilir; sonra önünüzde eğilip sonuçlarımı tamamen sizin hizmetinize bırakarak Londra'ya döneceğim. Size aksini yapamayacak kadar çok şey borçluyum; zira tüm tecrübelerim arasında bundan daha tuhaf ve ilginç bir vaka hatırlamıyorum."
+
+"Bu benim aklımın alacağı iş değil Bay Holmes. Dün gece Tunbridge Wells'ten döndüğümüzde sizi gördük ve sonuçlarımızla genel olarak hemfikirdiniz. O zamandan beri ne oldu da vaka hakkında tamamen yeni bir fikre kapıldınız?"
+
+"Madem sordunuz söyleyeyim; dün gece size söylediğim gibi, birkaç saati Malikane'de geçirdim."
+
+"Peki, ne oldu?"
+
+"Ah, buna şimdilik sadece çok genel bir cevap verebilirim. Bu arada, eski bina hakkında kısa ama açık ve ilginç bir tarihçe okuyorum; yerel tütüncüden bir peni gibi mütevazı bir fiyata alınabiliyor."
+
+Burada Holmes, yelek cebinden antik Malikane'nin kaba bir gravürüyle süslenmiş küçük bir broşür çıkardı.
+
+"İnsanın çevresindeki tarihsel atmosferle bilinçli bir sempati içinde olması, soruşturmanın tadını muazzam ölçüde artırıyor aziz dostum Bay Mac. Öyle sabırsız bakmayın; sizi temin ederim ki böylesine yavan bir anlatım bile insanın zihninde geçmişe dair bir resim canlandırıyor. Size bir örnek vermeme izin verin. 'I. James'in saltanatının beşinci yılında inşa edilen ve çok daha eski bir binanın yerinde yükselen Birlstone Malikanesi, hendekli Jacobean konutlarının günümüze ulaşan en güzel örneklerinden birini sunar...'"
+
+"Bizi aptal yerine koyuyorsunuz Bay Holmes!"
+
+"Cık cık, Bay Mac! Sizde fark ettiğim ilk öfke belirtisi bu. Pekala, madem konu hakkında bu kadar hassassınız, kelimesi kelimesine okumayacağım. Ancak size, 1644'te bir parlamento albayının burayı ele geçirmesinden, İç Savaş sırasında Kral Charles'ın birkaç gün boyunca burada saklanmasından ve son olarak İkinci George'un burayı ziyaret etmesinden bahsedildiğini söylersem; bu antik evle bağlantılı çeşitli ilginç çağrışımlar olduğunu kabul edersiniz."
+
+"Bundan şüphem yok Bay Holmes; ama bunun bizim işimizle ne ilgisi var?"
+
+"Yok mu? Gerçekten yok mu? Geniş bir bakış açısı, aziz dostum Bay Mac, mesleğimizin esaslarından biridir. Fikirlerin etkileşimi ve bilginin dolaylı kullanımları genellikle olağanüstü ilgi çekicidir. Sadece bir suç uzmanı olsa da, sizden biraz daha yaşlı ve belki de daha deneyimli olan birinin bu sözlerini maruz görün."
+
+"Bunu kabul eden ilk kişi ben olurum," dedi dedektif içtenlikle. "Sadede geliyorsunuz, kabul ediyorum; ama bunu yapmak için öyle lanet olası dolambaçlı yollar kullanıyorsunuz ki."
+
+"Ah Bay Mac," dedi Holmes, kınayan bir işaret parmağını sallayarak, "Kral Charles'ın saklanışını anlatan o mükemmel yerel derlemeyi okumadınız. O günlerde insanlar mükemmel saklanma yerleri olmadan saklanamazlardı ve bir kez kullanılmış olan saklanma yeri tekrar kullanılabilir. Bay Douglas'ı bu çatının altında bulacağımıza kendimi inandırmıştım."
+
+"Peki bize ne kadar süredir bu oyunu oynuyorsunuz Bay Holmes?" dedi müfettiş öfkeyle. "Bildiginiz halde saçma bir aramanın peşinde kendimizi heba etmemize ne kadar izin verdiniz?"
+
+"Bir an bile değil, aziz dostum Bay Mac. Vaka hakkındaki görüşlerimi ancak dün gece oluşturdum. Bu akşama kadar kanıtlanamayacakları için, sizi ve meslektaşınızı bir günlüğüne tatile davet ettim. Söyleyin, daha ne yapabilirdim? Hendekte o kıyafetleri bulduğumda, bulduğumuz cesedin Bay John Douglas'a ait olamayacağı, Tunbridge Wells'ten gelen bisikletçiye ait olması gerektiği bana hemen aşikar oldu. Başka bir sonuç mümkün değildi. Bu nedenle Bay John Douglas'ın kendisinin nerede olabileceğini belirlemem gerekiyordu; ve ihtimaller dengesi, karısının ve arkadaşının suç ortaklığıyla, bir kaçak için böylesine uygun saklanma imkanlarına sahip olan bu evde gizlendiği ve son kaçışını yapabileceği daha sakin zamanları beklediği yönündeydi."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Gördüğün gibi bu iz, okul yönünden gelen bir sürücü tarafından bırakılmış."
+
+"Yoksa okula doğru giden mi?"
+
+"Hayır, hayır, aziz dostum Watson. Daha derin batmış olan iz, elbette ağırlığın bindiği arka tekerleğe aittir. Birçok noktada, bu izin ön tekerleğin daha sığ olan izinin üzerinden geçtiğini ve onu sildiğini görebilirsin. Şüphesiz okuldan uzaklaşıyordu."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Bu tür bir problemi çözerken, asıl marifet geriye doğru akıl yürütebilmektir. Bu çok yararlı ve aslında çok kolay bir yetenektir, ancak insanlar bunu pek pratik etmezler. Gündelik hayatta ileriye doğru akıl yürütmek daha çok işe yarar, bu yüzden diğeri ihmal edilir. Sentez yaparak düşünebilen elli kişiye karşılık, analiz yaparak düşünebilen bir kişi ancak çıkar... Durun, daha net anlatayım. Çoğu insan, onlara bir olaylar dizisini tarif ederseniz, size sonucun ne olacağını söyleyebilir. Olayları zihinlerinde birleştirirler ve bunlardan bir şeyin meydana geleceğini çıkarırlar. Ancak, kendilerine bir sonuç söylendiğinde, o sonuca giden adımların neler olduğunu kendi iç bilinçlerinden türetebilecek çok az insan vardır. Geriye doğru ya da analitik akıl yürütmek derken kastettiğim güç işte budur."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+Sherlock Holmes şişesini şömine rafının köşesinden ve deri altı şırıngasını zarif Fas derisi kutusundan çıkardı. Uzun, beyaz ve sinirli parmaklarıyla ince iğneyi ayarladı ve sol gömlek kolunu sıvadı. Gözleri bir süre, sayısız iğne iziyle delik deşik olmuş ve yara bere içindeki sinirli ön kolu ve bileği üzerinde düşünceli bir şekilde gezindi. Sonunda sivri ucu sapladı, minik pistonu aşağı bastırdı ve uzun bir tatmin iç çekişiyle kadife kaplı koltuğuna gömüldü.
+
+Aylar boyunca günde üç kez bu performansa tanık olmuştum ama alışkanlık zihnimi buna alıştırmamıştı. Aksine, günden güne bu görüntü beni daha çok rahatsız ediyor ve protesto etme cesaretini gösteremediğim düşüncesiyle vicdanım her gece içimi kemiriyordu. Defalarca bu konuda içimi dökmeye yemin etmiştim ama arkadaşımın o serinkanlı, umursamaz havasında, insanın haddini aşmaya çekineceği bir şeyler vardı. Büyük yetenekleri, ustaca tavırları ve birçok olağanüstü niteliğine dair edindiğim tecrübeler, ona karşı çıkma konusunda beni çekingen ve tutuk kılıyordu.
+
+Ancak o öğleden sonra, öğle yemeğinde içtiğim Beaune şarabından mı yoksa onun tavırlarındaki aşırı yavaşlığın yarattığı ekstra öfkeden mi bilinmez, aniden daha fazla dayanamayacağımı hissettim.
+
+"Bugün hangisi?" diye sordum, — "morfin mi yoksa kokain mi?"
+
+Gözlerini, açtığı eski gotik harfli kitaptan uyuşuk bir şekilde kaldırdı. "Kokain," dedi, — "yüzde yedilik bir solüsyon. Denemek ister misin?"
+
+"Hayır, kesinlikle," diye cevap verdim sertçe. "Bünyem Afgan seferinin etkilerini henüz atlatamadı. Üzerine ekstra bir yük bindirmeyi göze alamam."
+
+Şiddetli tepkime gülümsedi. "Belki de haklısın Watson," dedi. "Sanırım fiziksel etkisi kötü. Ancak ben onu zihin için o kadar fevkalade uyarıcı ve berraklaştırıcı buluyorum ki, ikincil etkileri pek de önemli gelmiyor."
+
+"Ama bir düşün!" dedim ciddiyetle. "Bedelini hesapla! Beynin, dediğin gibi uyarılabilir ve heyecanlanabilir ama bu, artan doku değişimini içeren patolojik ve marazi bir süreçtir ve sonunda kalıcı bir zayıflık bırakabilir. Ayrıca üzerine çöken o kara reaksiyonu da biliyorsun. Emin ol, bu riske değmez. Neden sadece geçici bir zevk uğruna, sana bahşedilmiş o büyük yetenekleri kaybetme riskini göze alıyorsun? Unutma ki sadece bir yoldaş olarak değil, aynı zamanda bünyesinden bir ölçüde sorumlu olduğun bir tıp doktoru olarak konuşuyorum."
+
+Alınmış görünmüyordu. Aksine, parmak uçlarını birleştirdi ve sohbetten zevk alan biri gibi dirseklerini koltuğun kollarına dayadı.
+
+"Zihnim," dedi, "durgunluğa isyan ediyor. Bana problemler verin, bana iş verin, bana en anlaşılmaz kriptogramı ya da en karmaşık analizi verin; işte o zaman kendi atmosferimde olurum. O zaman yapay uyarıcılardan vazgeçebilirim. Ama varoluşun o sıkıcı rutininden nefret ediyorum. Zihinsel bir coşkuya açım. İşte bu yüzden kendi özel mesleğimi seçtim, — ya da daha doğrusu yarattım, çünkü dünyada tekim."
+
+"Tek gayriresmi dedektif mi?" dedim kaşlarımı kaldırarak.
+
+"Tek gayriresmi danışman dedektif," diye cevap verdi. "Ben dedektiflikteki son ve en yüksek temyiz mahkemesiyim. Gregson, Lestrade ya da Athelney Jones işin içinden çıkamadıklarında — ki bu onların normal halidir — mesele bana getirilir. Verileri bir uzman olarak inceler ve uzman görüşümü bildiririm. Böyle vakalarda hiçbir övgü talep etmem. Adım hiçbir gazetede geçmez. İşin kendisi, o kendine has yeteneklerimi kullanacak bir alan bulmanın hazzı, benim en büyük ödülümdür. Ama Jefferson Hope vakasında çalışma yöntemlerimi bizzat tecrübe etmiştin."
+
+"Evet, gerçekten de," dedim içtenlikle. "Hayatımda hiçbir şey beni bu kadar etkilememişti. Hatta bunu 'Kızıl Dosya' gibi biraz fantastik bir başlıkla küçük bir broşür haline getirdim."
+
+Hüzünle başını salladı. "Göz gezdirdim," dedi. "Dürüst olmak gerekirse, seni tebrik edemem. Dedektiflik tam bir bilimdir ya da öyle olmalıdır; ve aynı soğuk ve duygusuz tavırla ele alınmalıdır. Sen ise ona romantizm katmaya çalışmışsın; bu, Öklid'in beşinci teoremine bir aşk hikayesi ya da bir kaçış öyküsü sıkıştırmakla aynı etkiyi yaratıyor."
+
+"Ama romantizm oradaydı," diye itiraz ettim. "Gerçekleri değiştiremezdim."
+
+"Bazı gerçekler bastırılmalı ya da en azından onları ele alırken adil bir orantı duygusu gözetilmelidir. O vakada bahsedilmeyi hak eden tek nokta, sonuçlardan sebeplere giderek olayı çözmeyi başardığım o ilginç analitik muhakemeydi."
+
+Onu memnun etmek için özel olarak tasarlanmış bir çalışmanın böyle eleştirilmesi canımı sıkmıştı. Ayrıca, broşürümün her satırının sadece onun özel marifetlerine adanmasını talep eden o bencilliğe de sinirlendiğimi itiraf etmeliyim. Baker Sokağı'nda onunla yaşadığım yıllar boyunca, arkadaşımın o sessiz ve didaktik tavrının altında küçük bir kibrin yattığını birden fazla kez gözlemlemiştim. Ancak sesimi çıkarmadım, oturup yaralı bacağımı ovuşturdum. Bir süre önce bacağıma bir Jezail kurşunu isabet etmişti; yürümemi engellemese de, havanın her değişiminde yorgun bir sızıyla ağrıyordu.
+
+"Pratiğim son zamanlarda Kıta'ya kadar uzandı," dedi Holmes bir süre sonra eski briar piposunu doldururken. "Geçen hafta, muhtemelen bildiğin gibi Fransız dedektiflik servisinde son zamanlarda öne çıkan Francois Le Villard bana danıştı. Kelt ırkına has o hızlı sezgi gücüne sahip ama sanatının daha yüksek seviyelerine ulaşmak için gereken o geniş ve kesin bilgi yelpazesinden yoksun. Vaka bir vasiyetnameyle ilgiliydi ve bazı ilginç özellikler taşıyordu. Onu iki paralel vakaya yönlendirebildim; biri 1857'de Riga'da, diğeri 1871'de St. Louis'de yaşanmıştı ve bunlar ona doğru çözümü gösterdi. İşte bu sabah yardımlarımı takdir eden mektubu." Konuşurken buruşuk bir yabancı mektup kağıdını bana doğru fırlattı. Gözlerimi üzerinde gezdirdim; Fransız'ın hararetli hayranlığına tanıklık eden bolca övgü notu, araya serpiştirilmiş 'magnifiques' (muhteşem), 'coup-de-maîtres' (ustaca darbe) ve 'tours-de-force' (güç gösterisi) ifadeleri göze çarpıyordu.
+
+"Bir öğrencinin ustasıyla konuştuğu gibi konuşuyor," dedim.
+
+"Ah, yardımımı fazla büyütüyor," dedi Sherlock Holmes hafifçe. "Kendisi de hatırı sayılır yeteneklere sahip. İdeal bir dedektif için gerekli üç nitelikten ikisine sahip: Gözlem gücü ve çıkarım gücü. Sadece bilgisi eksik; o da zamanla olur. Şu anda benim küçük çalışmalarımı Fransızcaya çeviriyor."
+
+"Çalışmalarını mı?"
+
+"Ah, bilmiyor muydun?" diye bağırdı gülerek. "Evet, birkaç monografinin suçlusuyum. Hepsi teknik konular üzerine. Mesela, işte şu 'Çeşitli Tütünlerin Külleri Arasındaki Farklar Üzerine'. İçinde yüz kırk çeşit puro, sigara ve pipo tütününü sayıyor, küllerindeki farkları renkli levhalarla gösteriyorum. Bu, ceza davalarında sürekli ortaya çıkan ve bazen ipucu olarak hayati önem taşıyan bir noktadır. Örneğin, bir cinayetin Hint lunkah tütünü içen bir adam tarafından işlendiğini kesin olarak söyleyebilirseniz, bu arama alanınızı bariz şekilde daraltır. Eğitimli bir göz için, bir Trichinopoly'nin siyah külü ile kuşgözü tütününün beyaz tüyü arasında, bir lahana ile patates arasındaki kadar fark vardır."
+
+"Teferruatlar konusunda olağanüstü bir dehanız var," dedim.
+
+"Önemlerinin farkındayım. İşte ayak izlerinin takibi üzerine monografim; içinde izleri korumak için Paris alçısının kullanımına dair bazı notlar var. Burada da, bir mesleğin elin şekli üzerindeki etkisine dair tuhaf, küçük bir çalışma; çatı ustalarının, denizcilerin, mantar kesicilerin, dizgicilerin, dokumacıların ve elmas cilalayıcıların ellerinin taşbaskılarıyla birlikte. Bu, bilimsel dedektif için, özellikle sahipsiz ceset vakalarında veya suçluların geçmişini ortaya çıkarmada büyük pratik önem taşıyan bir meseledir. Ama seni hobimle yoruyorum."
+
+"Hiç de değil," diye cevap verdim içtenlikle. "Benim için son derece ilgi çekici, özellikle de senin bunu pratiğe döküşünü gözlemleme fırsatım olduğu için. Ama az önce gözlem ve çıkarımdan bahsettin. Eminim biri diğerini bir ölçüde kapsıyordur."
+
+"Pek sayılmaz," diye cevap verdi, koltuğuna keyifle yaslanıp piposundan kalın mavi duman halkaları üflerken. "Örneğin, gözlem bana bu sabah Wigmore Sokağı Postanesine gittiğini gösteriyor; ama çıkarım, oradayken bir telgraf çektiğini bilmemi sağlıyor."
+
+"Doğru!" dedim. "Her iki noktada da haklısın! Ama buna nasıl ulaştığını anlayamadığımı itiraf etmeliyim. Bu benim tarafımdan ani bir karardı ve kimseye bahsetmemiştim."
+
+"Basitliğin ta kendisi," dedi şaşkınlığıma kıkırdayarak, — "o kadar gülünç derecede basit ki açıklaması gereksiz; yine de gözlem ve çıkarımın sınırlarını tanımlamaya yarayabilir. Gözlem bana ayakkabının üst kısmına yapışmış küçük kırmızımsı bir çamur olduğunu söylüyor. Seymour Sokağı Ofisi'nin tam karşısında kaldırımı sökmüşler ve toprağı öyle bir şekilde atmışlar ki, girerken basmamak zor. Toprak, bildiğim kadarıyla mahallenin başka hiçbir yerinde bulunmayan o kendine has kırmızımsı renkte. İşte bu gözlem. Gerisi ise çıkarım."
+
+"Peki telgrafı nasıl çıkardın?"
+
+"Elbette, bütün sabah karşında oturduğum için bir mektup yazmadığını biliyordum. Ayrıca açık duran masanda bir tabaka pul ve kalın bir tomar kartpostal olduğunu görüyorum. O halde postaneye telgraf çekmekten başka ne için gitmiş olabilirsin? Diğer tüm faktörleri ele, geriye kalan tek şey gerçek olmalıdır."
+
+"Bu durumda kesinlikle öyle," diye cevap verdim biraz düşündükten sonra. "Ancak dediğin gibi, bu en basitiydi. Teorilerini daha zorlu bir teste tabi tutsam bana saygısızlık demezsin değil mi?"
+
+"Aksine," diye cevap verdi, "bu beni ikinci doz kokaini almaktan kurtarır. Bana sunacağın herhangi bir problemi incelemekten memnuniyet duyarım."
+
+"Senin, bir insanın günlük kullanımındaki herhangi bir nesneye, eğitimli bir gözlemcinin okuyabileceği şekilde kişiliğinin izini bırakmamasının zor olduğunu söylediğini duymuştum. Şimdi, elime yakın zamanda geçen bir saat var. Eski sahibinin karakteri veya alışkanlıkları hakkında bana bir fikir verme nezaketini gösterir misin?"
+
+Testin imkansız olduğunu düşündüğümden ve bunu, zaman zaman takındığı o dogmatik tona karşı bir ders olarak amaçladığımdan, kalbimde hafif bir eğlenme hissiyle saati ona uzattım. Saati elinde tarttı, kadrana dikkatle baktı, arkasını açtı ve mekanizmayı önce çıplak gözle, sonra da güçlü bir dışbükey mercekle inceledi. Sonunda kapağı kapatıp geri uzattığında, yüzündeki hayal kırıklığı ifadesine gülmemek için kendimi zor tuttum.
+
+"Neredeyse hiç veri yok," dedi. "Saat yakın zamanda temizlenmiş, bu da beni en düşündürücü gerçeklerden mahrum bıraktı."
+
+"Haklısın," diye cevap verdim. "Bana gönderilmeden önce temizlenmişti." İçimden, başarısızlığını örtmek için çok topal ve aciz bir bahane öne sürdüğünü düşünerek arkadaşımı suçladım. Temizlenmemiş bir saatten ne gibi veriler bekleyebilirdi ki?
+
+"Tatmin edici olmasa da, araştırmam tamamen kısır geçmedi," diye gözlemledi, rüya gibi, sönük gözlerle tavana bakarak. "Düzeltmene tabi olarak, saatin ağabeyine ait olduğu ve ona da babanızdan miras kaldığı kanaatindeyim."
+
+"Bunu şüphesiz arkadaki H. W. harflerinden çıkardın?"
+
+"Aynen öyle. W. harfi kendi soyadını çağrıştırıyor. Saatin tarihi neredeyse elli yıl geriye gidiyor ve baş harfler de saat kadar eski: Yani bir önceki nesil için yapılmış. Mücevherat genellikle en büyük oğula geçer ve onun da babasıyla aynı isme sahip olması en muhtemeldir. Eğer yanlış hatırlamıyorsam baban öleli yıllar oldu. Bu nedenle saat en büyük ağabeyinin elindeymiş."
+
+"Buraya kadar doğru," dedim. "Başka bir şey?"
+
+"Adam düzensiz alışkanlıkları olan biriymiş, — çok düzensiz ve savruk. İyi imkanlarla hayata başlamış ama şansını heba etmiş, zaman zaman kısa refah dönemleri olsa da yoksulluk içinde yaşamış ve sonunda içkiye yenik düşüp ölmüş. Çıkarabildiklerim bu kadar."
+
+Koltuğumdan fırladım ve kalbimde büyük bir acıyla odada sabırsızca topalladım.
+
+"Bu sana yakışmadı Holmes," dedim. "Bu seviyeye düşebileceğine inanamazdım. Talihsiz ağabeyimin geçmişini araştırmışsın ve şimdi bu bilgiyi hayali bir yolla çıkarmış gibi yapıyorsun. Bütün bunları eski bir saatten okuduğuna inanmamı bekleyemezsin! Bu çok kaba ve açık konuşmak gerekirse, içinde şarlatanlıktan bir parça var."
+
+"Aziz doktor," dedi nazikçe, "lütfen özürlerimi kabul et. Meselye soyut bir problem olarak bakınca, bunun senin için ne kadar kişisel ve acı verici olabileceğini unutmuşum. Ancak seni temin ederim ki, sen saati verene kadar bir ağabeyin olduğunu bile bilmiyordum."
+
+"O halde, tüm mucizeler aşkına, bu gerçekleri nereden buldun? Her ayrıntısında kesinlikle doğrular."
+
+"Ah, bu şans. Ben sadece ihtimaller dengesinin ne olduğunu söyleyebildim. Bu kadar isabetli olmayı hiç beklemiyordum."
+
+"Ama sadece tahmin değildi?"
+
+"Hayır, hayır: Asla tahmin etmem. Bu şok edici bir alışkanlıktır, — mantık yeteneğini yok eder. Sana tuhaf gelen şey, sadece düşünce zincirimi takip etmemen veya büyük çıkarımların bağlı olabileceği küçük gerçekleri gözlemlememendir. Örneğin, ağabeyinin savruk olduğunu belirterek başladım. Şu saat kasasının alt kısmını incelediğinde, sadece iki yerinde ezik olmadığını, aynı zamanda aynı cepte bozuk para veya anahtar gibi sert cisimlerle taşınma alışkanlığından dolayı her yerinin çizik ve iz içinde olduğunu görürsün. Elli gine değerindeki bir saate bu kadar hoyratça davranan bir adamın savruk biri olduğunu varsaymak büyük bir marifet sayılmaz. Böylesine değerli bir eşyayı miras alan bir adamın diğer açılardan da halinin vaktinin yerinde olduğunu çıkarmak da çok zorlama bir çıkarım değildir."
+
+Mantığını takip ettiğimi göstermek için başımı salladım.
+
+"İngiltere'deki rehincilerin, bir saati aldıklarında bilet numarasını kasanın içine bir iğne ucuyla kazımaları çok yaygın bir adettir. Bu, etiketten daha kullanışlıdır, çünkü numaranın kaybolma veya karışma riski yoktur. Bu kasanın içinde merceğimle görebildiğim en az dört tane böyle numara var. Çıkarım: Ağabeyin sık sık parasız kalmış. İkincil çıkarım: Zaman zaman refah patlamaları yaşamış, yoksa rehini kurtaramazdı. Son olarak, anahtar deliğinin bulunduğu iç plakaya bakmanı istiyorum. Deliğin etrafındaki binlerce çiziğe bak, — anahtarın kaydığı yerlerdeki izler. Hangi ayık adamın anahtarı o olukları açabilir? Ama bir ayyaşın saatini onlarsız asla göremezsin. Geceleri saati kurar ve titreyen elinin bu izlerini bırakır. Bütün bunlarda gizem nerede?"
+
+"Gün gibi açık," diye cevap verdim. "Sana ettiğim haksızlık için üzgünüm. O muazzam yeteneğine daha çok güvenmeliydim. Şu anda elinde profesyonel bir soruşturma olup olmadığını sorabilir miyim?"
+
+"Hiç yok. Kokain de bu yüzden. Beyin işi olmadan yaşayamam. Yaşamak için başka ne var ki? Şuradaki pencereye geç. Hiç bu kadar kasvetli, iç karartıcı, faydasız bir dünya oldu mu? Sarı sisin sokaktan aşağı süzülüşüne ve o donuk renkli evlerin arasında sürüklenişine bak. Daha umutsuzca bayağı ve maddi ne olabilir? Yeteneklere sahip olmanın ne yararı var doktor, onları kullanacak bir alan olmadıktan sonra? Suç sıradan, varoluş sıradan ve yeryüzünde sıradan olanlar dışında hiçbir niteliğin işlevi yok."
+
+Bu tirada cevap vermek için ağzımı açmıştım ki, kapı sertçe vuruldu ve ev sahibemiz elindeki pirinç tepside bir kartvizitle içeri girdi.
+
+"Sizin için genç bir hanım geldi efendim," dedi arkadaşıma hitaben.
+
+"Bayan Mary Morstan," diye okudu Holmes. "Hımm! İsmi hiç hatırlamıyorum. Genç hanımı yukarı davet edin Bayan Hudson. Gitmeyin doktor. Kalmanızı tercih ederim."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Hatherley Çiftlik Evi'nden Boscombe Gölü'ne mesafe çeyrek mil kadardır ve Bay McCarthy bu araziden geçerken onu iki kişi gördü. Biri ismi belirtilmeyen yaşlı bir kadın, diğeri ise Bay Turner'ın yanında çalışan avlak bekçisi William Crowder. Her iki tanık da Bay McCarthy'nin yalnız yürüdüğünü ifade ediyor. Avlak bekçisi, Bay McCarthy'yi gördükten birkaç dakika sonra, oğlu Bay James McCarthy'yi koltuğunun altında bir tüfekle aynı yöne giderken gördüğünü ekliyor. Kanaatine göre, o sırada baba görüş alanındaydı ve oğlu onu takip ediyordu. Akşamleyin meydana gelen trajediyi duyana kadar bu konu üzerinde daha fazla düşünmemiş."
+
+"İki McCarthy, avlak bekçisi William Crowder'ın onları gözden kaybetmesinden sonra da görüldü. Boscombe Gölü'nün çevresi sık ağaçlıklıdır, sadece kıyısında bir şerit halinde otlar ve sazlıklar bulunur. Boscombe Vadisi malikanesinin kapıcısının kızı olan on dört yaşındaki Patience Moran, ormanda çiçek topluyordu. İfadesine göre, oradayken ormanın sınırında ve gölün hemen yakınında Bay McCarthy ve oğlunu gördü; görünüşe göre şiddetli bir kavga ediyorlardı. Baba McCarthy'nin oğluna çok ağır sözler söylediğini duydu ve oğlunun sanki babasına vuracakmış gibi elini kaldırdığını gördü. Şiddetlerinden o kadar korktu ki kaçıp eve gitti ve annesine iki McCarthy'yi Boscombe Gölü yakınlarında kavga ederken bıraktığını, dövüşeceklerinden korktuğunu söyledi. O daha sözünü bitirmemişti ki genç Bay McCarthy, babasını ormanda ölü bulduğunu söylemek ve kapıcının yardımını istemek için koşarak kulübeye geldi. Çok heyecanlıydı, şapkası ve tüfeği yoktu; sağ elinin ve kol yeninin taze kanla lekelenmiş olduğu görüldü. Onu takip ettiklerinde, cesedi Göl'ün yanındaki çimenlerin üzerine uzanmış halde buldular. Kafası ağır ve kör bir silahın tekrarlanan darbeleriyle parçalanmıştı. Yaralar, cesedin birkaç adım ötesindeki çimenlerin üzerinde bulunan oğluna ait tüfeğin dipçiğiyle vurulmuş olabilecek türdendi. Bu koşullar altında genç adam derhal tutuklandı ve Salı günü yapılan soruşturmada 'Kasten Adam Öldürme' kararı verilince, Çarşamba günü Ross'taki yargıçların huzuruna çıkarıldı ve dava bir sonraki Ağır Ceza Mahkemesi'ne sevk edildi. Bunlar, adli tabip ve polis mahkemesinde ortaya çıkan davanın ana gerçekleridir."
+
+"Daha suçlayıcı bir vaka hayal edemiyorum," diye belirttim. "Eğer dolaylı kanıtlar bir suçluyu işaret ediyorsa, o da buradadır."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Bir yatırım için şehre gitmiştim ve onunla Regent Caddesi'nde karşılaştım; sırtında ceketi, ayağında doğru dürüst bir ayakkabısı bile yoktu."
+
+"'İşte buradayız Jack,' dedi koluma dokunarak; 'senin için bir aile kadar yakın olacağız. İkimiz varız, ben ve oğlum; bize sen bakacaksın. Eğer bakmazsan—İngiltere kanunlara saygılı güzel bir ülkedir ve yakında her zaman seslenebileceğin bir polis bulunur.'"
+
+"Neyse, Batı bölgesine geldiler, onları başımdan atmanın yolu yoktu ve o zamandan beri en iyi arazimde kira ödemeden yaşadılar. Benim için ne huzur kaldı, ne barış, ne de unutuş; nereye dönsem dirseğimin dibinde onun kurnaz, sırıtan yüzü vardı. Alice büyüdükçe işler daha da kötüleşti, çünkü benim polisten çok, kızımın geçmişimi öğrenmesinden korktuğumu kısa sürede fark etti. Ne istediyse elde etti ve her ne istediyse sorgusuz sualsiz verdim; toprak, para, evler... ta ki sonunda veremeyeceğim bir şeyi isteyene kadar. Alice'i istedi."
+
+"Görüyorsunuz, oğlu büyümüştü, benim kızım da öyle; sağlığımın zayıf olduğu bilindiğinden, oğlunun tüm mülke konması ona harika bir hamle gibi göründü. Ama orada kararlı durdum. Onun lanetli soyunun benimkine karışmasına izin veremezdim; çocuğa bir garezim olduğundan değil ama damarlarında onun kanı vardı ve bu kadarı yeterliydi. Direttim. McCarthy tehdit etti. Elinden geleni ardına koymamasını söyledim. Konuşmak için evlerimizin ortasındaki Göl kenarında buluşacaktık."
+
+"Oraya gittiğimde onu oğluyla konuşurken buldum, bu yüzden bir puro yaktım ve o yalnız kalana kadar bir ağacın arkasında bekledim. Ama konuşmalarını dinlerken içimdeki tüm karanlık ve acı hisler yüzeye çıkmış gibiydi. Oğlunu, kızımla evlenmeye zorluyordu; kızımın ne düşüneceğini, sanki sokaktan gelme bir kadınmış gibi hiç umursamıyordu. Benim ve en değer verdiğim her şeyin böyle bir adamın elinde olduğunu düşünmek beni delirtiyordu. Bu bağı koparamaz mıydım? Zaten ölmekte olan ve çaresiz bir adamdım. Zihnim berrak ve uzuvlarım oldukça güçlü olsa da, kendi kaderimin mühürlendiğini biliyordum. Ama hatıram ve kızım! Eğer o pis dili susturabilirsem ikisi de kurtulabilirdi. Yaptım Bay Holmes. Yine olsa yine yapardım. Ne kadar büyük günah işlemiş olsam da, kefaretini ödemek için bir şehit hayatı yaşadım. Ama kızımın beni tutan aynı ağlara dolanması, katlanabileceğimden fazlasıydı. Sanki iğrenç ve zehirli bir yaratıkmış gibi hiç vicdan azabı duymadan onu yere serdim. Çığlığı oğlunu geri getirdi; ama ben ormanın örtüsüne sığınmıştım, gerçi kaçarken düşürdüğüm pelerinimi almak için geri dönmek zorunda kaldım. İşte beyler, olan bitenin gerçek hikayesi budur."
+
+Yaşlı adam hazırlanan ifadeyi imzalarken, "Sizi yargılamak bana düşmez," dedi Holmes. "Dua ediyorum ki biz de asla böyle bir ayartılmayla sınanmayalım."
+
+"Dua edin efendim. Peki ne yapmayı düşünüyorsunuz?"
+
+"Sağlığınızı göz önüne alarak, hiçbir şey. Yakında yaptıklarınızın hesabını Ağır Ceza Mahkemesi'nden çok daha yüksek bir mahkemede vermek zorunda kalacağınızın siz de farkındasınız. İtirafınızı saklayacağım ve eğer McCarthy (oğlu) suçlu bulunursa, bunu kullanmak zorunda kalacağım. Aksi takdirde, bu kağıt hiçbir faninin gözüne görünmeyecek; ve sırrınız, siz hayatta olsanız da ölseniz de bizimle güvende kalacak."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Eve vardığımda," diye devam etti Holmes, "bana yardımcı olabilecek herhangi bir iz olup olmadığını görmek için hemen evin etrafını çok dikkatli bir şekilde dolaştım. Önceki akşamdan beri kar yağmadığını ve ayrıca izleri koruyacak kadar güçlü bir don olduğunu biliyordum. Hizmetlilerin kullandığı yoldan geçtim ama orası tamamen çiğnenmiş ve ayırt edilemez haldeydi. Ancak hemen ötesinde, mutfak kapısının uzak tarafında, bir kadın bir adamla durup konuşmuştu; adamın bir taraftaki yuvarlak izleri tahta bacaklı olduğunu gösteriyordu. Hatta rahatsız edildiklerini bile söyleyebilirdim, çünkü kadın hızla kapıya koşmuştu -ki bu derin ayak parmağı ve hafif topuk izlerinden belliydi- Tahta Bacak ise biraz beklemiş ve sonra gitmişti. O sırada bunun, bana daha önce bahsettiğiniz hizmetçi ve sevgilisi olabileceğini düşündüm ve soruşturma bunun doğru olduğunu gösterdi. Bahçenin etrafını dolaştım ama polise ait olduğunu varsaydığım rastgele izlerden başka bir şey görmedim; fakat ahır yoluna girdiğimde, önümdeki karların üzerinde çok uzun ve karmaşık bir hikaye yazılıydı."
+
+"Çizmeli bir adama ait çift sıra iz ve büyük bir memnuniyetle gördüğüm üzere, çıplak ayaklı bir adama ait ikinci bir çift sıra iz vardı. Bana anlattıklarınızdan, ikincisinin oğlunuz olduğuna hemen ikna oldum. İlki her iki yöne de yürümüştü ama diğeri hızla koşmuştu ve adımları yer yer çizme izlerinin üzerine bastığı için, diğerinden sonra geçtiği barizdi. Onları takip ettim ve hol penceresine kadar gittiklerini gördüm; Çizmeli olan beklerken oradaki bütün karı ezmişti. Sonra yolun diğer ucuna, yüz metre veya daha aşağısına yürüdüm. Çizmeli'nin arkasını döndüğü, karın sanki bir boğuşma olmuş gibi dağıldığı yeri ve son olarak yanılmadığımı gösteren birkaç damla kanın düştüğü yeri gördüm. Çizmeli daha sonra yoldan aşağı koşmuştu ve başka bir küçük kan lekesi, yaralanan kişinin o olduğunu gösteriyordu. Diğer uçtaki anayola geldiğinde, kaldırımın temizlenmiş olduğunu gördüm, böylece o ipucunun sonuna gelmiştim."
+
+"Ancak eve girdiğimde, hatırlarsınız, hol penceresinin eşiğini ve çerçevesini büyütecimle inceledim ve birinin dışarı çıktığını hemen görebildim. İçeri girerken ıslak ayağın bastığı yerde ayak tarağının hatlarını ayırt edebiliyordum. O zaman ne olduğuna dair bir fikir oluşturmaya başlamıştım. Bir adam pencerenin dışında beklemiş, biri ona mücevherleri getirmiş; bu eylem oğlunuz tarafından görülmüş, o da hırsızı kovalamış, onunla boğuşmuş, her ikisi de tacı çekiştirmiş ve birleşen güçleri tek başlarına yapamayacakları hasara yol açmıştı. Oğlunuz ödülle geri dönmüştü ama rakibinin elinde bir parça bırakmıştı. Buraya kadar her şey netti. Şimdi soru şuydu: Bu adam kimdi ve tacı ona kim getirmişti?"
+
+"Benim eski bir düsturum vardır: İmkansız olanı elediğinde, geriye kalan her ne kadar olasılık dışı görünse de, gerçektir. Şimdi, tacı aşağı indirenin siz olmadığınızı biliyordum, bu yüzden geriye sadece yeğeniniz ve hizmetçiler kalıyordu. Ama eğer hizmetçiler olsaydı, oğlunuz neden onların yerine kendisinin suçlanmasına izin versin ki? Bunun mümkün bir nedeni olamazdı. Ancak kuzenini sevdiği için, onun sırrını saklamasının mükemmel bir açıklaması vardı; hele ki bu sır yüz kızartıcı bir sırsa. Yeğeninizi o pencerede gördüğünüzü ve tacı tekrar gördüğünde nasıl bayıldığını hatırladığımda, tahminim kesinliğe dönüştü."
+
+"Peki onun suç ortağı kim olabilirdi? Belli ki bir sevgili, çünkü size duyması gereken sevgi ve minnetten daha ağır basacak başka kim olabilirdi? Dışarı pek çıkmadığınızı ve arkadaş çevrenizin çok sınırlı olduğunu biliyordum. Ama bunların arasında Sir George Burnwell vardı. Onun kadınlar arasında kötü şöhretli bir adam olduğunu daha önce duymuştum. O çizmeleri giyen ve kayıp mücevherleri elinde tutan o olmalıydı. Arthur'un onu keşfettiğini bilse bile, delikanlının kendi ailesini lekelemeden tek kelime edemeyeceğini bildiği için kendini güvende hissedebilirdi."
+
+"Pekala, sağduyunuz bundan sonra ne gibi önlemler aldığımı size söyleyecektir. Bir serseri kılığında Sir George'un evine gittim, uşağıyla tanışmayı başardım, efendisinin önceki gece başını yardığını öğrendim ve son olarak, altı şilin harcayarak, onun eskimiş ayakkabılarından bir çift satın alıp her şeyi sağlama aldım. Bunlarla Streatham'a gittim ve izlere tam olarak uyduklarını gördüm."
+
+"Dün akşam yolda kötü giyimli bir serseri görmüştüm," dedi Bay Holder.
+
+"Kesinlikle. O bendim. Adamımı bulduğumu anlayınca eve gelip kıyafetlerimi değiştirdim. O an oynamam gereken rol hassastı, çünkü skandalı önlemek için yasal kovuşturmadan kaçınılması gerektiğini görüyordum ve böylesine kurnaz bir hainin de bu konuda elimizin kolumuzun bağlı olduğunu anlayacağını biliyordum. Gidip onu gördüm. Başta elbette her şeyi inkar etti. Ama ona olan biten her ayrıntıyı verdiğimde, esip gürlemeye çalıştı ve duvardan ağır bir sopa indirdi. Ancak adamımı tanıyordum ve o daha vuramadan başına bir tabanca dayadım. O zaman biraz daha makul oldu. Ona elindeki taşlar için bir bedel ödeyeceğimizi söyledim; tanesi bin sterlin. Bu, onda gördüğüm ilk keder belirtisini ortaya çıkardı. 'Kahretsin!' dedi, 'Üçünü altı yüz sterline elden çıkardım!' Kovuşturma olmayacağına söz vererek, taşları alan kişinin adresini hemen aldım. Yanına gittim ve epey bir pazarlıktan sonra taşlarımızı tanesi bin sterlinden geri aldım. Sonra oğlunuza uğrayıp her şeyin yolunda olduğunu söyledim ve nihayetinde, gerçekten zor bir iş günü diyebileceğim günün ardından, saat iki sularında yatağıma girdim."
+
+Banker ayağa kalkarak, "İngiltere'yi büyük bir kamu skandalından kurtaran bir gün," dedi. "Efendim, size teşekkür edecek kelime bulamıyorum ama yaptıklarınız için beni nankör biri olarak görmeyeceksiniz. Yeteneğiniz gerçekten de duyduğum her şeyin ötesindeymiş. Şimdi sevgili oğluma, ona yaptığım haksızlık için özür dilemeye koşmalıyım. Zavallı Mary hakkında söyledikleriniz ise yüreğimi dağlıyor. Sizin yeteneğiniz bile bana onun şu an nerede olduğunu söyleyemez."
+
+"Şunu güvenle söyleyebiliriz sanırım," diye karşılık verdi Holmes, "Sir George Burnwell neredeyse o da oradadır. Günahları ne olursa olsun, yakında fazlasıyla cezasını bulacağı da aynı derecede kesindir."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Gece Brixton Yolu sapağındaki Lauriston Gardens 3 numarada fena bir hadise yaşandı. Devriye gezen memurumuz sabah iki sularında orada bir ışık görmüş ve ev boş olduğu için bir terslik olduğundan şüphelenmiş. Kapıyı açık bulmuş ve mobilyadan arınmış ön odada, iyi giyimli ve cebinde 'Enoch J. Drebber, Cleveland, Ohio, ABD' yazılı kartvizitler bulunan bir beyefendinin cesedini keşfetmiş. Herhangi bir soygun izi yok, adamın nasıl öldüğüne dair bir kanıt da yok. Odada kan izleri var ama cesedin üzerinde hiçbir yara yok. Boş eve nasıl girdiği konusunda çaresiz kaldık; doğrusu bütün olay tam bir muamma. Eğer saat on ikiden önce eve gelebilirseniz beni orada bulursunuz. Sizden haber alana kadar her şeyi _in statu quo_ (olduğu gibi) bıraktım. Gelemezseniz size daha ayrıntılı bilgi vereceğim, ancak görüşlerinizi lütfederseniz büyük bir iyilik etmiş olursunuz.
+
+Saygılarımla,
+TOBIAS GREGSON."
+
+Arkadaşım, "Gregson, Scotland Yard'dakilerin en zekisidir," diye yorum yaptı; "o ve Lestrade, kötü bir sürünün içindeki en iyilerdir. İkisi de hızlı ve enerjiktir ama şok edici derecede gelenekseldirler. Ayrıca birbirlerine diş biliyorlar. Bir çift profesyonel güzel kadar kıskançtırlar. Eğer ikisi de iz üzerindeyse, bu davada epey şamata çıkacak demektir."
+
+Onun bu kadar sakin bir şekilde konuşmasına şaşırmıştım. "Kaybedilecek bir an bile yok," diye bağırdım, "gidip size bir araba çağırayım mı?"
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Hiç ipucu yok mu?" dedi Gregson.
+
+"Hiçbir şey yok," diye atıldı Lestrade.
+
+Sherlock Holmes cesede yaklaştı ve diz çökerek dikkatle inceledi. Etraftaki sayısız kan pıhtısını ve sıçramasını işaret ederek, "Vücutta hiç yara olmadığına emin misiniz?" diye sordu.
+
+"Kesinlikle eminiz!" diye bağırdı her iki dedektif de.
+
+"O halde, elbette bu kan ikinci bir şahsa ait; eğer bir cinayet işlendiyse, muhtemelen katile. Bu bana 34 yılında Utrecht'te Van Jansen'in ölümündeki koşulları hatırlattı. Vakayı hatırlıyor musun Gregson?"
+
+"Hayır, efendim."
+
+"Araştırıp oku, gerçekten okumalısın. Güneşin altında yeni bir şey yok. Hepsi daha önce yapıldı."
+
+Konuşurken, çevik parmakları oradan oraya uçuşuyor; hissediyor, bastırıyor, düğmeleri çözüyor, inceliyor, bir yandan da gözleri daha önce bahsettiğim o uzaklara dalmış ifadeyi takınıyordu. Muayene o kadar hızlı yapılmıştı ki, ne kadar ince eleyip sık dokuduğu zor tahmin edilirdi. Sonunda, ölünün dudaklarını kokladı ve ardından rugan çizmelerinin tabanlarına göz attı.
+
+"Yerinden hiç oynatılmadı, değil mi?" diye sordu.
+
+"Muayenemiz için gerekli olandan fazla değil."
+
+"Artık onu morga kaldırabilirsiniz," dedi. "Buradan öğrenilecek başka bir şey kalmadı."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Ve şimdi asıl mesele, 'neden' sorusu gündeme geldi. Cinayetin amacı soygun değildi, zira hiçbir şey alınmamıştı. O halde sebep siyaset miydi, yoksa bir kadın mı? Beni karşı karşıya bırakan soru buydu. Ben baştan beri ikinci ihtimale meyilliydim. Siyasi suikastçılar işlerini halledip hemen kaçmaya can atarlar. Bu cinayet ise aksine, son derece planlı bir şekilde işlenmişti ve fail odanın her yerinde izlerini bırakmıştı; bu da onun tüm süre boyunca orada olduğunu gösteriyordu. Böylesine metodik bir intikamı gerektiren şey siyasi değil, şahsi bir husumet olmalıydı. Duvardaki yazı keşfedildiğinde fikrime her zamankinden daha çok bağlandım. Bu apaçık bir şaşırtmacaydı. Ancak yüzük bulunduğunda soru çözüldü. Katil belli ki bunu kurbanına ölü ya da uzaktaki bir kadını hatırlatmak için kullanmıştı. İşte bu noktada Gregson'a, Cleveland'a çektiği telgrafta Bay Drebber'ın geçmiş kariyerindeki belirli bir noktayı sorup sormadığını sordum. Hatırlarsınız, olumsuz cevap vermişti."
+
+"Daha sonra odayı dikkatle incelemeye koyuldum; bu inceleme katilin boyu hakkındaki fikrimi doğruladı ve bana Trichinopoly purosu ile tırnaklarının uzunluğu gibi ek detaylar sağladı. Boğuşma izi olmadığına göre, yeri kaplayan kanın, heyecandan katilin burnundan geldiği sonucuna varmıştım. Kan izinin ayak izleriyle çakıştığını görebiliyordum. Çok kanlı canlı olmayan bir adamın heyecan yüzünden bu şekilde kanaması nadirdir, bu yüzden suçlunun muhtemelen gürbüz ve kırmızı yüzlü bir adam olduğu fikrini ortaya attım. Olaylar doğru hüküm verdiğimi kanıtladı."
+
+"Evden ayrıldıktan sonra Gregson'ın ihmal ettiği şeyi yapmaya koyuldum. Cleveland Emniyet Müdürü'ne telgraf çekerek soruşturmamı Enoch Drebber'ın evliliğiyle ilgili koşullarla sınırlandırdım. Cevap kesin ve netti. Bana Drebber'ın, Jefferson Hope adında eski bir aşk rakibine karşı çoktan yasa korumasına başvurduğunu ve bu Hope'un şu anda Avrupa'da olduğunu bildirdi. Artık gizemin anahtarını elimde tuttuğumu ve geriye sadece katili yakalamanın kaldığını biliyordum."
+
+"Drebber ile eve giren adamın, arabayı süren adamdan başkası olmadığına zihnimde çoktan karar vermiştim. Yoldaki izler, atın başında kimse olmasaydı imkansız olacak bir şekilde dolaştığını gösteriyordu. O halde sürücü evin içinde değilse nerede olabilirdi? Ayrıca, aklı başında herhangi bir adamın, kendisini ele vereceği kesin olan üçüncü bir şahsın gözleri önünde planlı bir suç işleyeceğini varsaymak saçmadır. Son olarak, bir adamın Londra'da bir başkasını adım adım takip etmek istediğini varsayarsak, taksi şoförü olmaktan daha iyi ne gibi bir yol izleyebilir? Tüm bu mülahazalar beni Jefferson Hope'un metropolün arabacıları arasında bulunacağı gibi karşı konulmaz bir sonuca götürdü."
+
+"Eğer onlardan biriyse, vazgeçtiğine inanmak için hiçbir neden yoktu. Aksine, onun bakış açısına göre herhangi bir ani değişiklik dikkatleri üzerine çekebilirdi. Muhtemelen, en azından bir süreliğine görevini yapmaya devam edecekti. Takma isim kullandığını varsaymak için de bir neden yoktu. Orijinal ismini kimsenin bilmediği bir ülkede neden ismini değiştirsin ki? Bu nedenle 'Sokak Arabı' dedektif birliğimi organize ettim ve aradığım adamı bulana kadar onları sistematik olarak Londra'daki her taksi sahibine gönderdim. Ne kadar başarılı oldukları ve benim bunu ne kadar çabuk değerlendirdiğim hafızanızda hala tazedir. Stangerson cinayeti tamamen beklenmedik bir hadiseydi ama her halükarda engellenmesi zor olurdu. Bildiğiniz gibi, varlığını çoktan tahmin ettiğim hapları bu sayede ele geçirdim. Görüyorsunuz ya, her şey kopuksuz veya kusursuz bir mantıksal silsile zinciridir."
+
+"Bu harika!" diye bağırdım. "Meziyetlerin herkesçe tanınmalı. Bu vakanın bir öyküsünü yayınlamalısın. Sen yapmazsan, senin yerine ben yaparım."
+
+"İstediğini yapabilirsin Doktor," diye cevap verdi. "Bak buraya!" diye devam etti bana bir kağıt uzatarak, "şuna bak!"
+
+Bu o günkü _Echo_ gazetesiydi ve işaret ettiği paragraf söz konusu davaya ayrılmıştı.
+
+"Halk," diyordu haber, "Bay Enoch Drebber ve Bay Joseph Stangerson cinayetlerinden şüphelenilen Hope adlı adamın ani ölümüyle sansasyonel bir ziyafetten mahrum kaldı. Davanın ayrıntıları muhtemelen asla bilinemeyecek, ancak suçun aşk ve Mormonizmin de rol oynadığı eski ve romantik bir kan davasının sonucu olduğu konusunda sağlam kaynaklardan bilgi aldık. Görünüşe göre her iki kurban da gençliklerinde 'Son Zaman Azizleri'ne mensuptu ve ölen mahkum Hope da Salt Lake City'den geliyordu. Davanın başka bir etkisi olmasa bile, en azından dedektif polis gücümüzün verimliliğini en çarpıcı şekilde ortaya koyuyor ve tüm yabancılara, husumetlerini kendi evlerinde halletmeleri ve İngiliz topraklarına taşımamaları konusunda akıllıca davranmaları için bir ders niteliği taşıyor. Bu akıllıca yakalamanın kredisinin tamamen tanınmış Scotland Yard yetkilileri Bay Lestrade ve Bay Gregson'a ait olduğu herkesin bildiği bir sır. Görünüşe göre adam, kendisinin de bir amatör olarak dedektiflik alanında bir miktar istidat gösterdiği ve bu tür eğitmenlerle zamanla onların beceri seviyesine ulaşmayı umabilecek olan Bay Sherlock Holmes adında birinin odalarında yakalanmış. Hizmetlerinin uygun bir takdiri olarak iki memura bir tür ödül takdim edilmesi bekleniyor."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"'Büyük kamara kaptan dairesinin bitişiğindeydi; hepimiz oraya doluştuk ve sedirlere yığıldık. Hepimiz bir ağızdan konuşuyorduk, çünkü bir kez daha özgür olmanın verdiği hisle adeta çıldırmıştık. Etrafta dolaplar vardı ve sahte papaz Wilson birini kırıp açarak bir düzine kahverengi şeri şarabı çıkardı. Şişelerin boyunlarını kırıp bardaklara doldurduk ve tam kafamıza dikiyorduk ki, bir anda, hiçbir uyarı olmadan kulaklarımızda tüfeklerin gürültüsü patladı. Salon dumanla o kadar dolmuştu ki masanın karşı tarafını bile göremiyorduk. Duman dağıldığında ortalık bir mezbahaya dönmüştü. Wilson ve diğer sekiz kişi yerde birbirlerinin üzerinde kıvranıyordu; o masadaki kan ve şeri şarabı görüntüsü, şimdi düşününce bile midemi bulandırıyor. Manzara bizi o kadar korkutmuştu ki, eğer Prendergast olmasaydı sanırım işi orada bırakırdık. O ise bir boğa gibi böğürdü ve hayatta kalanları peşine takıp kapıya hücum etti. Dışarı fırladık; kıç güvertede teğmen ve on adamı vardı. Salon masasının üzerindeki sallanan tavan pencereleri biraz açık kalmıştı ve bizi o aralıktan ateş ederek vurmuşlardı. Onlar daha tüfeklerini dolduramadan üzerlerine çullandık. Erkek gibi direndiler ama üstünlük bizdeydi ve beş dakika içinde her şey bitmişti. Tanrım! O gemi gibi bir mezbaha daha görülmüş müdür! Prendergast öfkeli bir şeytan gibiydi; askerleri çocukmuş gibi kaldırıp canlı ya da ölü demeden denize fırlatıyordu. Korkunç şekilde yaralanmış bir çavuş vardı, yine de şaşırtıcı bir süre yüzmeye devam etti, ta ki biri merhamet edip beynini dağıtana kadar. Çatışma bittiğinde düşmanlarımızdan geriye gardiyanlar, lostromolar ve doktordan başka kimse kalmamıştı.'"
+
+"'İşte büyük kavga onlar yüzünden çıktı. Aramızda özgürlüğüne kavuştuğu için sevinen ama ruhuna cinayet yüklemek istemeyen pek çok kişi vardı. Askerleri ellerinde tüfekleriyle devirmek başka şeydi, savunmasız adamlar soğukkanlılıkla öldürülürken seyirci kalmak başka. Beşi mahkum, üçü denizci olmak üzere sekiz kişi, bunun yapılmasına izin vermeyeceğimizi söyledik. Ama Prendergast'ı ve yanındakileri ikna etmek imkansızdı. Tek kurtuluş şansımızın "temiz iş" çıkarmakta yattığını söylüyor, tanık kürsüsünde aleyhine konuşacak tek bir dil bile bırakmak istemiyordu. Neredeyse esirlerle aynı kaderi paylaşacaktık ki, sonunda istersek bir filika alıp gidebileceğimizi söyledi. Bu teklife hemen atladık, çünkü bu kana susamışlıktan midemiz bulanmıştı ve işin sonunun daha da kötüye gideceğini görüyorduk. Bize birer kat gemici kıyafeti, bir varil su, biri tuzlanmış et diğeri peksimet dolu iki fıçı ve bir pusula verdiler. Prendergast bize bir harita fırlattı, gemimizin 15º Kuzey enlemi ve 25º Batı boylamında battığını ve bizim de kazazede denizciler olduğumuzu söyledi; sonra halatı kesti ve bizi serbest bıraktı.'"
+
+"'Şimdi hikayemin en şaşırtıcı kısmına geliyorum sevgili oğlum. Denizciler isyan sırasında ön yelkeni tersletmişlerdi (gemiyi durdurmuşlardı), ama biz ayrılırken yelkeni tekrar düzelttiler. Kuzeyden ve doğudan hafif bir rüzgar olduğu için barka yavaşça bizden uzaklaşmaya başladı. Teknemiz uzun ve yumuşak dalgaların üzerinde inip kalkarken, grubun en eğitimlileri olan Evans ve ben, haritayı açmış konumumuzu hesaplıyor ve hangi kıyıya gitmemiz gerektiğini planlıyorduk. Bu zor bir soruydu, çünkü Yeşil Burun Adaları (Cape de Verds) yaklaşık beş yüz mil kuzeyimizde, Afrika kıyısı ise yedi yüz mil doğumuzdaydı. Rüzgar kuzeye döndüğü için Sierra Leone'nin en iyisi olacağını düşündük ve rotamızı o yöne çevirdik. O sırada barka sancak tarafımızda, gövdesi neredeyse ufukta kaybolmak üzereydi. Birden ona baktığımızda, gemiden gökyüzüne doğru fışkıran, ufuk çizgisinde asılı kalmış devasa bir ağaca benzeyen yoğun, kara bir duman sütunu gördük. Birkaç saniye sonra gök gürültüsü gibi bir gürültü kulaklarımızı patlattı ve duman dağıldığında _Gloria Scott_'tan geriye hiçbir iz kalmamıştı. Anında teknenin burnunu tekrar çevirdik ve suyun üzerinde hala sürüklenen o pusun işaretlediği felaket bölgesine doğru tüm gücümüzle kürek çektik.'"
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+O akşam Londra'ya hızla dönerken Pullman vagonunun bir köşesi bize kalmıştı; Albay Ross'a da bana olduğu gibi yolculuk kısa gelmiş olmalıydı, zira yol arkadaşımızın pazartesi gecesi Dartmoor'daki eğitim ahırlarında meydana gelen olayları ve bunları nasıl çözdüğünü anlattığı hikayesini dinliyorduk.
+
+"İtiraf etmeliyim ki," dedi, "gazete haberlerinden oluşturduğum tüm teoriler tamamen hatalıydı. Yine de orada, gerçek anlamlarını gizleyen diğer ayrıntılarla örtülmemiş olsalardı, bazı işaretler vardı. Devonshire'a Fitzroy Simpson'ın gerçek suçlu olduğu inancıyla gittim, gerçi aleyhindeki kanıtların hiç de tam olmadığını görüyordum. Tam antrenörün evine vardığımızda, faytondayken, körili koyun etinin o muazzam önemi zihnimde belirdi. Hatırlarsınız belki, dalgındım ve siz indikten sonra bir süre daha oturmaya devam ettim. Kendi kendime, böylesine bariz bir ipucunu nasıl gözden kaçırabildiğime hayret ediyordum."
+
+"İtiraf etmeliyim ki," dedi Albay, "bunun bize nasıl yardımcı olduğunu hala göremiyorum."
+
+"Bu, akıl yürütme zincirimin ilk halkasıydı. Toz afyon hiç de tatsız değildir. Tadı nahoş olmasa da belirgindir. Sıradan bir yemeğe karıştırılsaydı, yiyen kişi şüphesiz bunu fark eder ve muhtemelen yemeyi bırakırdı. Köri, bu tadı gizlemek için tam da gereken araçtı. Bu yabancının, Fitzroy Simpson'ın, o gece antrenörün ailesine köri servis edilmesini sağlaması hiçbir varsayımla mümkün değildir; ve tam da tadı gizleyecek bir yemeğin servis edildiği gece, tesadüfen yanında toz afyonla oradan geçiyor olması devasa bir tesadüftür. Bu düşünülemez. Bu nedenle Simpson vakadan eleniyor ve dikkatimiz o gece akşam yemeği için körili koyun etini seçebilecek yegane iki kişi olan Straker ve karısı üzerinde toplanıyor. Afyon, yemek ahır çocuğuna ayrıldıktan sonra eklenmiş, çünkü diğerleri aynı yemeği yediği halde hiçbir olumsuz etki görmemiş. O halde, hizmetçi görmeden o tabağa kim erişebilirdi?"
+
+"Bu soruya karar vermeden önce, köpeğin sessizliğinin önemini kavramıştım; zira doğru bir çıkarım kaçınılmaz olarak diğerlerini de akla getirir. Simpson olayı bana ahırlarda bir köpek bulunduğunu göstermişti; buna rağmen biri içeri girip bir atı çıkarmış ama köpek tavan arasındakileri uyandıracak kadar havlamamıştı. Belli ki gece yarısı gelen ziyaretçi, köpeğin iyi tanıdığı biriydi."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+Ona biraz şaşkınlıkla bakan Albay Ross'a dönerek, "Affedersiniz," dedi. "Gündüz düşlerine dalmışım." Gözlerinde bir parıltı ve tavırlarında bastırılmış bir heyecan vardı; alışkın olduğum üzere, bu beni bir ipucu yakaladığına ikna etti, gerçi bunu nerede bulduğunu hayal bile edemiyordum.
+
+Müfettiş Gregory, "Belki de hemen olay yerine gitmeyi tercih edersiniz Bay Holmes?" dedi.
+
+"Sanırım burada biraz daha kalıp bir iki detay sorusunun üzerine eğilmeyi tercih ederim. Straker'ın cesedi buraya getirildi, değil mi?"
+
+"Evet; yukarıda yatıyor. Soruşturma yarın yapılacak."
+
+"Albay Ross, kendisi yıllardır hizmetinizdeydi değil mi?"
+
+"Onu her zaman mükemmel bir hizmetkar olarak görmüşümdür."
+
+"Müfettiş, tahmin ediyorum ki ölüm anında ceplerinde neler olduğuna dair bir envanter çıkardınız?"
+
+"Eşyaların kendisi oturma odasında, eğer görmek isterseniz."
+
+"Çok memnun olurum." Hepimiz ön odaya geçip orta masanın etrafına oturduk; Müfettiş kare teneke bir kutunun kilidini açtı ve içindeki küçük eşya yığınını önümüze serdi. Bir kutu kibrit, iki inçlik bir iç yağı mumu, bir A.D.P. briar kökü pipo, yarım ons uzun kıyım Cavendish tütünü dolu fok derisi bir kese, altın zincirli gümüş bir saat, beş altın sovereign, alüminyum bir kalemlik, birkaç kağıt ve Weiss & Co., London markalı, çok hassas, esnemeyen namlulu, fildişi saplı bir bıçak vardı.
+
+"Bu çok nevi şahsına münhasır bir bıçak," dedi Holmes, onu kaldırıp dikkatle incelerken. "Üzerinde kan lekeleri gördüğüme göre, ölü adamın avucunda bulunan bıçak bu olmalı. Watson, bu bıçak kesinlikle senin alanına giriyor?"
+
+"Biz buna katarakt bıçağı deriz," dedim.
+
+"Ben de öyle düşünmüştüm. Çok hassas işler için tasarlanmış çok hassas bir namlu. Bir adamın böyle kaba bir seferde yanında taşıması için tuhaf bir nesne, özellikle de cebinde kapanmadığı düşünülürse."
+
+"Ucunu koruyan mantar bir disk vardı, onu cesedin yanında bulduk," dedi Müfettiş. "Karısı, bıçağın tuvalet masasının üzerinde durduğunu ve odadan çıkarken onu aldığını söylüyor. Zavallı bir silah ama belki de o an eline geçirebileceği en iyi şey buydu."
+
+"Çok muhtemel. Peki ya bu kağıtlar?"
+
+"Üçü ödenmiş saman tüccarı makbuzu. Biri Albay Ross'tan gelen bir talimat mektubu. Diğeri ise Bond Caddesi'nden Madame Lesurier tarafından William Derbyshire adına düzenlenmiş, otuz yedi sterlin on beş şilinlik bir kadın terzisi faturası. Bayan Straker, Derbyshire'ın kocasının bir arkadaşı olduğunu ve zaman zaman mektuplarının buraya geldiğini söylüyor."
+
+"Bayan Derbyshire'ın epey pahalı zevkleri varmış," diye belirtti Holmes, faturaya göz atarak. "Tek bir kostüm için yirmi iki gine oldukça ağır. Neyse, görünüşe göre burada öğrenilecek başka bir şey kalmadı, artık olay yerine inebiliriz."
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+"Sanırım dün geceki soygunla ilgili -tabii eğer o bir hırsızsa- bir ipucu bulmak istiyor. Şahsen ben onun sıradan bir hırsız olduğuna inanmıyorum."
+
+"Peki, senin fikrin nedir?"
+
+"Yemin ederim, bunu zayıf sinirlerime de yorabilirsin ama etrafımda dönen derin bir siyasi entrika olduğuna ve anlayamadığım bir nedenden ötürü komplocuların hedefinde hayatımın olduğuna inanıyorum. Kulağa abartılı ve saçma geliyor ama gerçekleri bir düşün! Bir hırsız neden ganimet umudu olmayan bir yatak odası penceresinden girmeye çalışsın ve neden elinde uzun bir bıçakla gelsin?"
+
+"Bir hırsız levyesi olmadığına emin misin?"
+
+"Ah, hayır, bir bıçaktı. Namlunun parıltısını gayet net gördüm."
+
+"Ama Tanrı aşkına, neden böylesine bir düşmanlıkla takip edilesin ki?"
+
+"Ah, işte asıl soru bu."
+
+"Peki, eğer Holmes da aynı görüşteyse, bu onun hareketlerini açıklar, değil mi? Teorinin doğru olduğunu varsayarsak; eğer dün gece seni tehdit eden adamı yakalayabilirse, deniz antlaşmasını kimin aldığını bulma yolunda büyük mesafe kat etmiş olur. Biri seni soyarken diğerinin canına kastettiği iki ayrı düşmanın olduğunu varsaymak saçma olur."
+
+"Ama Holmes Briarbrae'ye gitmeyeceğini söylemişti."
+
+"Onu bir süredir tanıyorum," dedim, "ama şimdiye kadar çok geçerli bir sebebi olmadan hiçbir şey yaptığını görmedim," ve bununla birlikte sohbetimiz başka konulara kaydı.
+
+Ama benim için yorucu bir gündü. Phelps uzun hastalığından sonra hala halsizdi ve talihsizliği onu mızmız ve gergin yapmıştı. İlgisini Afganistan'a, Hindistan'a, sosyal meselelere, zihnini bu saplantıdan uzaklaştıracak herhangi bir şeye çekme çabalarım nafileydi. Sürekli kayıp antlaşmasına dönüyor; Holmes'un ne yaptığına, Lord Holdhurst'ün ne gibi adımlar attığına, sabah ne haberler alacağımıza dair tahminler yürütüp duruyordu. Akşam ilerledikçe heyecanı oldukça acı verici bir hal aldı.
+
+--------------------------------------------------
+
+
+
+
+
+

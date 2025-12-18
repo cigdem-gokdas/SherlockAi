@@ -1,0 +1,155 @@
+{
+  "case": {
+    "title": "Boğaziçi Köşkü Cinayeti",
+    "victim": {
+      "name": "İbrahim Bey",
+      "background": "Zengin bir sanayici, Boğaziçi'nde yaşayan ve İstanbul'un en büyük tekstil fabrikalarından birini yöneten.",
+      "killed_when": "Gece Saat 01:00",
+      "killed_where": "Çalışma Odası"
+    },
+    "suspects": [
+      {
+        "name": "Ayşe Hanım",
+        "role": "Eşi",
+        "trait": "Kıvrak ve zeki",
+        "motive": "Mehmet Bey'in tüm servetini almak istiyordu.",
+        "is_killer": false
+      },
+      {
+        "name": "Ayşe Hanım",
+        "role": "İş Ortağı",
+        "trait": "Hırslı ve acımasız",
+        "motive": "Mehmet Bey'in fabrikasını ele geçirmek istiyordu.",
+        "is_killer": false
+      },
+      {
+        "name": "Hatice Hanım",
+        "role": "Servetçi",
+        "trait": "Gizemli ve sessiz",
+        "motive": "Mehmet Bey'in değerli bir mücevherini çalmak istiyordu.",
+        "is_killer": false
+      },
+      {
+        "name": "Ali Ağa",
+        "role": "Bahçıvan",
+        "trait": "Kıskanç ve öfkeli",
+        "motive": "Mehmet Bey'in onu işten çıkarması yüzünden intikam almak istiyordu.",
+        "is_killer": true
+      }
+    ],
+    "killer": {
+      "name": "Ali Ağa",
+      "true_motive": "Mehmet Bey'in kendisini işten çıkardığı için, onu öldürerek intikam aldı."
+    },
+    "locations": [
+      "Çalışma Odası",
+      "Bahçe",
+      "Yemek Salonu",
+      "Çalışma Odası"
+    ],
+    "crime_summary": "Boğaziçi Köşkü'nde Mehmet Bey ölü bulundu. Kim bu cinayeti işledi?"
+  },
+  "clues": [
+    {
+      "item_name": "Kanlı Hançer",
+      "location": "Bahçe",
+      "description": "Mutfak hançeri, üzerinde parmak izleri var. İzlerin DNA analizi Ali Ağa'ya ait çıktı.",
+      "points_to_killer": true
+    },
+    {
+      "item_name": "Aşk Mektubu",
+      "location": "Çalışma Odası",
+      "description": "İmzasız bir mektup, İbrahim Bey'in sevgilisi olduğunu iddia eden bir kadın tarafından yazılmış olabilir.",
+      "points_to_killer": true
+    },
+    {
+      "item_name": "Kırık Ayna Parçası",
+      "location": "Yemek Salonu",
+      "description": "Ayna parçası, çatışma sırasında kırılmış olabilir. Ancak Ali Ağa'nın aynanın kırılmasından haberdar olduğu kanıtlanamadı.",
+      "points_to_killer": false
+    },
+    {
+      "item_name": "Parmak İzi",
+      "location": "Çalışma Odası",
+      "description": "Masa üzerindeki bir fincanın kenarında, Ali Ağa'ya ait olmayan bir parmak izi bulunmuştur.",
+      "points_to_killer": false
+    },
+    {
+      "item_name": "Kırık Telefon",
+      "location": "Çalışma Odası",
+      "description": "Telefon, İbrahim Bey'in son görüşmesinden sonra kırılmış olabilir. Ancak telefonun içeriği silindi.",
+      "points_to_killer": false
+    }
+  ],
+  "alibis": [
+    {
+      "person": "Ayşe Hanım",
+      "location": "Yemek Salonu",
+      "time": "Gece Saat 01:00"
+    },
+    {
+      "person": "Ayşe Hanım",
+      "location": "Yemek Salonu",
+      "time": "Gece Saat 01:00"
+    },
+    {
+      "person": "Hatice Hanım",
+      "location": "Bahçe",
+      "time": "Gece Saat 01:00"
+    },
+    {
+      "person": "Ali Ağa",
+      "location": "Çalışma Odası",
+      "time": "Gece Saat 01:00"
+    },
+    {
+      "person": "İbrahim Bey",
+      "location": "Çalışma Odası",
+      "time": "Gece Saat 01:00"
+    }
+  ],
+  "relationships": [
+    {
+      "person1": "Ayşe Hanım",
+      "person2": "İbrahim Bey",
+      "type": "HATES",
+      "detail": "Mehmet Bey'in tüm servetini almak istiyordu."
+    },
+    {
+      "person1": "Ayşe Hanım",
+      "person2": "İbrahim Bey",
+      "type": "FEARS",
+      "detail": "Mehmet Bey'in fabrikasını ele geçirmek istiyordu."
+    },
+    {
+      "person1": "Hatice Hanım",
+      "person2": "İbrahim Bey",
+      "type": "LOVES",
+      "detail": "Mehmet Bey'in değerli bir mücevherini çalmak istiyordu."
+    },
+    {
+      "person1": "Ali Ağa",
+      "person2": "İbrahim Bey",
+      "type": "HATES",
+      "detail": "Mehmet Bey'in onu işten çıkarması yüzünden intikam almak istiyordu."
+    },
+    {
+      "person1": "Hatice Hanım",
+      "person2": "Ayşe Hanım",
+      "type": "ALLIES_WITH",
+      "detail": "Vaka ile bağlantılılar"
+    },
+    {
+      "person1": "Ayşe Hanım",
+      "person2": "Ali Ağa",
+      "type": "ALLIES_WITH",
+      "detail": "Vaka ile bağlantılılar"
+    },
+    {
+      "person1": "Ali Ağa",
+      "person2": "Ayşe Hanım",
+      "type": "KNOWS",
+      "detail": "Vaka ile bağlantılılar"
+    }
+  ]
+}
