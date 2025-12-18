@@ -1,153 +1,152 @@
 {
   "case": {
-    "title": "Şerbetçi'nin Şahidi",
+    "title": "Zehirli Şerbet",
     "victim": {
-      "name": "Mustafa Efendi",
-      "background": "Şehrin en ünlü şerbetçisi, zengin ve saygın bir adam.",
-      "killed_when": "Gece yarısı",
-      "killed_where": "Kendi şerbet dükkanının arka odasında"
+      "name": "Emine Hanım",
+      "background": "Zengin bir tüccar, şehrin en saygın kişilerinden biriydi.",
+      "killed_when": "Akşam yemeği sırasında, saat 20:30 civarı",
+      "killed_where": "Kendi konakında düzenlenen akşam yemeğinde"
     },
     "suspects": [
       {
         "name": "Feride Hanım",
-        "role": "Mehmet Efendi'nin eski eşi, boşanmadan sonra zengin bir mirasçı.",
-        "trait": "Hırslı ve kıskanç",
-        "motive": "Mehmet Efendi'nin mirasını almak için cinayet işlemiş olabilir.",
+        "role": "Mehmet Emin Bey'in karısı",
+        "trait": "Hırslı ve kıskanç bir kadın",
+        "motive": "Eşinin mirasını almak için",
         "is_killer": false
       },
       {
-        "name": "Ali Rıza Usta",
-        "role": "Şerbet dükkanında çalışan garson, Mehmet Efendi'ye minnettar.",
-        "trait": "Sakin ve dürüst",
-        "motive": "Mehmet Efendi'nin ölümünden korkmuş olabilir, şantaj mektuplarını Ali Rıza Usta yazmış olabilir.",
+        "name": "Şevket Usta",
+        "role": "Mehmet Emin Bey'in şerbetçi dükkanından alışveriş yapan kişi",
+        "trait": "Gizemli ve ürkütücü bir tavır",
+        "motive": "Mehmet Emin Bey'e karşı eski bir kin besliyor",
         "is_killer": true
       },
       {
-        "name": "Şehzade Mustafa",
-        "role": "Şehrin genç ve zengin prensesi, Mehmet Efendi'nin en büyük müşterisi.",
-        "trait": "Yüksek zekâlı ve gizemli",
-        "motive": "Mehmet Efendi'nin bir sırını biliyor olabilir veya şantaj mektuplarına maruz kalmış olabilir.",
+        "name": "Münir Bey",
+        "role": "Mehmet Emin Bey'in iş ortağı",
+        "trait": "Hırslı ve hilekar",
+        "motive": "Mehmet Emin Bey'in şirketini ele geçirmek için",
         "is_killer": false
       },
       {
-        "name": "Hacı Mehmet",
-        "role": "Şehrin en eski ve saygın hamamının sahibi, Mehmet Efendi'nin arkadaşı.",
-        "trait": "Bilge ve tecrübeli",
-        "motive": "Mehmet Efendi'nin ölümünden haberdar olabilir veya şantaj mektuplarını yazmış olabilir.",
+        "name": "Gülsüm Hanım",
+        "role": "Mehmet Emin Bey'in yeğeni",
+        "trait": "Uysal ve sessiz bir kadın",
+        "motive": "Kurbanın ölümünden haberdar olmadığını iddia ediyor",
         "is_killer": false
       }
     ],
     "killer": {
-      "name": "Ali Rıza Usta",
-      "true_motive": "Mehmet Efendi, Ali Rıza Usta'nın geçmişini öğrenmişti ve şantaj yapacaktı. Ali Rıza Usta, Mehmet Efendi'nin ölümünü önlemek için cinayet işledi."
+      "name": "Şevket Usta",
+      "true_motive": "Mehmet Emin Bey'in, Şevket Usta'nın ailesine karşı yaptığı haksızlıktan dolayı öfkeliydi."
     },
     "locations": [
-      "Şerbet Dükkanı",
-      "Bahçe",
-      "Yemek Salonu",
-      "Kapalıçarşı"
+      "Kütüphane",
+      "Şerbetçi Dükkanı",
+      "Yemek Salonu"
     ],
-    "crime_summary": "Ünlü şerbetçi Mehmet Efendi, kendi dükkanının arka odasında ölü bulundu. Şantaj mektupları ve gizli ilişkiler, cinayeti aydınlatmak için polis memuru Cemil Bey'in önüne çıkan karmaşık bir bulmacayı ortaya koyuyor."
+    "crime_summary": "Zengin tüccar Mehmet Emin Bey akşam yemeğinde zehirlenerek hayatını kaybetti. Şüpheliler arasında karısı, iş ortağı ve şerbetçi dükkanından alışveriş yapan kişi bulunuyor."
   },
   "clues": [
     {
-      "item_name": "Ali Rıza Ustasının Eşyalarına Ait Kırık Çay Bardak Parçası",
-      "location": "Şerbet Dükkanı",
-      "description": "Kırık çay bardağı parçasında Ali Rıza Ustasının özel olarak kullandığı desen bulunmaktadır.",
+      "item_name": "Parmak İzi",
+      "location": "Kütüphane",
+      "description": "Emine Hanım'ın kitaplığının üstündeki tozlu bir kutu üzerinde Şevket Usta'ya ait parmak izi bulunmuştur.",
       "points_to_killer": true
     },
     {
-      "item_name": "Mustafa Efendi'nin Kanlı Şalvarı",
-      "location": "Bahçe",
-      "description": "Mustafa Efendi'nin şallarında kan izleri bulunmaktadır. Kan, Mustafa Efendi'nin ölüm sebebini göstermektedir.",
-      "points_to_killer": false
+      "item_name": "Kırmızı Renkli Boya Leke",
+      "location": "Şerbetçi Dükkanı",
+      "description": "Şevket Usta'nın elbiselerinde, kütüphanedeki olaydan önceki günlerde satın alındığı bilinen kırmızı renkte bir boya lekesi bulunmuştur.",
+      "points_to_killer": true
     },
     {
-      "item_name": "Ali Rıza Ustasının Parmak İzi",
+      "item_name": "Kırık Şarap Bardağı",
       "location": "Yemek Salonu",
-      "description": "Yemek salonunda bulunan bir bıçak üzerinde Ali Rıza Ustasının parmak izi bulunmaktadır.",
-      "points_to_killer": true
-    },
-    {
-      "item_name": "Kırık Bir Çin Küresi",
-      "location": "Kapalıçarşı",
-      "description": "Kapalıçarşı'da bulunan bir çin kütresinin kırık parçaları, cinayete karışan başka bir kişinin olabileceğini göstermektedir.",
+      "description": "Emine Hanım'ın öldüğü yemek salonunda, Şevket Usta'nın kullandığı bilinen bir şarap bardağının kırık parçaları bulunmuştur.",
       "points_to_killer": false
     },
     {
-      "item_name": "Ali Rıza Ustasının Çekirdekli Bir Kurşun",
-      "location": "Şerbet Dükkanı",
-      "description": "Şerbet dükkanında bulunan bir çekirdekli kurşun, Ali Rıza Ustasının silahından gelmektedir.",
-      "points_to_killer": true
+      "item_name": "Kırmızı Gül",
+      "location": "Kütüphane",
+      "description": "Emine Hanım'ın öldüğü kütüphanenin masası üzerinde, Şevket Usta'nın sevdiği bilinen kırmızı bir gül bulunmuştur.",
+      "points_to_killer": false
+    },
+    {
+      "item_name": "Parmak İzi",
+      "location": "Şerbetçi Dükkanı",
+      "description": "Şerbetçi dükkanında, Şevket Usta'nın elbiselerinden kalan bir parmak izi bulunmuştur. Ancak bu iz, olaydan önceki günlerde de orada olabilir.",
+      "points_to_killer": false
     }
   ],
   "alibis": [
     {
       "person": "Feride Hanım",
-      "location": "Şerbet Dükkanı",
-      "time": "Gece yarısı"
+      "location": "Şerbetçi Dükkanı",
+      "time": "Akşam yemeği sırasında, saat 20:30 civarı"
     },
     {
-      "person": "Ali Rıza Usta",
-      "location": "Kendi şerbet dükkanının arka odasında",
-      "time": "Gece yarısı"
+      "person": "Şevket Usta",
+      "location": "Kendi konakında düzenlenen akşam yemeğinde",
+      "time": "Akşam yemeği sırasında, saat 20:30 civarı"
     },
     {
-      "person": "Şehzade Mustafa",
-      "location": "Bahçe",
-      "time": "Gece yarısı"
+      "person": "Münir Bey",
+      "location": "Şerbetçi Dükkanı",
+      "time": "Akşam yemeği sırasında, saat 20:30 civarı"
     },
     {
-      "person": "Hacı Mehmet",
-      "location": "Kapalıçarşı",
-      "time": "Gece yarısı"
+      "person": "Gülsüm Hanım",
+      "location": "Şerbetçi Dükkanı",
+      "time": "Akşam yemeği sırasında, saat 20:30 civarı"
     },
     {
-      "person": "Mustafa Efendi",
-      "location": "Kendi şerbet dükkanının arka odasında",
-      "time": "Gece yarısı"
+      "person": "Emine Hanım",
+      "location": "Kendi konakında düzenlenen akşam yemeğinde",
+      "time": "Akşam yemeği sırasında, saat 20:30 civarı"
     }
   ],
   "relationships": [
     {
       "person1": "Feride Hanım",
-      "person2": "Mustafa Efendi",
-      "type": "DISTRUSTS",
-      "detail": "Mehmet Efendi'nin mirasını almak için cinayet işlemiş olabilir."
+      "person2": "Emine Hanım",
+      "type": "LOVES",
+      "detail": "Eşinin mirasını almak için"
     },
     {
-      "person1": "Ali Rıza Usta",
-      "person2": "Mustafa Efendi",
+      "person1": "Şevket Usta",
+      "person2": "Emine Hanım",
+      "type": "FEARS",
+      "detail": "Mehmet Emin Bey'e karşı eski bir kin besliyor"
+    },
+    {
+      "person1": "Münir Bey",
+      "person2": "Emine Hanım",
       "type": "RESENTS",
-      "detail": "Mehmet Efendi'nin ölümünden korkmuş olabilir, şantaj mektuplarını Ali Rıza Usta yazmış olabilir."
+      "detail": "Mehmet Emin Bey'in şirketini ele geçirmek için"
     },
     {
-      "person1": "Şehzade Mustafa",
-      "person2": "Mustafa Efendi",
-      "type": "DISTRUSTS",
-      "detail": "Mehmet Efendi'nin bir sırını biliyor olabilir veya şantaj mektuplarına maruz kalmış olabilir."
+      "person1": "Gülsüm Hanım",
+      "person2": "Emine Hanım",
+      "type": "FEARS",
+      "detail": "Kurbanın ölümünden haberdar olmadığını iddia ediyor"
     },
     {
-      "person1": "Hacı Mehmet",
-      "person2": "Mustafa Efendi",
-      "type": "RESENTS",
-      "detail": "Mehmet Efendi'nin ölümünden haberdar olabilir veya şantaj mektuplarını yazmış olabilir."
-    },
-    {
-      "person1": "Ali Rıza Usta",
-      "person2": "Hacı Mehmet",
-      "type": "KNOWS",
+      "person1": "Feride Hanım",
+      "person2": "Gülsüm Hanım",
+      "type": "COMPETES_WITH",
       "detail": "Vaka ile bağlantılılar"
     },
     {
-      "person1": "Ali Rıza Usta",
+      "person1": "Münir Bey",
       "person2": "Feride Hanım",
       "type": "COMPETES_WITH",
       "detail": "Vaka ile bağlantılılar"
     },
     {
-      "person1": "Ali Rıza Usta",
-      "person2": "Hacı Mehmet",
+      "person1": "Münir Bey",
+      "person2": "Feride Hanım",
       "type": "KNOWS",
       "detail": "Vaka ile bağlantılılar"
     }

@@ -78,8 +78,10 @@ def create_vector_db():
     # 4. Embedding (TÜRKÇE İÇİN KRİTİK NOKTA)
     # ollama.py ile aynı model olmak ZORUNDA
     print(" Yapay zeka modeli hazırlanıyor (paraphrase-multilingual-MiniLM-L12-v2)...")
-    embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-
+    embedding_model = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_kwargs={'device': 'cuda'}  # <--- İŞTE BU SATIR EKLENECEK
+)
     # 5. Veritabanını Temizle ve Oluştur
     if os.path.exists(DB_PATH):
         print("  Eski veritabanı temizleniyor...")
