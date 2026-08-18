@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -14,7 +15,9 @@ from .game import OyunYoneticisi
 from .rag import TurkceBilgiTabani
 from .schemas import SorguIstegi, SoruIstegi, SuclamaIstegi, YeniOyunIstegi
 
-PROJE_KOKU = Path(__file__).resolve().parents[2]
+PROJE_KOKU = Path(os.getenv("SHERLOCKAI_ROOT", Path.cwd())).resolve()
+if not (PROJE_KOKU / "web").is_dir() or not (PROJE_KOKU / "data").is_dir():
+    PROJE_KOKU = Path(__file__).resolve().parents[2]
 WEB = PROJE_KOKU / "web"
 load_dotenv(PROJE_KOKU / ".env")
 
@@ -25,7 +28,7 @@ oyunlar = OyunYoneticisi(yapay_zeka)
 app = FastAPI(
     title="SherlockAI",
     description="Türkçe yapay zekâ destekli sinematik detektiflik oyunu",
-    version="2.1.0",
+    version="2.1.1",
     docs_url="/gelistirici",
     redoc_url=None,
 )
@@ -35,6 +38,11 @@ app.mount("/assets", StaticFiles(directory=WEB / "assets"), name="assets")
 @app.get("/", include_in_schema=False)
 def ana_sayfa() -> FileResponse:
     return FileResponse(WEB / "index.html")
+
+
+@app.get("/favicon.ico", include_in_schema=False)
+def favicon() -> FileResponse:
+    return FileResponse(WEB / "assets" / "favicon.svg", media_type="image/svg+xml")
 
 
 @app.get("/api/durum")

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import os
 import re
 from typing import Any
@@ -12,6 +13,8 @@ import httpx
 from .fallback_case import yedek_vaka
 from .rag import TurkceBilgiTabani
 from .schemas import Supheli, Vaka
+
+GUNLUK = logging.getLogger(__name__)
 
 SISTEM = """Sen, 1900'lerin başındaki İstanbul'da geçen etkileşimli bir polisiye oyununun anlatıcısısın.
 Yalnızca doğal, akıcı ve çağdaş okurca anlaşılır Türkçe yaz. Özel adlar dışında yabancı kelime kullanma.
@@ -30,9 +33,9 @@ class YapayZekaIstemcisi:
         if self.saglayici_tercihi not in {"auto", "ollama", "gemini", "offline"}:
             self.saglayici_tercihi = "auto"
         self.gemini_anahtari = os.getenv("GEMINI_API_KEY", "").strip()
-        self.gemini_model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite").strip()
+        self.gemini_model = os.getenv("GEMINI_MODEL", "gemini-3.7-flash").strip()
         if not re.fullmatch(r"[A-Za-z0-9._-]+", self.gemini_model):
-            self.gemini_model = "gemini-2.5-flash-lite"
+            self.gemini_model = "gemini-3.7-flash"
 
     def _etiketler(self) -> list[str]:
         try:
@@ -122,7 +125,7 @@ class YapayZekaIstemcisi:
         if not self.gemini_anahtari:
             return None
         govde: dict[str, Any] = {
-            "system_instruction": {"parts": [{"text": SISTEM}]},
+            "systemInstruction": {"parts": [{"text": SISTEM}]},
             "contents": [
                 {
                     "role": "model" if ileti.get("role") == "assistant" else "user",
@@ -136,19 +139,34 @@ class YapayZekaIstemcisi:
             govde["generationConfig"].update(
                 {"responseMimeType": "application/json", "responseJsonSchema": sema}
             )
-        try:
-            cevap = httpx.post(
-                f"https://generativelanguage.googleapis.com/v1beta/models/{self.gemini_model}:generateContent",
-                headers={"x-goog-api-key": self.gemini_anahtari},
-                json=govde,
-                timeout=self.zaman_asimi,
+        modeller = list(
+            dict.fromkeys(
+                [self.gemini_model, "gemini-3.5-flash-lite", "gemini-2.5-flash-lite"]
             )
-            cevap.raise_for_status()
-            parcalar = cevap.json()["candidates"][0]["content"]["parts"]
-            metin = "".join(parca.get("text", "") for parca in parcalar).strip().strip('"')
-            return metin or None
-        except (httpx.HTTPError, IndexError, KeyError, TypeError, ValueError):
-            return None
+        )
+        for model in modeller:
+            try:
+                cevap = httpx.post(
+                    f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                    headers={"x-goog-api-key": self.gemini_anahtari},
+                    json=govde,
+                    timeout=self.zaman_asimi,
+                )
+                cevap.raise_for_status()
+                parcalar = cevap.json()["candidates"][0]["content"]["parts"]
+                metin = "".join(parca.get("text", "") for parca in parcalar).strip().strip('"')
+                return metin or None
+            except httpx.HTTPStatusError as hata:
+                kod = hata.response.status_code
+                if kod in {429, 500, 502, 503, 504}:
+                    GUNLUK.warning("Gemini %s geçici olarak kullanılamıyor (HTTP %s).", model, kod)
+                    continue
+                GUNLUK.warning("Gemini isteği reddedildi (HTTP %s).", kod)
+                return None
+            except (httpx.HTTPError, IndexError, KeyError, TypeError, ValueError) as hata:
+                GUNLUK.warning("Gemini yanıtı okunamadı: %s", type(hata).__name__)
+                continue
+        return None
 
     def _sohbet(
         self,
@@ -194,13 +212,27 @@ Zorunlu kurallar:
 
 Yalnızca verilen JSON şemasına uyan nesneyi döndür."""
         metin = self._sohbet([{"role": "user", "content": istek}], sema=sema, sicaklik=0.15)
-        if not metin:
-            return yedek_vaka(), False
-        try:
-            vaka = Vaka.model_validate_json(metin)
-            return vaka, True
-        except (ValueError, json.JSONDecodeError):
-            return yedek_vaka(), False
+        for deneme in range(2):
+            if not metin:
+                break
+            try:
+                return Vaka.model_validate_json(metin), True
+            except (ValueError, json.JSONDecodeError) as hata:
+                if deneme == 1:
+                    GUNLUK.warning("Model vakası iki denemede de doğrulanamadı: %s", str(hata)[:500])
+                    break
+                duzeltme = f"""Aşağıdaki JSON neredeyse doğru, ancak uygulama doğrulamasından geçmedi.
+Hata: {str(hata)[:1200]}
+
+JSON:
+{metin[:12000]}
+
+Olayı ve çözümü değiştirmeden hataları düzelt. Kimlik ilişkilerini, tam dört şüpheliyi,
+tek katili, dört mekânı ve alan uzunluklarını denetle. Yalnızca şemaya uyan JSON nesnesini döndür."""
+                metin = self._sohbet(
+                    [{"role": "user", "content": duzeltme}], sema=sema, sicaklik=0.05
+                )
+        return yedek_vaka(), False
 
     @staticmethod
     def _kanit_ozeti(vaka: Vaka, bulunanlar: set[str]) -> str:

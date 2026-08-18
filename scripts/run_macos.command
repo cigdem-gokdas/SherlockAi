@@ -7,5 +7,6 @@ if [[ ! -d .venv ]]; then
 fi
 
 source .venv/bin/activate
-python -m pip install -q -e .
+export SHERLOCKAI_ROOT="$PWD"
+python -m pip install -q .
 python -m sherlock_ai

@@ -97,7 +97,7 @@ Evet, Google AI Studio'dan alınan Gemini API anahtarı iyi bir alternatiftir. K
 ```dotenv
 AI_PROVIDER=gemini
 GEMINI_API_KEY=buraya_kendi_anahtarin
-GEMINI_MODEL=gemini-2.5-flash-lite
+GEMINI_MODEL=gemini-3.7-flash
 ```
 
 `.env` Git tarafından yok sayılır; anahtarı kaynak koda, ekran görüntüsüne veya GitHub'a koyma. Ücretsiz katmanda gönderilen veriler için Google'ın güncel veri kullanım koşullarını kontrol et; SherlockAI yalnızca kurgusal oyun verisi gönderecek şekilde tasarlanmıştır. Resmî belgeler: [API anahtarı kurulumu](https://ai.google.dev/gemini-api/docs/api-key), [fiyat ve ücretsiz katman](https://ai.google.dev/gemini-api/docs/pricing).
@@ -147,7 +147,7 @@ SherlockAi/
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -e ".[dev]"
+python -m pip install ".[dev]"
 python -m ruff check src tests scripts
 python -m unittest discover -s tests -v
 ```
