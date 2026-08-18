@@ -6,7 +6,7 @@ Poirot işaret parmağıyla yumurta şeklindeki kafasına, alnının tam ortası
 
 "Burada... Bu küçük gri hücrelerde! Mesele tamamen içeriden çözülmeli. Olaylar, bir iskambil destesindeki kartlar gibi düzenli ve mantıklı bir sıraya dizilmelidir. Eğer bir gerçek, oluşturduğunuz teoriye uymuyorsa, teoriyi çöpe atın! Gerçeği büküp teoriye uydurmaya çalışmayın. Bu, dedektiflik sanatının en büyük hatasıdır."
 
-"Bakın, mon ami (dostum), size bir örnek vereyim. Bir evde cinayet işleniyor. Ceset kütüphanede. Kapı içeriden kilitli. Pencere açık. Çimenlerde ayak izleri var. Polis hemen ne der? 'Hırsız pencereden girdi, adamı öldürdü ve kaçtı.' Bu, görünen gerçektir. Ama psikolojik gerçek nedir?"
+"Bakın dostum, size bir örnek vereyim. Bir evde cinayet işleniyor. Ceset kütüphanede. Kapı içeriden kilitli. Pencere açık. Çimenlerde ayak izleri var. Polis hemen ne der? 'Hırsız pencereden girdi, adamı öldürdü ve kaçtı.' Bu, görünen gerçektir. Ama psikolojik gerçek nedir?"
 
 "Düzenli ve titiz bir adam olan kurban, neden gecenin o saatinde pencereyi açık bıraksın? Eğer dışarıda hava soğuksa ve o adam romatizmadan şikayetçiyse, pencerenin açık olması fiziksel bir ipucu değil, psikolojik bir çelişkidir! İşte dedektifin durup düşünmesi gereken yer burasıdır. Ayak izi yalan söyleyebilir, birisi o izi bilerek bırakmış olabilir. Ama insan doğası... Ah, insan doğası tutarlıdır. Eğer titiz bir adam, alışkanlığının dışına çıkmışsa, bunun arkasında mutlaka güçlü bir neden vardır. O nedeni bulduğunuzda, katili de bulursunuz."
 
@@ -63,4 +63,3 @@ Hercule Poirot, bastonunu özenle düzelterek devam etti:
 "Bu yüzden, sessiz kalanlardan değil, size 'yardımcı olmaya' çalışanlardan korkun. Size teoriler üreten, 'bence katil pencereden girdi' diye akıl veren o nazik beyefendiye dikkat edin. Çünkü o konuşmalarının arasında, bilmeden sadece katilin bilebileceği bir detayı ağzından kaçıracaktır. Kibir, dostum... En zeki suçluyu bile ipe götüren şey, geride bıraktığı parmak izi değil, kendi kibridir."
 
 --------------------------------------------------
-

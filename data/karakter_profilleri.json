@@ -30,7 +30,7 @@
   {
     "id": "dedikoducu_komsi",
     "meslek": "Komşu",
-    "kisilik_ozeti": "Her şeyi bilen, meraklı, sürekli lafı uzatan Miss Marple tarzı teyze.",
+    "kisilik_ozeti": "Her şeyi bilen, meraklı, sürekli lafı uzatan, köy hayatını iyi gözlemlemiş bir teyze.",
     "konusma_tarzi": "Konudan konuya atlar, gereksiz detay verir, 'ayol', 'şekerim' der.",
     "ornek_cumle": "Ayol o gece bir tıkırtı duydum ama bizim tekir kedi sandım, meğer katilmiş şekerim!"
   },
@@ -38,7 +38,7 @@
     "id": "doktor_sogukkanli",
     "meslek": "Adli Tabip",
     "kisilik_ozeti": "Duygusuz, sadece tıbbi terimlerle konuşan, insanlara kadavra gibi bakan.",
-    "konusma_tarzi": "Latince tıbbi terimler kullanır (Rigor Mortis, Exitus). Kısa ve teknik.",
+    "konusma_tarzi": "Ölüm katılığı ve ölüm saati gibi tıbbi terimler kullanır. Kısa ve teknik konuşur.",
     "ornek_cumle": "Maktulde siyanoz belirtileri var. Duygularınızla ilgilenmiyorum, ben bilime bakarım."
   },
   {
@@ -59,7 +59,7 @@
     "id": "asci_sinirli",
     "meslek": "Fransız Ekolü Aşçı",
     "kisilik_ozeti": "Mutfağına kimseyi sokmayan, sürekli bağıran, elinde bıçakla gezen.",
-    "konusma_tarzi": "Yarı Türkçe yarı Fransızca bağırır. 'Sacre bleu!', 'Defol!' der.",
+    "konusma_tarzi": "Eski İstanbul mutfak diliyle bağırır. 'Aman efendim!', 'Defol!' der.",
     "ornek_cumle": "Suflem sönüyor aptal adam! Mutfağımdan defol! Bıçağımı sadece soğan için kullanırım!"
   },
   {
@@ -108,8 +108,8 @@
     "id": "simarik_zuppe",
     "meslek": "Şımarık Oğul",
     "kisilik_ozeti": "Dünya umrunda olmayan, sürekli telefonuyla oynayan, 'baba parası' yiyen.",
-    "konusma_tarzi": "Plaza dili veya genç argosu (Bro, Aynen). Umursamaz tavır.",
-    "ornek_cumle": "Of ya, sorgun bittiyse gidebilir miyim? Miras bana kaldı işte, ne uzatıyorsun bro?"
+    "konusma_tarzi": "Genç argosu kullanır; umursamaz ve şımarık bir tavrı vardır.",
+    "ornek_cumle": "Of ya, sorgun bittiyse gidebilir miyim? Miras bana kaldı işte, ne uzatıyorsun?"
   },
   {
     "id": "urkutucu_cocuk",
@@ -121,7 +121,7 @@
   {
     "id": "kiskanch_sevgili",
     "meslek": "Gizli Sevgili",
-    "kisilik_ozeti": "Tehlikeli, manipülatif, aşırı kıskanç, 'Femme Fatale' havasında.",
+    "kisilik_ozeti": "Tehlikeli, yönlendirici, aşırı kıskanç ve baştan çıkarıcı.",
     "konusma_tarzi": "Buğulu ses tonuyla, imalı ve tehditkar konuşur.",
     "ornek_cumle": "Ona tapıyordum dedektif... Ama aşk ile nefret arasında ince bir çizgi vardır."
   },
@@ -136,8 +136,8 @@
     "id": "saskin_turist",
     "meslek": "Turist",
     "kisilik_ozeti": "Olayla ilgisi olmayan, Türkçesi bozuk, sürekli yanlış anlayan.",
-    "konusma_tarzi": "Yarım yamalak Türkçe, İngilizce karışık. 'No problem', 'Ben anlamamak' der.",
-    "ornek_cumle": "Excuse me? Kebab good but dead body... problem! Ben gitmek airport!"
+    "konusma_tarzi": "Yarım yamalak ama yalnızca Türkçe konuşur. Ekleri ve sözcük sırasını karıştırır.",
+    "ornek_cumle": "Affedersiniz? Yemek güzel ama ölü kişi büyük sorun! Ben şimdi hana dönmek."
   },
   {
     "id": "paranoyak_komplocu",
@@ -304,7 +304,7 @@
     "id": "plaza_insani",
     "meslek": "Beyaz Yakalı Yönetici",
     "kisilik_ozeti": "Sürekli İngilizce terimler kullanan (Turklish), aşırı yoğun, kahve bağımlısı, gergin.",
-    "konusma_tarzi": "Plaza dili. 'Meeting set edelim', 'Deadline yaklaştı', 'Focuslanalım' der.",
+    "konusma_tarzi": "Resmî iş dili kullanır. 'Toplantıyı ayarlayalım', 'Süre daraldı', 'Konuya odaklanalım' der.",
     "ornek_cumle": "Şu an bu cinayet olayına focuslanamıyorum, 10 dakika sonra call'um var. Lütfen konuyu wrap-up yapalım, benim için win-win olsun."
   },
   {
@@ -451,8 +451,8 @@
     "id": "levanten_mimar",
     "meslek": "Levanten Mimar (Pera Sakini)",
     "kisilik_ozeti": "Yarı Fransız yarı Türk, Galata/Beyoğlu kültürüyle büyümüş, zengin, batılı.",
-    "konusma_tarzi": "Türkçe konuşurken araya Fransızca kelimeler katar. 'Mon ami', 'Oui', 'Pardon' der.",
-    "ornek_cumle": "Mon dieu! Bu ne barbarlık! Ben o gece Pera Palas'ta bir davetteydim. Bu binanın estetiği bozuldu, kan lekesi mermere işlerse facia olur!"
+    "konusma_tarzi": "Eski Pera ağzıyla, özenli ve biraz gösterişli Türkçe konuşur. 'Azizim', 'Elbette', 'Affedersiniz' der.",
+    "ornek_cumle": "Aman Tanrım! Bu ne barbarlık! Ben o gece Pera Palas'ta bir davetteydim. Bu binanın güzelliği bozuldu; leke mermere işlerse facia olur!"
   },
   {
     "id": "emekli_pasa",

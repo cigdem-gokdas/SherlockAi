@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Yerel yapay zekâ destekli, tamamen Türkçe bir detektiflik oyunu.">
+  <title>Karanlık Dosya — SherlockAI</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <main id="acilis" class="opening">
+    <div class="opening__art" aria-hidden="true"></div>
+    <div class="opening__shade" aria-hidden="true"></div>
+    <nav class="opening__nav" aria-label="Üst menü">
+      <a class="brand" href="#"><span class="brand__seal">S</span><span>SHERLOCK<span>AI</span></span></a>
+      <div id="model-durumu" class="model-pill"><i></i><span>Sistem inceleniyor</span></div>
+    </nav>
+
+    <section class="opening__copy">
+      <p class="eyebrow">YEREL YAPAY ZEKÂ DESTEKLİ DETEKTİFLİK OYUNU</p>
+      <h1>Her yalan bir iz bırakır.</h1>
+      <p class="lead">Sisli İstanbul'da kurbanlar susar, odalar hatırlar. Şüphelileri sorgula, mekânları ara ve yalnızca kanıtların taşıyabildiği bir hüküm ver.</p>
+      <div class="opening__actions">
+        <button id="dosya-ac" class="button button--primary"><span>Yeni vaka dosyası aç</span><b>→</b></button>
+        <button id="nasil-oynanir" class="button button--ghost">Nasıl oynanır?</button>
+      </div>
+      <div class="opening__facts" aria-label="Oyun özellikleri">
+        <div><strong>4</strong><span>şüpheli</span></div>
+        <div><strong>8+</strong><span>saklı kanıt</span></div>
+        <div><strong>1</strong><span>geri dönülmez hüküm</span></div>
+      </div>
+    </section>
+
+    <aside class="dispatch-card">
+      <p class="dispatch-card__kicker">BU GECEKİ İHBAR</p>
+      <div class="dispatch-card__image"></div>
+      <p class="dispatch-card__time">KANDİLLİ · 00.17</p>
+      <h2>Kilitli bir oda. Dört tanık. Kayıp on yedi dakika.</h2>
+      <div class="audio-line" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <p>“Anahtar içerideydi efendim. Fakat balkondan gelen çamur kokusunu kimse açıklayamıyor.”</p>
+    </aside>
+
+    <div class="scroll-hint"><span></span>VAKA MASASINA GEÇ</div>
+  </main>
+
+  <section id="oyun" class="case-app is-hidden" aria-live="polite">
+    <header class="case-topbar">
+      <a class="brand brand--small" href="#" id="eve-don"><span class="brand__seal">S</span><span>SHERLOCK<span>AI</span></span></a>
+      <div class="case-title-mini"><small>AKTİF VAKA</small><strong id="ust-baslik">—</strong></div>
+      <div class="case-stats">
+        <div><small>KANIT</small><strong id="ust-kanit">0</strong></div>
+        <div><small>PUAN</small><strong id="ust-puan">0</strong></div>
+        <div class="timer"><small>KALAN SÜRE</small><strong id="ust-sure">35:00</strong></div>
+      </div>
+    </header>
+
+    <aside class="case-sidebar">
+      <div class="case-number"><span>DOSYA</span><b>№ 017</b></div>
+      <nav class="case-nav" aria-label="Vaka bölümleri">
+        <button class="is-active" data-panel="dosya"><i>⌂</i><span>Vaka dosyası</span></button>
+        <button data-panel="mekanlar"><i>⌖</i><span>Mekânlar</span><b id="mekan-sayac">0/4</b></button>
+        <button data-panel="supheliler"><i>♙</i><span>Şüpheliler</span><b id="supheli-sayac">0/4</b></button>
+        <button data-panel="kanitlar"><i>◇</i><span>Kanıt masası</span><b id="kanit-sayac">0</b></button>
+        <button data-panel="iliski"><i>⌘</i><span>İlişki ağı</span></button>
+        <button data-panel="zihin"><i>✦</i><span>Zihin odası</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="case-progress"><span><i id="ilerleme-cizgi"></i></span><small><b id="ilerleme-yuzde">0%</b> dosya tamamlandı</small></div>
+        <button id="suclama-ac" class="accuse-button">SON SUÇLAMAYI YAP <span>⚖</span></button>
+      </div>
+    </aside>
+
+    <section class="case-workspace">
+      <div id="panel-dosya" class="panel is-active">
+        <article class="case-hero">
+          <div class="case-hero__visual"><span class="evidence-marker">01</span></div>
+          <div class="case-hero__content">
+            <p class="eyebrow" id="vaka-yer-tarih">—</p>
+            <h1 id="vaka-baslik">Vaka hazırlanıyor…</h1>
+            <p id="vaka-giris">Sis dağılırken dosyanız masaya bırakılacak.</p>
+            <div class="victim-strip">
+              <span>✞</span><div><small>KURBAN</small><strong id="kurban-ad">—</strong><em id="kurban-kimlik">—</em></div>
+              <div><small>TAHMİNİ ÖLÜM</small><strong id="kurban-zaman">—</strong><em id="kurban-mekan">—</em></div>
+            </div>
+          </div>
+        </article>
+        <div class="section-heading"><div><small>BAŞLANGIÇ NOKTASI</small><h2>Soruşturmayı nereden açacaksınız?</h2></div><p>İyi bir hüküm, aceleyle değil doğru soruyla başlar.</p></div>
+        <div id="hizli-kartlar" class="quick-grid"></div>
+      </div>
+
+      <div id="panel-mekanlar" class="panel">
+        <div class="page-heading"><p class="eyebrow">OLAY YERİ İNCELEME</p><h1>Mekânlar susmaz.</h1><p>Her odayı tarayın. Bulduğunuz izler kanıt masasına mühürlü olarak taşınır.</p></div>
+        <div id="mekan-listesi" class="location-grid"></div>
+      </div>
+
+      <div id="panel-supheliler" class="panel">
+        <div class="page-heading"><p class="eyebrow">SORGU KORİDORU</p><h1>Dört yüz, dört ayrı sır.</h1><p>Söylenenden çok, neyin neden saklandığını dinleyin.</p></div>
+        <div id="supheli-listesi" class="suspect-grid"></div>
+      </div>
+
+      <div id="panel-kanitlar" class="panel">
+        <div class="page-heading page-heading--split"><div><p class="eyebrow">MÜHÜRLÜ BULGULAR</p><h1>Kanıt masası</h1></div><button id="kanit-analiz" class="button button--line">Bulguları birlikte yorumla</button></div>
+        <div id="kanit-bos" class="empty-evidence"><div></div><h2>Masa henüz boş.</h2><p>Mekânları aradığınızda bulgular burada çapraz incelemeye açılacak.</p></div>
+        <div id="kanit-listesi" class="evidence-grid"></div>
+      </div>
+
+      <div id="panel-iliski" class="panel">
+        <div class="page-heading"><p class="eyebrow">BAĞLANTI HARİTASI</p><h1>Herkes birine bağlı.</h1><p>Güven, korku ve çıkar çizgilerini birlikte okuyun.</p></div>
+        <div id="iliski-agi" class="relationship-board"></div>
+      </div>
+
+      <div id="panel-zihin" class="panel">
+        <div class="mind-room">
+          <div class="mind-room__portrait"></div>
+          <div class="mind-room__chat">
+            <p class="eyebrow">YAPAY ZEKÂ DESTEKLİ ÇIKARIM</p>
+            <h1>Zihin Odası</h1>
+            <p class="mind-room__intro">“Veriler kendi başına konuşmaz. Onlara doğru soruyu yöneltmek gerekir.”</p>
+            <div id="danisma-gecmisi" class="chat-history"><div class="bubble bubble--ai">Dosyayı birlikte okuyabiliriz. Benden çözümü değil, elinizdeki kanıtlar arasındaki bağı sınamamı isteyin.</div></div>
+            <form id="danisma-formu" class="chat-form">
+              <label class="sr-only" for="danisma-soru">Dedektif yardımcısına sorun</label>
+              <textarea id="danisma-soru" rows="2" maxlength="500" placeholder="Örn. Zaman çizelgesindeki en büyük çelişki ne?"></textarea>
+              <button class="button button--primary" type="submit">Sor <span>→</span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <dialog id="yeni-vaka" class="modal">
+    <form id="yeni-vaka-formu" method="dialog">
+      <button class="modal__close" value="cancel" aria-label="Kapat">×</button>
+      <p class="eyebrow">YENİ DOSYA</p><h2>Bu gece hangi sır perdelensin?</h2>
+      <label>Tema<input id="tema" name="tema" value="Boğaz kıyısında kilitli oda" maxlength="120"></label>
+      <div class="choice-row">
+        <label>Zorluk<select id="zorluk"><option value="çırak">Çırak</option><option value="müfettiş" selected>Müfettiş</option><option value="üstat">Üstat</option></select></label>
+        <label>Süre<select id="sure"><option value="25">25 dakika</option><option value="35" selected>35 dakika</option><option value="50">50 dakika</option></select></label>
+      </div>
+      <p class="form-note">Yerel model hazırsa benzersiz vaka üretilir. Değilse doğrulanmış vaka anında açılır.</p>
+      <button class="button button--primary button--full" type="submit">Dosyayı mühürle ve başlat <span>→</span></button>
+    </form>
+  </dialog>
+
+  <dialog id="kilavuz" class="modal modal--paper">
+    <form method="dialog"><button class="modal__close" value="cancel" aria-label="Kapat">×</button>
+      <p class="eyebrow">SAHA KILAVUZU</p><h2>Bir hüküm üç ayak üzerinde durur.</h2>
+      <ol><li><b>İncele.</b> Dört mekânı ara, nesnelerin yalnız varlığına değil yerlerine bak.</li><li><b>Sorgula.</b> Her şüpheli bir şey saklar; her sır cinayet değildir.</li><li><b>Bağla.</b> Zihin Odası'nda zaman çizelgesini ve çelişkileri sınadıktan sonra tek suçlama hakkını kullan.</li></ol>
+    </form>
+  </dialog>
+
+  <dialog id="sorgu" class="interrogation">
+    <button class="modal__close" id="sorgu-kapat" aria-label="Sorguyu kapat">×</button>
+    <div id="sorgu-portre" class="interrogation__portrait"></div>
+    <section class="interrogation__room">
+      <p class="eyebrow">SORGU ODASI № 3</p><h2 id="sorgu-ad">—</h2><p id="sorgu-rol" class="interrogation__role">—</p>
+      <div id="sorgu-gecmisi" class="chat-history chat-history--tall"></div>
+      <form id="sorgu-formu" class="chat-form"><label class="sr-only" for="sorgu-soru">Şüpheliye soru</label><textarea id="sorgu-soru" rows="2" maxlength="500" placeholder="Şüpheliye sorunuzu yöneltin…"></textarea><button class="button button--primary" type="submit">Sor <span>→</span></button></form>
+    </section>
+  </dialog>
+
+  <dialog id="suclama" class="modal modal--accuse">
+    <form id="suclama-formu" method="dialog"><button class="modal__close" value="cancel" aria-label="Kapat">×</button>
+      <p class="eyebrow">GERİ DÖNÜLMEZ KARAR</p><h2>Kimi suçluyorsunuz?</h2><p>Dosya bu hükümle kapanır. Sezginizi değil, kanıt zincirinizi konuşturun.</p>
+      <label>Şüpheli<select id="suclanan"></select></label>
+      <label>Gerekçeniz<textarea id="gerekce" rows="4" maxlength="800" placeholder="Hangi kanıtlar aynı kişiyi işaret ediyor?"></textarea></label>
+      <button class="button button--danger button--full" type="submit">Hükmü açıkla <span>⚖</span></button>
+    </form>
+  </dialog>
+
+  <dialog id="sonuc" class="modal modal--result"><div id="sonuc-icerik"></div></dialog>
+  <div id="yukleniyor" class="loading is-hidden"><div class="loading__lens"></div><p id="yukleniyor-metin">Vaka dosyası hazırlanıyor…</p><small>Yerel model çalışıyorsa bu işlem biraz sürebilir.</small></div>
+  <div id="bildirimler" class="toasts" aria-live="assertive"></div>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>
