@@ -17,6 +17,10 @@ class VakaTestleri(TestCase):
         self.assertEqual(len(vaka.supheliler), 4)
         self.assertEqual(len(vaka.mekanlar), 4)
         self.assertEqual(sum(s.katil for s in vaka.supheliler), 1)
+        self.assertEqual(sum(s.cinsiyet == "kadın" for s in vaka.supheliler), 2)
+        for supheli in vaka.supheliler:
+            uygun = {"kadın": {0, 3}, "erkek": {1, 2}}[supheli.cinsiyet]
+            self.assertIn(supheli.portre_konumu, uygun)
         self.assertGreaterEqual(len(vaka.kanitlar), 6)
 
     def test_rag_turkce_sorgu_getirir(self):

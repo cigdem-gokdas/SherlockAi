@@ -26,6 +26,7 @@ class Supheli(BaseModel):
     gorunen_gudusu: str = Field(min_length=3, max_length=220)
     gizli_bilgi: str = Field(min_length=3, max_length=300)
     katil: bool = False
+    cinsiyet: Literal["kadın", "erkek"]
     portre: str = "portreler.jpg"
     portre_konumu: int = Field(default=0, ge=0, le=3)
 
@@ -79,6 +80,8 @@ class Vaka(BaseModel):
     def tutarliligi_denetle(self) -> Vaka:
         if sum(k.katil for k in self.supheliler) != 1:
             raise ValueError("Tam olarak bir katil bulunmalı")
+        if sum(k.cinsiyet == "kadın" for k in self.supheliler) != 2:
+            raise ValueError("Portrelerle uyum için tam iki kadın ve iki erkek şüpheli bulunmalı")
         mekanlar = {m.id for m in self.mekanlar}
         supheliler = {s.id for s in self.supheliler}
         if any(k.mekan_id not in mekanlar for k in self.kanitlar):

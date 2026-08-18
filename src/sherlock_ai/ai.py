@@ -187,6 +187,47 @@ class YapayZekaIstemcisi:
             return self._gemini_sohbet(iletiler, sema=sema, sicaklik=sicaklik)
         return None
 
+    @staticmethod
+    def _portreleri_esle(vaka: Vaka) -> Vaka:
+        """Şüphelileri portre şeridindeki uygun kadın/erkek yuvalarına yerleştir."""
+
+        yuvalar = {"kadın": iter((0, 3)), "erkek": iter((1, 2))}
+        for supheli in vaka.supheliler:
+            supheli.portre = "portreler.jpg"
+            supheli.portre_konumu = next(yuvalar[supheli.cinsiyet])
+        return vaka
+
+    @staticmethod
+    def _vaka_jsonini_dogrula(metin: str) -> Vaka:
+        """Modelin ilişki kimliklerindeki küçük sapmaları güvenli biçimde onar."""
+
+        veri = json.loads(metin)
+        supheli_kimlikleri = [s["id"] for s in veri.get("supheliler", []) if s.get("id")]
+        gecerli_kimlikler = set(supheli_kimlikleri)
+        iliskiler = [
+            iliski
+            for iliski in veri.get("iliskiler", [])
+            if iliski.get("kaynak_id") in gecerli_kimlikler
+            and iliski.get("hedef_id") in gecerli_kimlikler
+            and iliski.get("kaynak_id") != iliski.get("hedef_id")
+        ]
+        var_olanlar = {(i["kaynak_id"], i["hedef_id"]) for i in iliskiler}
+        for sira, kaynak in enumerate(supheli_kimlikleri):
+            if len(iliskiler) >= 4:
+                break
+            hedef = supheli_kimlikleri[(sira + 1) % len(supheli_kimlikleri)]
+            if (kaynak, hedef) not in var_olanlar:
+                iliskiler.append(
+                    {
+                        "kaynak_id": kaynak,
+                        "hedef_id": hedef,
+                        "tur": "tanıyor",
+                        "ayrinti": "Vaka öncesinden gelen, henüz ayrıntıları açıklanmamış bir tanışıklık.",
+                    }
+                )
+        veri["iliskiler"] = iliskiler[:12]
+        return Vaka.model_validate(veri)
+
     def vaka_uret(self, tema: str, zorluk: str) -> tuple[Vaka, bool]:
         baglam = self.rag.baglam(f"{tema} kanıt çıkarım alibi kapalı oda insan doğası", 4)
         sema = Vaka.model_json_schema()
@@ -201,12 +242,14 @@ Esinlenme notları (olayları veya adları kopyalama; yalnızca yöntem ve atmos
 Zorunlu kurallar:
 - Olay 1890-1925 arası İstanbul'da geçsin; bütün adlar, unvanlar ve mekânlar Türkçe olsun.
 - Tam dört şüpheli, dört araştırılabilir mekân ve altı ile on arasında kanıt üret.
+- Tam iki kadın ve iki erkek şüpheli üret; ad, unvan, rol ve cinsiyet birbiriyle tutarlı olsun.
 - Yalnızca bir şüphelinin katil alanı doğru olsun.
 - Her masumun cinayetten bağımsız sakladığı inandırıcı bir sırrı bulunsun.
 - En az üç kanıt birlikte katili mantıken göstersin; tek bir kanıt çözüm için yeterli olmasın.
 - Kanıtların mekan_id değerleri mekân kimlikleriyle; ilişkilerin uçları şüpheli kimlikleriyle birebir eşleşsin.
 - Kimliklerde yalnızca küçük Latin harfleri, rakam, alt çizgi veya kısa çizgi kullan.
-- Portre ve görsel dosyalarını sırasıyla portreler.jpg ve mekanlar.jpg yap; konumları 0, 1, 2, 3 ata.
+- Portre ve görsel dosyalarını sırasıyla portreler.jpg ve mekanlar.jpg yap.
+- Kadın portre konumları 0 ve 3; erkek portre konumları 1 ve 2 olsun.
 - Gerçek çözümü yalnızca cozum ve gizli_bilgi alanlarında açıkla.
 - Bütün serbest metin alanlarını Türkçe yaz.
 
@@ -216,7 +259,8 @@ Yalnızca verilen JSON şemasına uyan nesneyi döndür."""
             if not metin:
                 break
             try:
-                return Vaka.model_validate_json(metin), True
+                vaka = self._vaka_jsonini_dogrula(metin)
+                return self._portreleri_esle(vaka), True
             except (ValueError, json.JSONDecodeError) as hata:
                 if deneme == 1:
                     GUNLUK.warning("Model vakası iki denemede de doğrulanamadı: %s", str(hata)[:500])
